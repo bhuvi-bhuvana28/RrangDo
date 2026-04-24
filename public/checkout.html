@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout - RrangoDoIndia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 class="page-title">📦 Checkout</h2>
+
+<div class="checkout-box">
+<div id="order-summary">
+<p></p>
+</div>
+
+<div class="checkout-box">
+<h3>Total</h3>
+<p id="checkout-total"></p>
+</div>
+
+<!-- PAYMENT SECTION -->
+
+<div class="payment-section">
+
+<label>Select Payment Method</label>
+
+<select id="payment-method" onchange="showPaymentFields()">
+<option value="">Choose Payment</option>
+<option value="upi">UPI</option>
+<option value="card">Credit / Debit Card</option>
+<option value="cod">Cash on Delivery</option>
+</select>
+
+<!-- UPI FIELD -->
+<div id="upi-box" class="payment-box">
+<input type="text" placeholder="Enter UPI ID (example@upi)">
+</div>
+
+<!-- CARD FIELD -->
+<div id="card-box" class="payment-box">
+
+<input type="text" placeholder="Card Number">
+
+<input type="text" placeholder="Card Holder Name">
+
+<div class="card-row">
+<input type="text" placeholder="MM/YY">
+<input type="text" placeholder="CVV">
+</div>
+
+</div>
+
+</div>
+<button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+<button class="cancel-order-btn" onclick="cancelOrder()">Cancel</button>
+</div>
+
+<script>
+// ✅ CHECK ADDRESS BEFORE ORDER
+let address = JSON.parse(localStorage.getItem("userAddress"));
+
+if(!address){
+  alert("Please add address first 📍");
+  window.location.href = "address.html";
+}
+function showPaymentFields(){
+
+const method = document.getElementById("payment-method").value
+
+document.getElementById("upi-box").style.display = "none"
+document.getElementById("card-box").style.display = "none"
+
+if(method === "upi"){
+document.getElementById("upi-box").style.display = "block"
+}
+
+if(method === "card"){
+document.getElementById("card-box").style.display = "block"
+}
+
+}
+
+/*function placeOrder(){
+
+alert("🎉 Order Placed Successfully!")
+
+localStorage.removeItem("cart")
+
+window.location.href = "index.html"
+
+}
+*/
+function cancelOrder(){
+
+window.location.href = "cart.html"
+
+}
+function changeAddress(){
+  window.location.href = "address.html";
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

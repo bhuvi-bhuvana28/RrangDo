@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup - RrangoDoIndia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+<div class="login-container">
+  <h2>Create Account</h2>
+
+  <input type="text" id="name" placeholder="Full Name">
+  <input type="email" id="email" placeholder="Email Address">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="signupUser()">Sign Up</button>
+
+  <p class="signup-text">
+    Already have an account?
+    <a href="login.html">Login</a>
+  </p>
+</div>
+
+<script>
+function signupUser(){
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  if(name === "" || email === "" || password === ""){
+    alert("Please fill all fields");
+    return;
+  }
+
+  // Store in localStorage (frontend only)
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userEmail", email);
+  localStorage.setItem("userPassword", password);
+
+  alert("Signup Successful! Please Login.");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

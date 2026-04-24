@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Delivery Address</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center;">📍 Select Delivery Address</h2>
+
+<div class="address-container">
+
+  <!-- ✅ SHOW ADDRESS -->
+  <div id="saved-address-box"></div>
+
+  <!-- ✅ BUTTONS -->
+
+</div>
+
+<script>
+
+
+
+// ✅ GET ADDRESS FROM LOCAL STORAGE
+let savedAddress = JSON.parse(localStorage.getItem("userAddress"));
+let box = document.getElementById("saved-address-box");
+
+// ✅ IF ADDRESS EXISTS
+if(savedAddress && savedAddress.street){
+
+  box.innerHTML = `
+    <div class="address-card">
+      <p>${savedAddress.street}</p>
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+
+      <button onclick="useThisAddress()" class="main-btn">
+        ✅ Continue with this Address
+      </button>
+
+      <br><br>
+
+      <button onclick="addNewAddress()" class="secondary-btn">
+        ✏️ Change Address
+      </button>
+
+    </div>
+  `;
+
+}else{
+
+  // ❌ NO ADDRESS → only show add
+  box.innerHTML = `
+    <p>No saved address ❌</p>
+
+    <div style="text-align:center; margin-top:20px;">
+      <button onclick="addNewAddress()" class="secondary-btn">
+        ➕ Add Address
+      </button>
+    </div>
+  `;
+}
+
+// ✅ FUNCTIONS
+function useThisAddress(){
+  window.location.href = "checkout.html";
+}
+
+function addNewAddress(){
+  localStorage.setItem("fromCheckout", "true");   // ✅ ADD THIS
+  window.location.href = "location.html";
+}
+
+
+</script>
+
+</body>
+</html>

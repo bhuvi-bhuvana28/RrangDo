@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - RrangoDoIndia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+
+  <div class="login-box">
+
+    <h2>Welcome Back 👋</h2>
+    <p class="sub-text">Login using Email or Phone</p>
+
+    <!-- Email / Phone -->
+    <input type="text" id="user" placeholder="Email or Phone Number">
+
+    <!-- Password -->
+    <input type="password" id="password" placeholder="Password">
+
+    <!-- Login Button -->
+    <button class="login-btn" onclick="loginUser()">Login</button>
+
+    <button onclick="continueGuest()">Continue as Guest</button>
+
+    <p class="signup-text">
+      Don’t have an account?
+      <a href="signup.html">Sign Up</a>
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+let userType = localStorage.getItem("userType");
+
+// ❌ only redirect if already logged AND coming directly
+if(userType === "user" || userType === "guest"){
+  // allow login page if user manually opens
+}
+function loginUser(){
+
+  let user = document.getElementById("user").value;
+  let password = document.getElementById("password").value;
+
+  // ❌ block empty fields only
+  if(!user || !password){
+    alert("Enter email & password ❌");
+    return;
+  }
+
+  // ✅ accept ANY input
+  localStorage.setItem("userType", "user");
+
+  // (optional) store current user
+  localStorage.setItem("currentUser", user);
+
+  alert("Login Successful 🚀");
+
+  window.location.href = "location.html";
+}
+ 
+
+function continueGuest(){
+  localStorage.setItem("userType", "guest");
+
+  // ✅ skip location → go directly to home
+  window.location.href = "index.html";
+}
+
+</script>
+
+
+
+</body>
+</html>

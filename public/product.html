@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">RrangoDoIndia</div>
+  <div class="header-right">
+    <a href="index.html">🏠 Home</a>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="wishlist.html">❤️</a>
+  </div>
+</div>
+
+<div class="product-details">
+
+<div class="product-left">
+  <img id="product-image">
+</div>
+
+<div class="product-right">
+
+<h2 id="product-name"></h2>
+<p id="product-price"></p>
+
+<div class="cart-row">
+
+  <!-- QTY ALWAYS VISIBLE -->
+  <div class="qty-control">
+    <button onclick="decreaseProductQty(name)">-</button>
+    <span id="qty-${product.name.replace(/\s/g,'')}">1</span>
+    <button onclick="increaseProductQty(name)">+</button>
+  </div>
+
+  <!-- ADD BUTTON -->
+  <button class="add-btn"
+    onclick="addToCartWithQty(name, price, img1)">
+    ADD
+  </button>
+
+  <!-- ❤️ -->
+  <button class="wish-btn"
+    onclick="addToWishlist(name, price, img1)">
+    ❤️
+  </button>
+
+</div>
+
+</div>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search)
+
+const name = params.get("name")
+const price = Number(params.get("price"))
+const img1 = params.get("img1")
+
+document.getElementById("product-name").innerText = name
+document.getElementById("product-price").innerText = "₹" + price
+document.getElementById("product-image").src = img1
+
+let productQty = {}
+
+function startAdd(name, price, image){
+  productQty[name] = 1
+
+  document.getElementById("add-btn").style.display = "none"
+  document.getElementById("qty-box").style.display = "flex"
+
+  addToCartWithQty(name, price, image)
+}
+
+function increaseProductQty(name){
+  productQty[name]++
+  document.getElementById("qty").innerText = productQty[name]
+}
+
+function decreaseProductQty(name){
+  if(productQty[name] > 1){
+    productQty[name]--
+    document.getElementById("qty").innerText = productQty[name]
+  }
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

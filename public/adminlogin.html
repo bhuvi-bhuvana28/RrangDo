@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+
+<div class="admin-login-container">
+
+  <h2>🔐 Admin Login</h2>
+  <p class="subtitle">Only authorized users can access</p>
+
+  <input type="text" id="admin-user" placeholder="📧 Enter Email">
+  <input type="password" id="admin-pass" placeholder="🔒 Enter Password">
+
+  <button onclick="adminLogin()">Login</button>
+
+</div>
+
+<script>
+function adminLogin(){
+  let user = document.getElementById("admin-user").value
+  let pass = document.getElementById("admin-pass").value
+
+  if(user === "admin@gmail.com" && pass === "admin123"){
+    localStorage.setItem("adminUser", user)
+    window.location.href = "admin.html"
+  } else {
+    alert("Invalid Admin Login ❌")
+  }
+}
+</script>
+
+</body>
+</html>

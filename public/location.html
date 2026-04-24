@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Location</title>
+
+  <!-- MAP -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <style>
+    body{
+      font-family: Arial;
+      background: linear-gradient(to right, #0f7c5b, #16a085);
+      margin: 0;
+      color: #333;
+    }
+
+    .container{
+      background: white;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      color: #0f7c5b;
+      margin-bottom: 10px;
+    }
+
+    #location-search{
+      padding: 12px;
+      width: 90%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      outline: none;
+    }
+
+    #location-search:focus{
+      border-color: #0f7c5b;
+    }
+
+    #map{
+      height: 350px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    #selected-address{
+      font-size: 14px;
+      margin: 10px;
+      color: #555;
+    }
+
+    button{
+      background: #0f7c5b;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover{
+      background: #0c5f46;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>📍 Select Your Location</h2>
+
+  <!-- SEARCH -->
+  <input
+    type="text"
+    id="location-search"
+    placeholder="Search location..."
+    onkeypress="searchLocation(event)"
+  >
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- ADDRESS -->
+  <p id="selected-address">Detecting location...</p>
+
+  <!-- BUTTON -->
+ <button class="confirm-btn" onclick="confirmLocation()">
+  Confirm & Continue
+</button>
+
+</div>
+
+<script>
+let userType = localStorage.getItem("userType");
+
+// ❌ if user not logged → go login
+if(!userType){
+  window.location.href = "login.html";
+}
+let map, marker;
+let fromCheckout = localStorage.getItem("fromCheckout");
+let address = localStorage.getItem("userAddress");
+
+if(address && fromCheckout !== "true"){
+  window.location.href = "index.html";
+}
+// ✅ INIT MAP
+function initMap(){
+
+  map = L.map('map').setView([20.5937, 78.9629], 5);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    maxZoom:19
+  }).addTo(map);
+
+  marker = L.marker([20.5937, 78.9629], {draggable:true}).addTo(map);
+
+  // AUTO LOCATION
+  getCurrentLocation();
+
+  marker.on('dragend', function(){
+    let pos = marker.getLatLng();
+    getAddress(pos.lat, pos.lng);
+  });
+}
+
+// ✅ GET CURRENT LOCATION
+function getCurrentLocation(){
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(position => {
+
+      let lat = position.coords.latitude;
+      let lng = position.coords.longitude;
+
+      map.setView([lat, lng], 15);
+      marker.setLatLng([lat, lng]);
+
+      getAddress(lat, lng);
+    });
+  }
+}
+
+// ✅ GET ADDRESS FROM LAT LNG
+async function getAddress(lat, lng){
+  let res = await fetch(
+    `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`
+  );
+  let data = await res.json();
+
+  document.getElementById("selected-address").innerText = data.display_name;
+}
+
+// ✅ SEARCH LOCATION (ENTER KEY)
+async function searchLocation(e){
+
+  if(e.key !== "Enter") return;
+
+  let query = document.getElementById("location-search").value;
+
+  if(!query){
+    alert("Enter location ❌");
+    return;
+  }
+
+  let res = await fetch(
+    `https://nominatim.openstreetmap.org/search?q=${query}&format=json`
+  );
+
+  let data = await res.json();
+
+  if(data.length === 0){
+    alert("Location not found ❌");
+    return;
+  }
+
+  let lat = data[0].lat;
+  let lon = data[0].lon;
+
+  map.setView([lat, lon], 15);
+  marker.setLatLng([lat, lon]);
+
+  getAddress(lat, lon);
+}
+
+// ✅ CONFIRM LOCATION
+function confirmLocation(){
+
+  let addressEl = document.getElementById("selected-address");
+  let input = document.getElementById("location-search").value;
+
+  let address = addressEl.innerText;
+
+  if(!address || address.includes("Detecting")){
+    if(input){
+      address = input;
+    } else {
+      alert("Select location ❌");
+      return;
+    }
+  }
+
+  // ✅ SAVE LOCATION (IMPORTANT)
+  localStorage.setItem("selectedLocation", address);
+
+  // ✅ SAVE ADDRESS
+  localStorage.setItem("userAddress", JSON.stringify({
+    name: "User",
+    phone: "",
+    street: address,
+    city: ""
+  }));
+
+  // ✅ CHECK FLOW
+  if(fromCheckout === "true"){
+    localStorage.removeItem("fromCheckout");
+    window.location.href = "checkout.html";
+  } else {
+    window.location.href = "index.html";
+  }
+}
+
+
+initMap()
+
+</script>
+
+</body>
+</html>

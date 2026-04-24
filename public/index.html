@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RrangoDoIndia⚡</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- LEAFLET MAP -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+  <!-- BANNER -->
+<div class="banner">
+  🚀 Fast Delivery of Construction Materials
+</div>
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">
+  <img src="image/logo.png" alt="logo" class="logo-img">
+  <span>RrangoDoIndia</span>
+</div>
+</div>
+
+
+<!-- LOCATION + SEARCH -->
+<div class="navbar">
+
+  <div class="location-box" onclick="openLocationPopup()" style="
+background:#ffffff;
+padding:8px 15px;
+border-radius:20px;
+cursor:pointer;
+font-weight:500;
+">
+  <i class="fa-solid fa-location-dot"></i> 
+  <span id="selected-location">Select Location</span>
+  </div>
+
+  <div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="text" placeholder="Search"
+    onkeypress="handleSearch(event)">
+  </div>
+
+  <div class="nav-buttons">
+    
+    <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <span id="auth-btn"></span>
+  </div>
+  
+
+</div>
+
+
+
+<!-- SLIDER -->
+<div class="banner-slider">
+  <div class="slides">
+    <img src="image/banner1.png" class="banner-img">
+    <!-- 7/4/26 -->
+    <video class="banner-img" autoplay muted loop>
+      <source src="video/banner.mp4" type="video/mp4">
+    </video>
+
+    <img src="image/banner2.png" class="banner-img">
+    <img src="image/banner3.png" class="banner-img">
+  </div>
+</div>
+
+<!-- CATEGORY -->
+<div class="category-section">
+<h2>Shop by Category</h2>
+
+<div class="category-scroll">
+
+<div class="category-card" onclick="goCategory('architecture')">
+  <img src="image/3Dbuildingplan.png">
+  <p>Architecture</p>
+</div>
+
+<div class="category-card" onclick="goCategory('foundation')">
+  <img src="image/ultratechcement.png">
+  <p>Foundation</p>
+</div>
+
+<div class="category-card" onclick="goCategory('electrical')">
+  <img src="image/electricalwire.png">
+  <p>Electrical</p>
+</div>
+
+<div class="category-card" onclick="goCategory('plumbing')">
+  <img src="image/pvcpipe.png">
+  <p>Plumbing</p>
+</div>
+
+<div class="category-card" onclick="goCategory('paints')">
+  <img src="image/asianpaints.png">
+  <p>Paints</p>
+</div>
+
+<div class="category-card" onclick="goCategory('tiles')">
+  <img src="image/granitetiles.png">
+  <p>Tiles</p>
+</div>
+
+<div class="category-card" onclick="goCategory('tools')">
+  <img src="image/drillmachine.png">
+  <p>Tools</p>
+</div>
+
+<div class="category-card" onclick="goCategory('auto')">
+  <img src="image/trucktyre.png">
+  <p>Automobile</p>
+</div>
+
+</div>
+</div>
+
+<!-- QUICK CATEGORY -->
+
+<div class="category-section">
+  <h2>Quick Categories</h2>
+
+  <div class="category-scroll">
+
+    <div class="category-card" onclick="goCategory('cement')">
+      <img src="image/ultratechcement.png">
+      <p>Cement</p>
+    </div>
+
+    <div class="category-card" onclick="goCategory('steel')">
+      <img src="image/tmtsteelbar.png">
+      <p>Steel</p>
+    </div>
+
+    <div class="category-card" onclick="goCategory('pipes')">
+      <img src="image/pvcpipe.png">
+      <p>Pipes</p>
+    </div>
+
+    <div class="category-card" onclick="goCategory('paints')">
+      <img src="image/asianpaints.png">
+      <p>Paints</p>
+    </div>
+
+    <div class="category-card" onclick="goCategory('tiles')">
+      <img src="image/granitetiles.png">
+      <p>Tiles</p>
+    </div>
+
+    <div class="category-card" onclick="goCategory('tools')">
+      <img src="image/drillmachine.png">
+      <p>Tools</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<h3 class="section-title">Popular Products</h3>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="image/ultratechcement.png" alt="UltraTech Cement">
+    <h4>UltraTech Cement</h4>
+    <p>₹420</p>
+  </div>
+
+  <div class="product-card">
+    <img src="image/tmtsteelbar.png" alt="TMT Steel Bar">
+    <h4>TMT Steel Bar</h4>
+    <p>₹65/kg</p>
+  </div>
+
+  <div class="product-card">
+    <img src="image/acc.png" alt="ACC Cement">
+    <h4>ACC Cement</h4>
+    <p>₹410</p>
+  </div>
+
+</div>
+
+<!-- LOCATION POPUP -->
+<div id="location-popup" class="location-popup">
+
+  <div class="location-modal">
+
+    <div class="location-header">
+      <h3>Your Location</h3>
+      <span onclick="closeLocationPopup()">✖</span>
+    </div>
+
+    <input type="text" id="location-search" placeholder="🔍 Search location" onkeyup="searchLocation(event)">
+    <div class="gps-card">
+      <div>
+        <h4>📍 Use My Current Location</h4>
+        <p>Enable your current location</p>
+      </div>
+      <button onclick="getCurrentLocation()">Enable</button>
+    </div>
+
+    <div id="map" style="height:250px;"></div>
+
+    <p id="selected-address">Select location...</p>
+
+    <button onclick="confirmLocation()" class="confirm-btn">
+      Confirm & Continue
+    </button>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <h3>RrangoDoIndia</h3>
+      <p>Premium building materials & hardware solutions across India.</p>
+
+      <div class="socials">
+        <span>📘</span>
+        <span>📷</span>
+        <span>▶️</span>
+      </div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Price List</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+
+    <!-- POLICY -->
+    <div class="footer-col">
+      <h4>Policy</h4>
+      <ul>
+        <li>Refund Policy</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Shipping Policy</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: support@rrangodoindia.com</p>
+      <p>Bangalore, India</p>
+    </div>
+
+  </div>
+
+  <!-- SUBSCRIBE -->
+  <div class="footer-subscribe">
+    <p>Get updates on offers & new products</p>
+    <div class="subscribe-box">
+      <input type="email" placeholder="Enter your email">
+      <button>→</button>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © 2025 RrangoDoIndia • All Rights Reserved
+  </div>
+</footer>
+</body>
+</html>
