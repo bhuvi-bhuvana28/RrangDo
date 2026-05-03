@@ -156,7 +156,7 @@ img3:"image/3Dbuildingplan1.png"},
   {image:"image/placeholder.png", name:"Spray Paint", price:300},
   {image:"image/placeholder.png", name:"Primer for Wood", price:650}
   ],
-
+ 
   tiles: [
     {image:"image/granitetiles.png",name:"Granite Tiles", price:75},
     {image:"image/marbletiles.png",name:"Marble Tiles", price:90},
@@ -227,7 +227,7 @@ img3:"image/3Dbuildingplan1.png"},
     {name:"Carpenter", price:1300}
   ],
   cement: [
-    {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
+    {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420,img1:"t",img2:"t2",img3:"t3"},
     {image:"image/acc.png",name:"ACC Cement", price:410},
     {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
     {image:"image/birlacement.png",name:"Birla Cement", price:415},
@@ -253,89 +253,90 @@ img3:"image/3Dbuildingplan1.png"},
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
+
 /* ===============================
-   LOAD CATEGORY PAGE
+   LOAD CATEGORY PAGE (FIXED)
 =================================*/
-if(window.location.pathname.includes("category.html")){
+document.addEventListener("DOMContentLoaded", function(){
 
-const params = new URLSearchParams(window.location.search);
+  const container = document.getElementById("category-products");
+  if(!container) return; // safety
 
-let type = params.get("type");
-const search = params.get("search");
+  const params = new URLSearchParams(window.location.search);
 
-const title = document.getElementById("category-title");
-const container = document.getElementById("category-products");
+  let type = params.get("type");
+  const search = params.get("search");
 
-container.innerHTML = "";
+  const title = document.getElementById("category-title");
 
-// 🔥 LOOP THROUGH ALL CATEGORIES (IMPORTANT FIX)
-Object.keys(categoryProducts).forEach(category => {
+  container.innerHTML = "";
 
-categoryProducts[category].forEach(product => {
+  Object.keys(categoryProducts).forEach(category => {
 
-// ✅ SEARCH FILTER
-if(search && !product.name.toLowerCase().includes(search.toLowerCase())){
-return;
-}
+    categoryProducts[category].forEach(product => {
 
-// ✅ TYPE FILTER (optional)
-if(type && category !== type.toLowerCase()){
-return;
-}
+      // SEARCH FILTER
+      if(search && !product.name.toLowerCase().includes(search.toLowerCase())){
+        return;
+      }
 
-container.innerHTML += `
-<div class="product-card">
+      // CATEGORY FILTER
+      if(type && category !== type.toLowerCase()){
+        return;
+      }
 
-<a href="product.html?name=${encodeURIComponent(product.name)}
-&price=${product.price}
-&img1=${encodeURIComponent(product.img1 || product.image)}
-&img2=${encodeURIComponent(product.img2 || product.image)}
-&img3=${encodeURIComponent(product.img3 || product.image)}">
+      container.innerHTML += `
+      <div class="product-card">
 
-${product.image ? `<img src="${product.image}" class="product-img">` : ""}
+        <a href="product.html?name=${encodeURIComponent(product.name)}
+        &price=${product.price}
+        &img1=${encodeURIComponent(product.img1 || product.image)}
+        &img2=${encodeURIComponent(product.img2 || product.image)}
+        &img3=${encodeURIComponent(product.img3 || product.image)}">
 
-<h4>${product.name}</h4>
-<p>₹${product.price}</p>
+        ${product.image ? `<img src="${product.image}" class="product-img">` : ""}
 
-</a>
+        <h4>${product.name}</h4>
+        <p>₹${product.price}</p>
 
-<div class="cart-row">
+        </a>
 
-  <!-- QTY -->
-  <div class="qty-control">
-    <button onclick="decreaseQty('${product.name}')">-</button>
-    <span id="qty-${product.name.replace(/\s/g,'')}">1</span>
-    <button onclick="increaseQty('${product.name}')">+</button>
-  </div>
+        <div class="cart-row">
 
-  <!-- ADD -->
-  <button class="add-btn"
-    onclick="addToCartWithQty('${product.name}', ${product.price}, '${product.image}')">
-    ADD
-  </button>
+          <div class="qty-control">
+            <button onclick="decreaseQty('${product.name}')">-</button>
+            <span id="qty-${product.name.replace(/\s/g,'')}">1</span>
+            <button onclick="increaseQty('${product.name}')">+</button>
+          </div>
 
+          <button class="add-btn"
+            onclick="addToCartWithQty('${product.name}', ${product.price}, '${product.image}')">
+            ADD
+          </button>
 
-<button onclick="addToWishlist('${product.name}',${product.price},'${product.image}')">
-❤️ 
-</button>
-</div>
-`;
+          <button onclick="addToWishlist('${product.name}',${product.price},'${product.image}')">
+            ❤️
+          </button>
+
+        </div>
+      </div>
+      `;
+    });
+
+  });
+
+  // TITLE
+  if(search){
+    title.innerText = "SEARCH RESULTS: " + search.toUpperCase();
+  } else if(type){
+    title.innerText = type.toUpperCase() + " PRODUCTS";
+  } else {
+    title.innerText = "ALL PRODUCTS";
+  }
+
+  updateCartCount();
 
 });
-
-});
-
-// title update
-if(search){
-title.innerText = "SEARCH RESULTS: " + search.toUpperCase();
-}else if(type){
-title.innerText = type.toUpperCase() + " PRODUCTS";
-}else{
-title.innerText = "ALL PRODUCTS";
-}
-
-updateCartCount();
-}
 
 function goCategory(type){
 window.location.href = "category.html?type=" + type;
@@ -691,39 +692,40 @@ function removeFromWishlist(index){
    CHECKOUT PAGE
 =================================*/
 
-if(document.getElementById("order-summary")){
+let summaryEl = document.getElementById("order-summary");
+
+if(summaryEl){
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  // 🔥 FIX: check empty cart
   if (cart.length === 0) {
     alert("Your cart is empty ❗");
     window.location.href = "index.html";
-    return;
+  } else {
+
+    let total = 0;
+    let html = "";
+
+    cart.forEach(item => {
+      let itemTotal = item.price * item.quantity;
+      total += itemTotal;
+
+      html += `<p>${item.name} x ${item.quantity} = ₹${itemTotal}</p>`;
+    });
+
+    summaryEl.innerHTML = html;
+
+    let finalTotal = total + 40 + 5;
+
+    let totalEl = document.getElementById("checkout-total");
+    if (totalEl) {
+      totalEl.innerText = "Total: ₹" + finalTotal;
+    }
   }
-
-  let container = document.getElementById("order-summary");
-  let total = 0;
-
-  container.innerHTML = "";
-
-  cart.forEach(item=>{
-    let itemTotal = item.price * item.quantity;
-    total += itemTotal;
-
-    container.innerHTML +=
-      `<p>${item.name} x ${item.quantity} = ₹${itemTotal}</p>`;
-  });
-
-  let delivery = 40;
-  let platform = 5;
-  let discount = 0;
-
-  let finalTotal = total + delivery + platform - discount;
-
-  document.getElementById("checkout-total").innerText =
-    "Total: ₹" + finalTotal;
 }
+/* ===============================
+   proceedCheckout
+=================================*/
 function proceedCheckout(){
 
   // ✅ ADD THIS HERE (TOP)
@@ -740,18 +742,13 @@ function proceedCheckout(){
   window.location.href = "address.html";
 }
 
+/* ===============================
+   placeOrder
+=================================*/
+
 function placeOrder(){
 
-  // ✅ GET ADDRESS
-  let address = JSON.parse(localStorage.getItem("userAddress"));
-
-  if(!address){
-    alert("Please add address first 📍");
-    window.location.href = "address.html";
-    return;
-  }
-
-  // ✅ GET CART
+  // ✅ ADD HERE (TOP OF FUNCTION)
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if(cart.length === 0){
@@ -759,17 +756,28 @@ function placeOrder(){
     return;
   }
 
-  // ✅ CREATE ORDER DATA
+  let address = JSON.parse(localStorage.getItem("userAddress"));
+
+  if(!address){
+    alert("Please add address first 📍");
+    return;
+  }
+
+  // ✅ NOW CREATE ORDER DATA
+  let total = cart.reduce((sum, item) => 
+    sum + item.price * item.quantity, 0
+  );
+
   let orderData = {
     items: cart,
-    total: cart.reduce((sum,item)=> sum + item.price * item.quantity, 0),
+    total: total,
     address: address
   };
 
   console.log("Sending:", orderData);
 
-  // ✅ SEND TO BACKEND
-  fetch("http://127.0.0.1:5000/create_order", {
+  // ✅ FETCH
+  fetch("https://rrangdoindia.com/create_order.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -779,28 +787,18 @@ function placeOrder(){
   .then(res => res.json())
   .then(data => {
 
-    console.log("Response:", data);
-
     if(data.error){
-      alert("Backend error: " + data.error);
-    }else{
+      alert("❌ " + data.error);
+    } else {
       alert("🎉 Order placed successfully!");
-
-      // ✅ CLEAR CART
       localStorage.removeItem("cart");
-
-      // ✅ REDIRECT
-      setTimeout(()=>{
-        window.location.href = "index.html";
-      },1000);
+      window.location.href = "index.html";
     }
 
   })
   .catch(err => {
-    console.error("Error:", err);
-    alert("Order failed ❌");
+    alert("REAL ERROR: " + err.message);
   });
-
 }
 
 /* ===============================
@@ -1118,6 +1116,8 @@ function selectAddress(city){
   localStorage.setItem("selectedLocation", city)
   closeLocationPopup()
 }
+
+
 ////////////////////  
 // ✅ RUN ONLY IN INDEX PAGE
 if(window.location.pathname.includes("index.html")){
