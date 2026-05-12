@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Select Delivery Address</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2 style="text-align:center;">
+<h2 class="center-text">
   📍 Select Delivery Address
 </h2>
 
 <div class="address-container">
-
   <div id="saved-address-box"></div>
-
 </div>
 
 <script>
@@ -35,11 +30,9 @@ document.getElementById("saved-address-box");
 if(savedAddress){
 
   box.innerHTML = `
-
     <div class="address-card">
 
       <h3>${savedAddress.name}</h3>
-
       <p>📞 ${savedAddress.phone}</p>
 
       <p>
@@ -58,60 +51,43 @@ if(savedAddress){
 
     </div>
 
-    <div style="text-align:center; margin-top:20px;">
+    <div class="center-box">
 
-      <button onclick="useThisAddress()"
-      class="main-btn">
-
+      <button onclick="useThisAddress()" class="main-btn">
         ✅ Continue with this Address
-
       </button>
 
       <br><br>
 
-      <button onclick="addNewAddress()"
-      class="secondary-btn">
-
+      <button onclick="addNewAddress()" class="secondary-btn">
         ✏️ Change Address
-
       </button>
 
     </div>
-
   `;
 
 }else{
 
   box.innerHTML = `
-
-    <p style="text-align:center;">
+    <p class="center-text">
       No saved address ❌
     </p>
 
-    <div style="text-align:center; margin-top:20px;">
-
-      <button onclick="addNewAddress()"
-      class="secondary-btn">
-
+    <div class="center-box">
+      <button onclick="addNewAddress()" class="secondary-btn">
         ➕ Add Address
-
       </button>
-
     </div>
   `;
 }
 
 // FUNCTIONS
 function useThisAddress(){
-
   window.location.href = "checkout.html";
-
 }
 
 function addNewAddress(){
-
   window.location.href = "location.html";
-
 }
 
 </script>

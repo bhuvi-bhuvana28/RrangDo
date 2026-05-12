@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,19 +32,16 @@
 <!-- COUPON SECTION -->
 <div class="coupon-section">
 
-  <!-- INPUT -->
   <div class="coupon-box">
     <input type="text" id="coupon-input" placeholder="Apply Coupon Code">
     <button onclick="applyCoupon()">Apply</button>
   </div>
 
-  <!-- VIEW COUPONS -->
   <button onclick="toggleCoupons()" class="view-coupon-btn">
     🎁 View Coupons
   </button>
 
-  <!-- COUPON LIST -->
-  <div id="coupon-list" class="coupon-list" style="display:none;">
+  <div id="coupon-list" class="coupon-list">
 
     <div class="coupon-card" onclick="applyCouponCode('RRANDO123')">
       <h4>RRANDO123</h4>
@@ -57,16 +55,14 @@
 
   </div>
 
-  <!-- APPLIED COUPON -->
   <p id="applied-coupon" class="applied-text"></p>
+
 </div>
 
-  <!-- 7/4/26 -->
-  <h3>You might also like ❤️</h3>
-  <div id="recommended-products"></div>
+<h3>You might also like ❤️</h3>
+<div id="recommended-products"></div>
 
-
-<!-- TOTAL + CHECKOUT -->
+<!-- TOTAL -->
 <div class="cart-summary">
   <h3 id="total-price">Total: ₹0</h3>
 
@@ -75,9 +71,9 @@
   </button>
 </div>
 
-
 </div>
 
 <script src="script.js"></script>
 
 </body>
+</html>

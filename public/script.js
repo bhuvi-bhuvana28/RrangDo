@@ -42,252 +42,970 @@ img3:"image/3Dbuildingplan1.png"},
   ],
 
   foundation: [
-    {image:"image/bricks.png",name:"Bricks Pack", price:700},
-    {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
-    {image:"image/concretemix.png",name:"Concrete Mix", price:600},
-    {image:"image/foundationsand.png",name:"Foundation Sand", price:300},
-    {image:"image/gravel.png",name:"Gravel Load", price:1500},
-    {image:"image/acc.png",name:"ACC Cement", price:410},
+
+  // =========================
+  // CEMENT
+  // =========================
+
+  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
+
+  {image:"image/acc.png",name:"ACC Cement", price:410},
+
   {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
+
   {image:"image/birlacement.png",name:"Birla Cement", price:415},
+
   {image:"image/shreecement.png",name:"Shree Cement", price:400},
 
   {image:"image/whitecement.png",name:"White Cement 25kg", price:750},
-  {image:"image/wallputty.png",name:"Wall Putty 20kg", price:900},
+
+  {image:"image/cementbags.png",name:"Cement Bulk Pack (10 Bags)", price:4000},
+
+  // =========================
+  // SAND & AGGREGATES
+  // =========================
+
+  {image:"image/foundationsand.png",name:"Foundation Sand", price:300},
+
+  {image:"image/mSand.png", name:"M-Sand (Manufactured Sand)", price:350},
+
+  {image:"image/pSand.png", name:"P-Sand (Plastering Sand)", price:400},
+
+  {image:"image/gravel.png",name:"Gravel Load", price:1500},
+
+  // =========================
+  // BRICKS & BLOCKS
+  // =========================
+
+  {image:"image/bricks.png",name:"Bricks Pack", price:700},
+
+  {image:"image/redbricks.png", name:"Red Clay Bricks Pack", price:750},
+
+  {image:"image/flyashbricks.png",name:"Fly Ash Bricks Pack", price:650},
+
+  {image:"image/hollowblocks.png",name:"Hollow Blocks", price:800},
+
+  {image:"image/concreteblocks.png", name:"Concrete Solid Blocks", price:900},
+
+  // =========================
+  // CONCRETE PRODUCTS
+  // =========================
+
+  {image:"image/concretemix.png",name:"Concrete Mix", price:600},
+
+  {image:"image/readyconcrete.png", name:"Ready Mix Concrete (RMC)", price:5000},
+
+  // =========================
+  // STEEL & REINFORCEMENT
+  // =========================
+
+  {image:"image/tmtbars.png", name:"TMT Steel Bars 12mm", price:65000},
+
+  {image:"image/steelmesh.png", name:"Steel Mesh Roll", price:2500},
+
+  {image:"image/bindingwire.png", name:"Binding Wire Roll", price:300},
+
+  {image:"image/fiberreinforce.png", name:"Fiber Reinforcement Material", price:1100},
+
+  // =========================
+  // TILE ADHESIVES
+  // =========================
 
   {image:"image/roff_t01.png",name:"Roff T01 Tile Adhesive", price:405},
+
   {image:"image/roff_t02.png",name:"Roff T02 Tile Adhesive", price:695},
+
   {image:"image/roff_t09.png",name:"Roff T09 Tile Adhesive", price:560},
 
   {image:"image/laticrete305.png",name:"MYK Laticrete 305", price:385},
+
   {image:"image/laticrete315.png",name:"MYK Laticrete 315", price:420},
 
-  {image:"image/flyashbricks.png",name:"Fly Ash Bricks Pack", price:650},
-  {image:"image/hollowblocks.png",name:"Hollow Blocks", price:800},
-  {image:"image/mSand.png", name:"M-Sand (Manufactured Sand)", price:350},
-{image:"image/pSand.png", name:"P-Sand (Plastering Sand)", price:400},
+  // =========================
+  // WATERPROOFING
+  // =========================
 
-{image:"image/redbricks.png", name:"Red Clay Bricks Pack", price:750},
-{image:"image/concreteblocks.png", name:"Concrete Solid Blocks", price:900},
+  {image:"image/waterproof.png", name:"Waterproofing Chemical", price:1200},
 
-{image:"image/tmtbars.png", name:"TMT Steel Bars 12mm", price:65000},
-{image:"image/steelmesh.png", name:"Steel Mesh Roll", price:2500},
+  {image:"image/dampproof.png", name:"Damp Proof Course Liquid", price:950},
 
-{image:"image/readyconcrete.png", name:"Ready Mix Concrete (RMC)", price:5000},
-{image:"image/cementbags.png", name:"Cement Bulk Pack (10 Bags)", price:4000},
+  {image:"image/bitumen.png", name:"Bitumen Waterproofing Roll", price:2000},
 
-{image:"image/waterproof.png", name:"Waterproofing Chemical", price:1200},
-{image:"image/dampproof.png", name:"Damp Proof Course Liquid", price:950},
+  {image:"image/foundationcoating.png", name:"Foundation Protective Coating", price:1300},
 
-{image:"image/bindingwire.png", name:"Binding Wire Roll", price:300},
-{image:"image/shuttering.png", name:"Shuttering Plywood", price:1800},
+  // =========================
+  // CHEMICALS & COMPOUNDS
+  // =========================
 
-{image:"image/curingcompound.png", name:"Concrete Curing Compound", price:850},
-{image:"image/fiberreinforce.png", name:"Fiber Reinforcement Material", price:1100},
+  {image:"image/wallputty.png",name:"Wall Putty 20kg", price:900},
 
-{image:"image/expansionjoint.png", name:"Expansion Joint Filler", price:600},
-{image:"image/grouting.png", name:"Grouting Material", price:700},
+  {image:"image/curingcompound.png", name:"Concrete Curing Compound", price:850},
 
-{image:"image/bitumen.png", name:"Bitumen Waterproofing Roll", price:2000},
-{image:"image/geotextile.png", name:"Geotextile Fabric", price:1500},
+  {image:"image/grouting.png", name:"Grouting Material", price:700},
 
-{image:"image/foundationcoating.png", name:"Foundation Protective Coating", price:1300},
-{image:"image/soilstabilizer.png", name:"Soil Stabilizer Chemical", price:2200}
-  ],
+  {image:"image/expansionjoint.png", name:"Expansion Joint Filler", price:600},
+
+  {image:"image/soilstabilizer.png", name:"Soil Stabilizer Chemical", price:2200},
+
+  // =========================
+  // CONSTRUCTION SUPPORT
+  // =========================
+
+  {image:"image/shuttering.png", name:"Shuttering Plywood", price:1800},
+
+  {image:"image/geotextile.png", name:"Geotextile Fabric", price:1500}
+
+],
 
   electrical: [
-    {image:"image/electricalwire.png",name:"Electrical Wire Roll", price:1200},
-    {image:"image/switchboard.png",name:"Switch Board", price:350},
-    {image:"image/ledbulb.png",name:"LED Bulb Pack", price:500},
-    {image:"image/mcbbox.png",name:"MCB Box", price:1500},
-    {image:"image/electricalpanel.png",name:"Electrical Panel", price:4500},
-    {image:"image/extensionboard.png", name:"Extension Board", price:450},
-  {image:"image/circuitbreaker.png", name:"Circuit Breaker", price:800},
-  {image:"image/ceilingfan.png", name:"Ceiling Fan", price:2200},
-  {image:"image/exhaustfan.png", name:"Exhaust Fan", price:1500},
-  {image:"image/inverter.png", name:"Inverter", price:8500},
-  {image:"image/battery.png", name:"Inverter Battery", price:9500},
+
+  // =========================
+  // WIRES & CABLES
+  // =========================
+
+  {image:"image/electricalwire.png",name:"Electrical Wire Roll", price:1200},
+
+  {image:"image/wire.png", name:"Single Core Wire", price:1500},
+
+  {image:"image/multicore.png", name:"Multi Core Cable", price:3000},
+
+  {image:"image/lan.png", name:"LAN Cable", price:2500},
+
+  {image:"image/coaxial.png", name:"Coaxial Cable", price:1800},
+
+  // =========================
+  // SWITCHES & SOCKETS
+  // =========================
+
+  {image:"image/switch.png", name:"Switch", price:50},
+
+  {image:"image/socket.png", name:"Socket", price:60},
+
+  {image:"image/dimmer.png", name:"Dimmer", price:250},
+
+  {image:"image/regulator.png", name:"Fan Regulator", price:300},
+
+  {image:"image/indicator.png", name:"Indicator", price:40},
+
+  {image:"image/dpswitch.png", name:"DP Switch", price:250},
+
   {image:"image/socket.png", name:"Power Socket", price:120},
-  {image:"image/stabilizer.png", name:"Voltage Stabilizer", price:3000},
+
+  // =========================
+  // CONDUITS & FITTINGS
+  // =========================
+
+  {image:"image/conduitpipe.png", name:"PVC Conduit Pipe", price:120},
+
+  {image:"image/elbow.png", name:"Elbow", price:15},
+
+  {image:"image/tee.png", name:"Tee", price:18},
+
+  {image:"image/coupling.png", name:"Coupling", price:10},
+
+  {image:"image/bend.png", name:"Bend", price:20},
+
+  {image:"image/saddle.png", name:"Saddle Patti", price:5},
+
+  {image:"image/reducer.png", name:"Reducer", price:12},
+
+  {image:"image/extensionring.png", name:"Extension Ring", price:25},
+
+  {image:"image/bush.png", name:"Female Bush Adapter", price:10},
+
+  {image:"image/pvccement.png", name:"PVC Cement", price:90},
+
+  {image:"image/bendingspring.png", name:"Bending Spring", price:150},
+
+  {image:"image/casing.png", name:"Casing Capping", price:80},
+
+  {image:"image/internalbend.png", name:"Internal Bend", price:20},
+
+  {image:"image/externalbend.png", name:"External Bend", price:20},
+
+  // =========================
+  // BOXES & BOARDS
+  // =========================
+
+  {image:"image/gangbox.png", name:"Gang Box", price:40},
+
+  {image:"image/squarebox.png", name:"Square Box", price:50},
+
+  {image:"image/junctionbox.png", name:"Junction Box", price:40},
+
+  {image:"image/fanbox.png", name:"Fan Box", price:120},
+
+  {image:"image/surfacebox.png", name:"Surface Box", price:60},
+
+  {image:"image/concealedbox.png", name:"Concealed Box", price:50},
+
+  {image:"image/switchboard.png", name:"Switch Board", price:200},
+
+  {image:"image/mcbbox.png", name:"MCB Box", price:400},
+
+  {image:"image/db.png", name:"Distribution Board", price:1500},
+
+  {image:"image/paneltrunking.png", name:"Panel Trunking", price:300},
+
+  // =========================
+  // PROTECTION DEVICES
+  // =========================
+
+  {image:"image/mcb.png", name:"MCB", price:350},
+
+  {image:"image/rccb.png", name:"RCCB", price:1200},
+
+  {image:"image/isolator.png", name:"Isolator", price:500},
+
+  {image:"image/circuitbreaker.png", name:"Circuit Breaker", price:800},
+
+  {image:"image/fuse.png", name:"Fuse", price:30},
+
+  // =========================
+  // LIGHTING
+  // =========================
+
+  {image:"image/ledbulb.png",name:"LED Bulb Pack", price:500},
+
   {image:"image/tubelights.png", name:"Tube Light Set", price:600},
+
+  {image:"image/bulbholder.png", name:"Bulb Holder", price:40},
+
+  // =========================
+  // FANS & POWER
+  // =========================
+
+  {image:"image/ceilingfan.png", name:"Ceiling Fan", price:2200},
+
+  {image:"image/exhaustfan.png", name:"Exhaust Fan", price:1500},
+
+  {image:"image/inverter.png", name:"Inverter", price:8500},
+
+  {image:"image/battery.png", name:"Inverter Battery", price:9500},
+
+  {image:"image/stabilizer.png", name:"Voltage Stabilizer", price:3000},
+
+  // =========================
+  // ACCESSORIES
+  // =========================
+
+  {image:"image/pvctape.png", name:"PVC Tape", price:20},
+
+  {image:"image/cabletie.png", name:"Cable Tie", price:2},
+
+  {image:"image/wallplug.png", name:"Wall Plug", price:3},
+
+  {image:"image/wireclip.png", name:"Wire Clip", price:2},
+
+  {image:"image/multiplug.png", name:"Multiplug", price:200},
+
+  {image:"image/spikeguard.png", name:"Spike Guard", price:500},
+
+  {image:"image/extensionboard.png", name:"Extension Board", price:450},
+
+  {image:"image/extensionbox.png", name:"Extension Box", price:300},
+
+  // =========================
+  // TOOLS & TESTING
+  // =========================
+
+  {image:"image/linetester.png", name:"Line Tester", price:120},
+
+  {image:"image/electricalpanel.png",name:"Electrical Panel", price:4500},
+
+  // =========================
+  // SMART & HOME
+  // =========================
+
   {image:"image/smartplug.png", name:"Smart Plug", price:900},
-  {image:"image/conduitpipe.png", name:"PVC Conduit Pipe", price:120, img1:"image/conduitpipe.png", img2:"image/conduitpipe2.png", img3:"image/conduitpipe3.png"},
-{image:"image/elbow.png", name:"Elbow", price:15, img1:"image/elbow.png", img2:"image/elbow2.png", img3:"image/elbow3.png"},
-{image:"image/tee.png", name:"Tee", price:18, img1:"image/tee.png", img2:"image/tee2.png", img3:"image/tee3.png"},
-{image:"image/coupling.png", name:"Coupling", price:10, img1:"image/coupling.png", img2:"image/coupling2.png", img3:"image/coupling3.png"},
-{image:"image/bend.png", name:"Bend", price:20, img1:"image/bend.png", img2:"image/bend2.png", img3:"image/bend3.png"},
-{image:"image/saddle.png", name:"Saddle Patti", price:5, img1:"image/saddle.png", img2:"image/saddle2.png", img3:"image/saddle3.png"},
-{image:"image/junctionbox.png", name:"Junction Box", price:40, img1:"image/junctionbox.png", img2:"image/junctionbox2.png", img3:"image/junctionbox3.png"},
-{image:"image/reducer.png", name:"Reducer", price:12, img1:"image/reducer.png", img2:"image/reducer2.png", img3:"image/reducer3.png"},
-{image:"image/extensionring.png", name:"Extension Ring", price:25, img1:"image/extensionring.png", img2:"image/extensionring2.png", img3:"image/extensionring3.png"},
-{image:"image/bush.png", name:"Female Bush Adapter", price:10, img1:"image/bush.png", img2:"image/bush2.png", img3:"image/bush3.png"},
-{image:"image/pvccement.png", name:"PVC Cement", price:90, img1:"image/pvccement.png", img2:"image/pvccement2.png", img3:"image/pvccement3.png"},
-{image:"image/bendingspring.png", name:"Bending Spring", price:150, img1:"image/bendingspring.png", img2:"image/bendingspring2.png", img3:"image/bendingspring3.png"},
-{image:"image/fanbox.png", name:"Fan Box", price:120, img1:"image/fanbox.png", img2:"image/fanbox2.png", img3:"image/fanbox3.png"},
 
-{image:"image/casing.png", name:"Casing Capping", price:80, img1:"image/casing.png", img2:"image/casing2.png", img3:"image/casing3.png"},
-{image:"image/internalbend.png", name:"Internal Bend", price:20, img1:"image/internalbend.png", img2:"image/internalbend2.png", img3:"image/internalbend3.png"},
-{image:"image/externalbend.png", name:"External Bend", price:20, img1:"image/externalbend.png", img2:"image/externalbend2.png", img3:"image/externalbend3.png"},
-{image:"image/squarebox.png", name:"Square Box", price:50, img1:"image/squarebox.png", img2:"image/squarebox2.png", img3:"image/squarebox3.png"},
+  {image:"image/doorbell.png", name:"Door Bell", price:250},
 
-{image:"image/paneltrunking.png", name:"Panel Trunking", price:300, img1:"image/paneltrunking.png", img2:"image/paneltrunking2.png", img3:"image/paneltrunking3.png"},
+  {image:"image/wirelessbell.png", name:"Wireless Door Bell", price:800}
 
-{image:"image/switch.png", name:"Switch", price:50, img1:"image/switch.png", img2:"image/switch2.png", img3:"image/switch3.png"},
-{image:"image/socket.png", name:"Socket", price:60, img1:"image/socket.png", img2:"image/socket2.png", img3:"image/socket3.png"},
-{image:"image/dimmer.png", name:"Dimmer", price:250, img1:"image/dimmer.png", img2:"image/dimmer2.png", img3:"image/dimmer3.png"},
-{image:"image/regulator.png", name:"Fan Regulator", price:300, img1:"image/regulator.png", img2:"image/regulator2.png", img3:"image/regulator3.png"},
-{image:"image/indicator.png", name:"Indicator", price:40, img1:"image/indicator.png", img2:"image/indicator2.png", img3:"image/indicator3.png"},
-{image:"image/fuse.png", name:"Fuse", price:30, img1:"image/fuse.png", img2:"image/fuse2.png", img3:"image/fuse3.png"},
-{image:"image/dpswitch.png", name:"DP Switch", price:250, img1:"image/dpswitch.png", img2:"image/dpswitch2.png", img3:"image/dpswitch3.png"},
-
-{image:"image/gangbox.png", name:"Gang Box", price:40, img1:"image/gangbox.png", img2:"image/gangbox2.png", img3:"image/gangbox3.png"},
-{image:"image/switchboard.png", name:"Switch Board", price:200, img1:"image/switchboard.png", img2:"image/switchboard2.png", img3:"image/switchboard3.png"},
-{image:"image/surfacebox.png", name:"Surface Box", price:60, img1:"image/surfacebox.png", img2:"image/surfacebox2.png", img3:"image/surfacebox3.png"},
-{image:"image/concealedbox.png", name:"Concealed Box", price:50, img1:"image/concealedbox.png", img2:"image/concealedbox2.png", img3:"image/concealedbox3.png"},
-
-{image:"image/mcb.png", name:"MCB", price:350, img1:"image/mcb.png", img2:"image/mcb2.png", img3:"image/mcb3.png"},
-{image:"image/rccb.png", name:"RCCB", price:1200, img1:"image/rccb.png", img2:"image/rccb2.png", img3:"image/rccb3.png"},
-{image:"image/isolator.png", name:"Isolator", price:500, img1:"image/isolator.png", img2:"image/isolator2.png", img3:"image/isolator3.png"},
-{image:"image/mcbbox.png", name:"MCB Box", price:400, img1:"image/mcbbox.png", img2:"image/mcbbox2.png", img3:"image/mcbbox3.png"},
-{image:"image/db.png", name:"Distribution Board", price:1500, img1:"image/db.png", img2:"image/db2.png", img3:"image/db3.png"},
-
-{image:"image/bulbholder.png", name:"Bulb Holder", price:40, img1:"image/bulbholder.png", img2:"image/bulbholder2.png", img3:"image/bulbholder3.png"},
-{image:"image/extensionbox.png", name:"Extension Box", price:300, img1:"image/extensionbox.png", img2:"image/extensionbox2.png", img3:"image/extensionbox3.png"},
-{image:"image/linetester.png", name:"Line Tester", price:120, img1:"image/linetester.png", img2:"image/linetester2.png", img3:"image/linetester3.png"},
-{image:"image/multiplug.png", name:"Multiplug", price:200, img1:"image/multiplug.png", img2:"image/multiplug2.png", img3:"image/multiplug3.png"},
-{image:"image/spikeguard.png", name:"Spike Guard", price:500, img1:"image/spikeguard.png", img2:"image/spikeguard2.png", img3:"image/spikeguard3.png"},
-
-{image:"image/pvctape.png", name:"PVC Tape", price:20, img1:"image/pvctape.png", img2:"image/pvctape2.png", img3:"image/pvctape3.png"},
-{image:"image/cabletie.png", name:"Cable Tie", price:2, img1:"image/cabletie.png", img2:"image/cabletie2.png", img3:"image/cabletie3.png"},
-{image:"image/wallplug.png", name:"Wall Plug", price:3, img1:"image/wallplug.png", img2:"image/wallplug2.png", img3:"image/wallplug3.png"},
-{image:"image/wireclip.png", name:"Wire Clip", price:2, img1:"image/wireclip.png", img2:"image/wireclip2.png", img3:"image/wireclip3.png"},
-
-{image:"image/doorbell.png", name:"Door Bell", price:250, img1:"image/doorbell.png", img2:"image/doorbell2.png", img3:"image/doorbell3.png"},
-{image:"image/wirelessbell.png", name:"Wireless Door Bell", price:800, img1:"image/wirelessbell.png", img2:"image/wirelessbell2.png", img3:"image/wirelessbell3.png"},
-
-{image:"image/wire.png", name:"Single Core Wire", price:1500, img1:"image/wire.png", img2:"image/wire2.png", img3:"image/wire3.png"},
-{image:"image/multicore.png", name:"Multi Core Cable", price:3000, img1:"image/multicore.png", img2:"image/multicore2.png", img3:"image/multicore3.png"},
-{image:"image/lan.png", name:"LAN Cable", price:2500, img1:"image/lan.png", img2:"image/lan2.png", img3:"image/lan3.png"},
-{image:"image/coaxial.png", name:"Coaxial Cable", price:1800, img1:"image/coaxial.png", img2:"image/coaxial2.png", img3:"image/coaxial3.png"}
-  ],
+],
 
   plumbing: [
-    {image:"image/pvcpipe.png",name:"PVC Pipe", price:300},
-    {image:"image/watertap.png",name:"Water Tap", price:250},
-    {image:"image/watertank.png",name:"Water Tank 500L", price:3500},
-    {image:"image/shower.png",name:"Shower Set", price:1800},
-    {image:"image/drainagepipe.png",name:"Drainage Pipe", price:400},
-    {image:"image/placeholder.png", name:"Flush Tank", price:1200},
-  {image:"image/placeholder.png", name:"Wash Basin", price:2500},
-  {image:"image/placeholder.png", name:"Toilet Seat", price:3000},
-  {image:"image/placeholder.png", name:"Hand Shower", price:900},
-  {image:"image/placeholder.png", name:"Wall Mixer Tap", price:2200},
-  {image:"image/placeholder.png", name:"Sink Pipe", price:350},
-  {image:"image/placeholder.png", name:"Ball Valve", price:180},
-  {image:"image/placeholder.png", name:"Pipe Clamp", price:120},
-  {image:"image/placeholder.png", name:"Water Filter", price:4500},
-  {image:"image/placeholder.png", name:"Overhead Shower", price:2000},
+
+  // =========================
+  // PIPES
+  // =========================
+
+  {image:"image/pvcpipe.png",name:"PVC Pipe", price:300},
+
   {image:"image/upvcpipes.png", name:"UPVC Pipe", price:450},
-{image:"image/cpvcpipe.png", name:"CPVC Pipe", price:500},
 
-{image:"image/pprpipe.png", name:"PPR Pipe", price:600},
-{image:"image/hdpepipe.png", name:"HDPE Pipe", price:800},
+  {image:"image/cpvcpipe.png", name:"CPVC Pipe", price:500},
 
-{image:"image/gipipe.png", name:"GI Pipe", price:700},
-{image:"image/flexiblepipe.png", name:"Flexible Hose Pipe", price:250},
+  {image:"image/pprpipe.png", name:"PPR Pipe", price:600},
 
-{image:"image/anglevalve.png", name:"Angle Valve", price:200},
-{image:"image/checkvalve.png", name:"Check Valve", price:350},
-{image:"image/gatevalve.png", name:"Gate Valve", price:500},
+  {image:"image/hdpepipe.png", name:"HDPE Pipe", price:800},
 
-{image:"image/stopcock.png", name:"Stop Cock Tap", price:180},
-{image:"image/bibcock.png", name:"Bib Cock Tap", price:220},
+  {image:"image/gipipe.png", name:"GI Pipe", price:700},
 
-{image:"image/washbasintap.png", name:"Wash Basin Tap", price:1200},
-{image:"image/kitchentap.png", name:"Kitchen Sink Tap", price:1500},
+  {image:"image/drainagepipe.png",name:"Drainage Pipe", price:400},
 
-{image:"image/healthfaucet.png", name:"Health Faucet", price:700},
-{image:"image/jetshower.png", name:"Jet Spray Shower", price:850},
+  {image:"image/sinkpipe.png", name:"Sink Pipe", price:350},
 
-{image:"image/watermeter.png", name:"Water Meter", price:1800},
-{image:"image/pressurepump.png", name:"Water Pressure Pump", price:4500},
+  {image:"image/flexiblepipe.png", name:"Flexible Hose Pipe", price:250},
 
-{image:"image/sealtape.png", name:"PTFE Seal Tape", price:30},
-{image:"image/pipesolvent.png", name:"Pipe Solvent Cement", price:120},
+  // =========================
+  // TAPS & FAUCETS
+  // =========================
 
-{image:"image/draincover.png", name:"Drain Cover", price:150},
-{image:"image/floortrap.png", name:"Floor Trap", price:300},
+  {image:"image/watertap.png",name:"Water Tap", price:250},
 
-{image:"image/greasetrap.png", name:"Grease Trap", price:2500},
-{image:"image/septic.png", name:"Septic Tank System", price:8000},
+  {image:"image/stopcock.png", name:"Stop Cock Tap", price:180},
 
-{image:"image/watersoftener.png", name:"Water Softener", price:12000},
-{image:"image/rofilter.png", name:"RO Water Filter System", price:9000}
-  ],
+  {image:"image/bibcock.png", name:"Bib Cock Tap", price:220},
+
+  {image:"image/wallmixertap.png", name:"Wall Mixer Tap", price:2200},
+
+  {image:"image/washbasintap.png", name:"Wash Basin Tap", price:1200},
+
+  {image:"image/kitchentap.png", name:"Kitchen Sink Tap", price:1500},
+
+  {image:"image/anglevalve.png", name:"Angle Valve", price:200},
+
+  // =========================
+  // VALVES & FITTINGS
+  // =========================
+
+  {image:"image/ballvalve.png", name:"Ball Valve", price:180},
+
+  {image:"image/checkvalve.png", name:"Check Valve", price:350},
+
+  {image:"image/gatevalve.png", name:"Gate Valve", price:500},
+
+  {image:"image/pipeclamp.png", name:"Pipe Clamp", price:120},
+
+  {image:"image/sealtape.png", name:"PTFE Seal Tape", price:30},
+
+  {image:"image/pipesolvent.png", name:"Pipe Solvent Cement", price:120},
+
+  // =========================
+  // BATHROOM PRODUCTS
+  // =========================
+
+  {image:"image/shower.png",name:"Shower Set", price:1800},
+
+  {image:"image/handshower.png", name:"Hand Shower", price:900},
+
+  {image:"image/overheadshower.png", name:"Overhead Shower", price:2000},
+
+  {image:"image/healthfaucet.png", name:"Health Faucet", price:700},
+
+  {image:"image/jetshower.png", name:"Jet Spray Shower", price:850},
+
+  {image:"image/washtub.png", name:"Wash Basin", price:2500},
+
+  {image:"image/toiletseat.png", name:"Toilet Seat", price:3000},
+
+  {image:"image/flushtank.png", name:"Flush Tank", price:1200},
+
+  // =========================
+  // WATER STORAGE & SYSTEMS
+  // =========================
+
+  {image:"image/watertank.png",name:"Water Tank 500L", price:3500},
+
+  {image:"image/watermeter.png", name:"Water Meter", price:1800},
+
+  {image:"image/pressurepump.png", name:"Water Pressure Pump", price:4500},
+
+  {image:"image/waterfilter.png", name:"Water Filter", price:4500},
+
+  {image:"image/watersoftener.png", name:"Water Softener", price:12000},
+
+  {image:"image/rofilter.png", name:"RO Water Filter System", price:9000},
+
+  // =========================
+  // DRAINAGE SYSTEM
+  // =========================
+
+  {image:"image/draincover.png", name:"Drain Cover", price:150},
+
+  {image:"image/floortrap.png", name:"Floor Trap", price:300},
+
+  {image:"image/greasetrap.png", name:"Grease Trap", price:2500},
+
+  {image:"image/septic.png", name:"Septic Tank System", price:8000}
+
+],
 
   paints: [
-    {image:"image/asianpaints.png",name:"Asian Paints Premium", price:950},
-    {image:"image/bergerpaint.png",name:"Berger Paint", price:880},
-    {image:"image/wallprimer.png",name:"Wall Primer", price:600},
-    {image:"image/exteriorpaint.png",name:"Exterior Paint", price:1200},
-    {image:"image/enamelpaint.png",name:"Enamel Paint", price:750},
-    {image:"image/placeholder.png", name:"Interior Emulsion Paint", price:1100},
-  {image:"image/placeholder.png", name:"Distemper Paint", price:500},
-  {image:"image/placeholder.png", name:"Waterproof Paint", price:1300},
-  {image:"image/placeholder.png", name:"Texture Paint", price:1800},
-  {image:"image/placeholder.png", name:"Wood Polish", price:900},
-  {image:"image/placeholder.png", name:"Metal Paint", price:850},
-  {image:"image/placeholder.png", name:"Anti Damp Paint", price:1400},
-  {image:"image/placeholder.png", name:"Ceiling Paint", price:700},
-  {image:"image/placeholder.png", name:"Spray Paint", price:300},
-  {image:"image/placeholder.png", name:"Primer for Wood", price:650}
-  ],
- 
+
+  // =========================
+  // INTERIOR PAINTS
+  // =========================
+
+  {image:"image/asianpaints.png", name:"Asian Paints Premium Emulsion", price:950},
+
+  {image:"image/bergerpaint.png", name:"Berger Easy Clean Paint", price:880},
+
+  {image:"image/interioremulsion.png", name:"Interior Emulsion Paint", price:1100},
+
+  {image:"image/distemper.png", name:"Distemper Paint", price:500},
+
+  {image:"image/plasticpaint.png", name:"Plastic Paint", price:950},
+
+  {image:"image/latexpaint.png", name:"Latex Paint", price:1200},
+
+  {image:"image/mattepaint.png", name:"Matte Finish Paint", price:1150},
+
+  {image:"image/satinpaint.png", name:"Satin Finish Paint", price:1250},
+
+  {image:"image/glosspaint.png", name:"Gloss Finish Paint", price:1300},
+
+  {image:"image/ceilingpaint.png", name:"Ceiling Paint", price:700},
+
+  // =========================
+  // EXTERIOR PAINTS
+  // =========================
+
+  {image:"image/exteriorpaint.png", name:"Exterior Weather Paint", price:1200},
+
+  {image:"image/waterproofpaint.png", name:"Waterproof Paint", price:1300},
+
+  {image:"image/antidamp.png", name:"Anti Damp Paint", price:1400},
+
+  {image:"image/primerexterior.png", name:"Exterior Primer", price:700},
+
+  // =========================
+  // PRIMERS & PUTTY
+  // =========================
+
+  {image:"image/wallprimer.png", name:"Wall Primer", price:600},
+
+  {image:"image/woodprimer.png", name:"Wood Primer", price:650},
+
+  {image:"image/putty.png", name:"Wall Putty", price:900},
+
+  {image:"image/sealer.png", name:"Surface Sealer", price:750},
+
+  // =========================
+  // WOOD & METAL FINISHES
+  // =========================
+
+  {image:"image/woodpolish.png", name:"Wood Polish", price:900},
+
+  {image:"image/stain.png", name:"Wood Stain", price:850},
+
+  {image:"image/metalpaint.png", name:"Metal Paint", price:850},
+
+  {image:"image/rustproof.png", name:"Anti Rust Paint", price:1000},
+
+  {image:"image/aluminiumpaint.png", name:"Aluminium Paint", price:950},
+
+  {image:"image/clearcoat.png", name:"Clear Coat Finish", price:1100},
+
+  // =========================
+  // SPECIALITY PAINTS
+  // =========================
+
+  {image:"image/enamelpaint.png", name:"Enamel Paint", price:750},
+
+  {image:"image/oilpaint.png", name:"Oil Based Paint", price:800},
+
+  {image:"image/texturepaint.png", name:"Texture Paint", price:1800},
+
+  {image:"image/spraypaint.png", name:"Spray Paint", price:300},
+
+  {image:"image/chalkpaint.png", name:"Chalk Paint", price:900},
+
+  {image:"image/heatresistant.png", name:"Heat Resistant Paint", price:1700},
+
+  {image:"image/fireproof.png", name:"Fire Resistant Paint", price:2200},
+
+  {image:"image/bitumenpaint.png", name:"Bitumen Paint", price:1200},
+
+  {image:"image/epoxypaint.png", name:"Epoxy Floor Paint", price:2000},
+
+  {image:"image/floorpaint.png", name:"Floor Coating Paint", price:1500},
+
+  {image:"image/roadmarking.png", name:"Road Marking Paint", price:2500}
+
+],
   tiles: [
-    {image:"image/granitetiles.png",name:"Granite Tiles", price:75},
-    {image:"image/marbletiles.png",name:"Marble Tiles", price:90},
-    {image:"image/floortiles.png",name:"Floor Tiles", price:60},
-    {image:"image/bathroomtiles.png",name:"Bathroom Tiles", price:85},
-    {image:"image/walltiles.png",name:"Wall Tiles", price:55},
-    {image:"image/placeholder.png", name:"Vitrified Tiles", price:95},
-  {image:"image/placeholder.png", name:"Ceramic Tiles", price:70},
-  {image:"image/placeholder.png", name:"Porcelain Tiles", price:110},
-  {image:"image/placeholder.png", name:"Kitchen Tiles", price:80},
-  {image:"image/placeholder.png", name:"Outdoor Tiles", price:120},
-  {image:"image/placeholder.png", name:"Parking Tiles", price:100},
-  {image:"image/placeholder.png", name:"Wood Finish Tiles", price:130},
-  {image:"image/placeholder.png", name:"Anti-Skid Tiles", price:115},
-  {image:"image/placeholder.png", name:"Designer Tiles", price:150},
-  {image:"image/placeholder.png", name:"Glass Mosaic Tiles", price:200}
-  ],
+
+  // =========================
+  // FLOOR TILES
+  // =========================
+
+  {image:"image/floortiles.png",name:"Floor Tiles", price:60},
+
+  {image:"image/vitrifiedtiles.png", name:"Vitrified Tiles", price:95},
+
+  {image:"image/ceramictiles.png", name:"Ceramic Tiles", price:70},
+
+  {image:"image/porcelaintiles.png", name:"Porcelain Tiles", price:110},
+
+  {image:"image/granitetiles.png",name:"Granite Tiles", price:75},
+
+  {image:"image/marbletiles.png",name:"Marble Tiles", price:90},
+
+  {image:"image/doublecharge.png", name:"Double Charge Tiles", price:140},
+
+  {image:"image/germfreetiles.png", name:"Germ Free Tiles", price:180},
+
+  {image:"image/highglosstiles.png", name:"High Gloss Tiles", price:160},
+
+  {image:"image/woodfineshtiles.png", name:"Wood Finish Tiles", price:130},
+
+  {image:"image/designtiles.png", name:"Designer Tiles", price:150},
+
+  {image:"image/3dtiles.png", name:"3D Floor Tiles", price:220},
+
+  {image:"image/mosaictiles.png", name:"Mosaic Tiles", price:170},
+
+  {image:"image/stonetiles.png", name:"Stone Finish Tiles", price:145},
+
+  // =========================
+  // WALL TILES
+  // =========================
+
+  {image:"image/walltiles.png",name:"Wall Tiles", price:55},
+
+  {image:"image/kitchentiles.png", name:"Kitchen Tiles", price:80},
+
+  {image:"image/bathroomtiles.png",name:"Bathroom Tiles", price:85},
+
+  {image:"image/elevationtiles.png", name:"Elevation Wall Tiles", price:190},
+
+  {image:"image/subwaytiles.png", name:"Subway Tiles", price:120},
+
+  {image:"image/digitaltiles.png", name:"Digital Wall Tiles", price:155},
+
+  {image:"image/printedtiles.png", name:"Printed Tiles", price:135},
+
+  {image:"image/glassmosaic.png", name:"Glass Mosaic Tiles", price:200},
+
+  // =========================
+  // OUTDOOR TILES
+  // =========================
+
+  {image:"image/outdoortiles.png", name:"Outdoor Tiles", price:120},
+
+  {image:"image/parkingtiles.png", name:"Parking Tiles", price:100},
+
+  {image:"image/antiskidtiles.png", name:"Anti-Skid Tiles", price:115},
+
+  {image:"image/terracetiles.png", name:"Terrace Tiles", price:140},
+
+  {image:"image/gardentiles.png", name:"Garden Tiles", price:130},
+
+  {image:"image/pathtiles.png", name:"Pathway Tiles", price:125},
+
+  {image:"image/interlocktiles.png", name:"Interlock Tiles", price:150},
+
+  // =========================
+  // SPECIALITY TILES
+  // =========================
+
+  {image:"image/heavydutytiles.png", name:"Heavy Duty Tiles", price:210},
+
+  {image:"image/fireprooftiles.png", name:"Fire Resistant Tiles", price:240},
+
+  {image:"image/acoustictiles.png", name:"Acoustic Tiles", price:260},
+
+  {image:"image/ceilingtiles.png", name:"Ceiling Tiles", price:175},
+
+  {image:"image/reflectivetiles.png", name:"Reflective Tiles", price:195},
+
+  {image:"image/quartztile.png", name:"Quartz Tiles", price:280}
+
+],
 
   pipes: [
-    {image:"image/steelpipe.png",name:"Steel Pipe", price:500},
-    {image:"image/gipipe.png",name:"GI Pipe", price:600},
-    {image:"image/pvcdrainpipe.png",name:"PVC Drain Pipe", price:350},
-    {image:"image/industrialpipe.png",name:"Industrial Pipe", price:900},
-    {image:"image/watersupplypipe.png",name:"Water Supply Pipe", price:450}
-  ],
+
+  // =========================
+  // WATER SUPPLY PIPES
+  // =========================
+
+  {image:"image/pvcpipe.png",name:"PVC Pipe", price:300},
+
+  {image:"image/cpvcpipe.png",name:"CPVC Pipe", price:420},
+
+  {image:"image/upvcpipe.png",name:"UPVC Pipe", price:390},
+
+  {image:"image/pprpipe.png",name:"PPR Pipe", price:480},
+
+  {image:"image/hdpepipe.png",name:"HDPE Pipe", price:680},
+
+  {image:"image/gipipe.png",name:"GI Pipe", price:600},
+
+  {image:"image/copperpipe.png",name:"Copper Pipe", price:750},
+
+  {image:"image/watersupplypipe.png",name:"Water Supply Pipe", price:450},
+
+  {image:"image/pressurepipe.png",name:"Pressure Pipe", price:670},
+
+  {image:"image/greenpipe.png",name:"Green PVC Pipe", price:380},
+
+  // =========================
+  // DRAINAGE & SEWER PIPES
+  // =========================
+
+  {image:"image/pvcdrainpipe.png",name:"PVC Drain Pipe", price:350},
+
+  {image:"image/drainagepipe.png",name:"Drainage Pipe", price:340},
+
+  {image:"image/sewerpipe.png",name:"Sewer Pipe", price:550},
+
+  {image:"image/undergroundpipe.png",name:"Underground Pipe", price:610},
+
+  // =========================
+  // AGRICULTURE & IRRIGATION
+  // =========================
+
+  {image:"image/agriculturalpipe.png",name:"Agricultural Pipe", price:450},
+
+  {image:"image/irrigationpipe.png",name:"Irrigation Pipe", price:520},
+
+  {image:"image/borewellpipe.png",name:"Borewell Pipe", price:890},
+
+  // =========================
+  // INDUSTRIAL PIPES
+  // =========================
+
+  {image:"image/industrialpipe.png",name:"Industrial Pipe", price:900},
+
+  {image:"image/chemicalpipe.png",name:"Chemical Pipe", price:930},
+
+  {image:"image/thermalpipe.png",name:"Thermal Resistant Pipe", price:860},
+
+  {image:"image/heavydutypipe.png",name:"Heavy Duty Pipe", price:990},
+
+  {image:"image/firepipe.png",name:"Fire Sprinkler Pipe", price:850},
+
+  {image:"image/gaspipe.png",name:"Gas Pipe", price:950},
+
+  {image:"image/constructionpipe.png",name:"Construction Pipe", price:560},
+
+  // =========================
+  // METAL PIPES
+  // =========================
+
+  {image:"image/steelpipe.png",name:"Steel Pipe", price:500},
+
+  {image:"image/blackpipe.png",name:"Black Steel Pipe", price:700},
+
+  {image:"image/stainlesspipe.png",name:"Stainless Steel Pipe", price:1200},
+
+  {image:"image/aluminumpipe.png",name:"Aluminium Pipe", price:720},
+
+  // =========================
+  // SHAPES & SPECIAL PIPES
+  // =========================
+
+  {image:"image/roundpipe.png",name:"Round Pipe", price:400},
+
+  {image:"image/squarepipe.png",name:"Square Pipe", price:530},
+
+  {image:"image/rectangularpipe.png",name:"Rectangular Pipe", price:610},
+
+  {image:"image/sandwichpipe.png",name:"Sandwich Pipe", price:780},
+
+  {image:"image/flexiblepipe.png",name:"Flexible Pipe", price:300},
+
+  {image:"image/lightpipe.png",name:"Light Weight Pipe", price:320},
+
+  {image:"image/plasticpipe.png",name:"Plastic Pipe", price:260},
+
+  {image:"image/conduitpipe.png",name:"Electrical Conduit Pipe", price:410}
+
+],
 
   tools: [
-    {image:"image/drillmachine.png",name:"Drill Machine", price:1800},
-    {image:"image/hammer.png",name:"Hammer", price:250},
-    {image:"image/concretemixer.png",name:"Concrete Mixer", price:12000},
-    {image:"image/safetyhelmet.png",name:"Safety Helmet", price:450},
-    {image:"image/measuringtape.png",name:"Measuring Tape", price:150},
-    {image:"image/placeholder.png", name:"Angle Grinder", price:2200},
-  {image:"image/placeholder.png", name:"Circular Saw", price:3500},
-  {image:"image/placeholder.png", name:"Power Cutter", price:5000},
-  {image:"image/placeholder.png", name:"Hand Saw", price:300},
-  {image:"image/placeholder.png", name:"Screwdriver Set", price:400},
-  {image:"image/placeholder.png", name:"Spanner Set", price:650},
-  {image:"image/placeholder.png", name:"Wrench", price:350},
-  {image:"image/placeholder.png", name:"Tool Kit Box", price:1200},
-  {image:"image/placeholder.png", name:"Ladder", price:2500},
-  {image:"image/placeholder.png", name:"Tile Cutter", price:2800}
-  ],
 
-  auto: [
+  // =========================
+  // POWER TOOLS
+  // =========================
+
+  {image:"image/drillmachine.png",name:"Drill Machine", price:1800},
+
+  {image:"image/anglegrinder.png", name:"Angle Grinder", price:2200},
+
+  {image:"image/circularsaw.png", name:"Circular Saw", price:3500},
+
+  {image:"image/powercutter.png", name:"Power Cutter", price:5000},
+
+  {image:"image/electriccutter.png", name:"Electric Cutter", price:4200},
+
+  {image:"image/electricsander.png", name:"Electric Sander", price:2400},
+
+  {image:"image/nailgun.png", name:"Nail Gun", price:3800},
+
+  {image:"image/steelcutter.png", name:"Steel Cutter", price:5200},
+
+  {image:"image/paintspraygun.png", name:"Paint Spray Gun", price:1600},
+
+  // =========================
+  // HEAVY EQUIPMENT
+  // =========================
+
+  {image:"image/concretemixer.png",name:"Concrete Mixer", price:12000},
+
+  {image:"image/concretevibrator.png", name:"Concrete Vibrator", price:4800},
+
+  {image:"image/aircompressor.png", name:"Air Compressor", price:8500},
+
+  {image:"image/pressurewasher.png", name:"Pressure Washer", price:7200},
+
+  {image:"image/waterpump.png", name:"Water Pump", price:4600},
+
+  {image:"image/wheelbarrow.png", name:"Wheel Barrow", price:3200},
+
+  {image:"image/ladder.png", name:"Ladder", price:2500},
+
+  // =========================
+  // HAND TOOLS
+  // =========================
+
+  {image:"image/hammer.png",name:"Hammer", price:250},
+
+  {image:"image/handsaw.png", name:"Hand Saw", price:300},
+
+  {image:"image/screwdriverset.png", name:"Screwdriver Set", price:400},
+
+  {image:"image/spannerset.png", name:"Spanner Set", price:650},
+
+  {image:"image/wrench.png", name:"Wrench", price:350},
+
+  {image:"image/pipewrench.png", name:"Pipe Wrench", price:750},
+
+  {image:"image/pliersset.png", name:"Pliers Set", price:500},
+
+  {image:"image/boltcutter.png", name:"Bolt Cutter", price:1400},
+
+  {image:"image/caulkinggun.png", name:"Caulking Gun", price:280},
+
+  {image:"image/measuringtape.png",name:"Measuring Tape", price:150},
+
+  // =========================
+  // SAFETY PRODUCTS
+  // =========================
+
+  {image:"image/safetyhelmet.png",name:"Safety Helmet", price:450},
+
+  {image:"image/safetygloves.png", name:"Safety Gloves", price:200},
+
+  {image:"image/safetyjacket.png", name:"Safety Jacket", price:650},
+
+  {image:"image/faceshield.png", name:"Face Shield", price:350},
+
+  // =========================
+  // TESTING & SPECIAL TOOLS
+  // =========================
+
+  {image:"image/laserlevel.png", name:"Laser Level", price:2700},
+
+  {image:"image/digitalmultimeter.png", name:"Digital Multimeter", price:950},
+
+  {image:"image/toolkitbox.png", name:"Tool Kit Box", price:1200},
+
+  {image:"image/tilecutter.png", name:"Tile Cutter", price:2800},
+
+  {image:"image/chainsaw.png", name:"Chainsaw", price:6500}
+
+],
+  cement: [
+
+  // =========================
+  // TOP CEMENT BRANDS
+  // =========================
+
+  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420,img1:"t",img2:"t2",img3:"t3"},
+
+  {image:"image/acc.png",name:"ACC Cement", price:410},
+
+  {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
+
+  {image:"image/shreecement.png",name:"Shree Cement", price:400},
+
+  {image:"image/birlacement.png",name:"Birla Cement", price:415},
+
+  {image:"image/jkcement.png",name:"JK Cement", price:435},
+
+  {image:"image/ramco.png",name:"Ramco Cement", price:440},
+
+  {image:"image/dalmia.png",name:"Dalmia Cement", price:425},
+
+  // =========================
+  // POPULAR REGIONAL BRANDS
+  // =========================
+
+  {image:"image/wondercement.png",name:"Wonder Cement", price:455},
+
+  {image:"image/nuvocement.png",name:"Nuvoco Cement", price:438},
+
+  {image:"image/chettinadcement.png",name:"Chettinad Cement", price:425},
+
+  {image:"image/bharathicement.png",name:"Bharathi Cement", price:445},
+
+  {image:"image/starcement.png",name:"Star Cement", price:435},
+
+  {image:"image/indiaCement.png",name:"India Cement", price:430},
+
+  {image:"image/orientcement.png",name:"Orient Cement", price:420},
+
+  {image:"image/prismcement.png",name:"Prism Cement", price:405},
+
+  // =========================
+  // ECONOMY & LOCAL BRANDS
+  // =========================
+
+  {image:"image/pennacement.png",name:"Penna Cement", price:398},
+
+  {image:"image/sanghicement.png",name:"Sanghi Cement", price:415},
+
+  {image:"image/kcpcement.png",name:"KCP Cement", price:405},
+
+  {image:"image/sagarcement.png",name:"Sagar Cement", price:420},
+
+  {image:"image/konarkcement.png",name:"Konark Cement", price:418},
+
+  {image:"image/bangurcement.png",name:"Bangur Cement", price:422},
+
+  {image:"image/maacement.png",name:"MAA Cement", price:400},
+
+  {image:"image/supercement.png",name:"Super Cement", price:398},
+
+  // =========================
+  // PREMIUM & SPECIAL CEMENTS
+  // =========================
+
+  {image:"image/goldcement.png",name:"Gold Cement", price:460},
+
+  {image:"image/platinumcement.png",name:"Platinum Cement", price:470},
+
+  {image:"image/premiumcement.png",name:"Premium Cement", price:480},
+
+  {image:"image/strongcement.png",name:"Strong Cement", price:440},
+
+  {image:"image/rapidcement.png",name:"Rapid Cement", price:450},
+
+  {image:"image/buildcement.png",name:"BuildPro Cement", price:445},
+
+  {image:"image/maxcement.png",name:"Max Cement", price:430},
+
+  {image:"image/mycemcement.png",name:"Mycem Cement", price:432},
+
+  // =========================
+  // INTERNATIONAL & OTHER
+  // =========================
+
+  {image:"image/heidelberg.png",name:"Heidelberg Cement", price:450},
+
+  {image:"image/zuaricement.png",name:"Zuari Cement", price:410},
+
+  {image:"image/deccancement.png",name:"Deccan Cement", price:415}
+
+],
+
+  steel: [
+
+  // =========================
+  // TMT & REINFORCEMENT BARS
+  // =========================
+
+  {image:"image/tmtsteelbar.png",name:"TMT Steel Bar", price:65},
+
+  {image:"image/jswsteelrod.png",name:"JSW Steel Rod", price:70},
+
+  {image:"image/ironrod10mm.png",name:"Iron Rod 10mm", price:550},
+
+  {image:"image/roundbar.png",name:"Round Steel Bar", price:650},
+
+  {image:"image/deformedbar.png",name:"Deformed Steel Bar", price:690},
+
+  {image:"image/reinforcementbar.png",name:"Reinforcement Bar", price:720},
+
+  {image:"image/highstrengthbar.png",name:"High Strength Steel Bar", price:850},
+
+  {image:"image/flatbar.png",name:"Flat Steel Bar", price:620},
+
+  // =========================
+  // SHEETS & PLATES
+  // =========================
+
+  {image:"image/steelsheet.png",name:"Steel Sheet", price:1200},
+
+  {image:"image/galvanizedsheet.png",name:"Galvanized Steel Sheet", price:1350},
+
+  {image:"image/roofsheet.png",name:"Roofing Steel Sheet", price:1450},
+
+  {image:"image/hrsheet.png",name:"Hot Rolled Sheet", price:1550},
+
+  {image:"image/crsheet.png",name:"Cold Rolled Sheet", price:1600},
+
+  {image:"image/steelplate.png",name:"Steel Plate", price:1700},
+
+  {image:"image/steelcoil.png",name:"Steel Coil", price:1500},
+
+  {image:"image/steelstrip.png",name:"Steel Strip", price:770},
+
+  // =========================
+  // CHANNELS & ANGLES
+  // =========================
+
+  {image:"image/steelchannel.png",name:"Steel Channel", price:900},
+
+  {image:"image/mschannel.png",name:"MS Channel", price:890},
+
+  {image:"image/uctchannel.png",name:"UCT Steel Channel", price:980},
+
+  {image:"image/msangle.png",name:"MS Angle", price:850},
+
+  // =========================
+  // PIPES & TUBES
+  // =========================
+
+  {image:"image/hollowpipe.png",name:"Hollow Steel Pipe", price:700},
+
+  {image:"image/squarepipe.png",name:"Square Steel Pipe", price:780},
+
+  {image:"image/mspipe.png",name:"MS Pipe", price:720},
+
+  {image:"image/stainlesspipe.png",name:"Stainless Steel Pipe", price:2100},
+
+  {image:"image/ssrod.png",name:"Stainless Steel Rod", price:1950},
+
+  // =========================
+  // STRUCTURAL STEEL
+  // =========================
+
+  {image:"image/steelbeam.png",name:"Steel Beam", price:1800},
+
+  {image:"image/heavybeam.png",name:"Heavy Steel Beam", price:3200},
+
+  {image:"image/steelgirder.png",name:"Steel Girder", price:2500},
+
+  {image:"image/steelcolumn.png",name:"Steel Column", price:2600},
+
+  {image:"image/steelframe.png",name:"Steel Frame", price:2800},
+
+  {image:"image/structuralsteel.png",name:"Structural Steel", price:3000},
+
+  // =========================
+  // WIRES & MESH
+  // =========================
+
+  {image:"image/steelwire.png",name:"Steel Binding Wire", price:300},
+
+  {image:"image/giwire.png",name:"GI Wire", price:350},
+
+  {image:"image/steelmesh.png",name:"Steel Mesh", price:980},
+
+  // =========================
+  // ACCESSORIES
+  // =========================
+
+  {image:"image/steelbracket.png",name:"Steel Bracket", price:450}
+
+],
+
+auto: [
     {image:"image/trucktyre.png",name:"Truck Tyre", price:4500},
     {image:"image/engineoil.png",name:"Engine Oil", price:900},
     {image:"image/brakepad.png",name:"Brake Pad", price:1500},
@@ -311,21 +1029,6 @@ img3:"image/3Dbuildingplan1.png"},
     {name:"Electrician", price:1200},
     {name:"Plumber", price:1100},
     {name:"Carpenter", price:1300}
-  ],
-  cement: [
-    {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420,img1:"t",img2:"t2",img3:"t3"},
-    {image:"image/acc.png",name:"ACC Cement", price:410},
-    {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
-    {image:"image/birlacement.png",name:"Birla Cement", price:415},
-    {image:"image/shreecement.png",name:"Shree Cement", price:400}
-  ],
-
-  steel: [
-    {name:"TMT Steel Bar", price:65},
-    {name:"JSW Steel Rod", price:70},
-    {name:"Steel Sheet", price:1200},
-    {name:"Iron Rod 10mm", price:550},
-    {name:"Steel Channel", price:900}
   ],
 
  
