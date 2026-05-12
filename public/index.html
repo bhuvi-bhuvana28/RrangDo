@@ -23,7 +23,7 @@
 <div class="navbar">
   <div class="logo">
   <img src="image/logo.png" alt="logo" class="logo-img">
-  <span>RrangoDoIndia</span>
+  <span>RrangDo</span>
 </div>
 </div>
 
@@ -242,10 +242,10 @@ font-weight:500;
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Price List</li>
-        <li>FAQ</li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
 
@@ -253,17 +253,23 @@ font-weight:500;
     <div class="footer-col">
       <h4>Policy</h4>
       <ul>
-        <li>Refund Policy</li>
-        <li>Privacy Policy</li>
-        <li>Terms of Service</li>
-        <li>Shipping Policy</li>
+        <li><a href="refund.html">Refund Policy</a></li>
+
+<li><a href="privacy.html">Privacy Policy</a></li>
+
+<li><a href="terms.html">Terms of Service</a></li>
+
+<li><a href="shipping.html">Shipping Policy</a></li>
       </ul>
     </div>
 
     <!-- CONTACT -->
     <div class="footer-col">
       <h4>Contact</h4>
-      <p>Email: support@rrangodoindia.com</p>
+      Email:
+<a href="mailto:support@rrangdoindia.com">
+support@rrangdoindia.com
+</a>
       <p>Bangalore, India</p>
     </div>
 
@@ -271,11 +277,23 @@ font-weight:500;
 
   <!-- SUBSCRIBE -->
   <div class="footer-subscribe">
-    <p>Get updates on offers & new products</p>
-    <div class="subscribe-box">
-      <input type="email" placeholder="Enter your email">
-      <button>→</button>
-    </div>
+    <div class="newsletter">
+
+  <h3>Get updates on offers & new products</h3>
+
+  <div class="newsletter-box">
+
+    <input 
+      type="email" 
+      id="newsletter-email"
+      placeholder="Enter your email"
+    >
+
+    <button onclick="subscribeEmail()">
+      →
+    </button>
+
+  </div>
   </div>
 
   <!-- COPYRIGHT -->

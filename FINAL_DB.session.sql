@@ -9,12 +9,25 @@ CREATE TABLE rrangdo.users (
   email VARCHAR(100)
 );
 
+
 CREATE TABLE rrangdo.addresses (
+
   id INT AUTO_INCREMENT PRIMARY KEY,
+
   name VARCHAR(100),
+
   phone VARCHAR(20),
-  street VARCHAR(200),
-  city VARCHAR(100)
+
+  pincode VARCHAR(20),
+
+  house VARCHAR(200),
+
+  area VARCHAR(200),
+
+  city VARCHAR(100),
+
+  state VARCHAR(100)
+
 );
 
 CREATE TABLE rrangdo.orders (
@@ -30,3 +43,4 @@ INSERT INTO rrangdo.orders (total, status, address, items)
 VALUES (500, 'Pending', '{}', '[]');
 
 SELECT * FROM rrangdo.orders;
+

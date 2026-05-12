@@ -17,14 +17,35 @@ img3:"image/3Dbuildingplan1.png"},
   {image:"image/houseblueprint.png", name:"House Blueprint", price:3000},
   {image:"image/landscapeplan.png", name:"Landscape Design Plan", price:4500},
   {image: "image/apartmentfloor.png",name: "Apartment Floor Plan",price: 3200},
-  {image: "image/duplexhouseplan.png",name: "Duplex House Plan",price: 5500}
+  {image: "image/duplexhouseplan.png",name: "Duplex House Plan",price: 5500},
+  {image:"image/2bhkplan.png", name:"2BHK House Plan", price:2800},
+{image:"image/3bhkplan.png", name:"3BHK House Plan", price:4200},
+{image:"image/4bhkplan.png", name:"4BHK House Plan", price:6000},
+{image:"image/vastuplan.png", name:"Vastu Compliant Plan", price:3500},
+{image:"image/ecoHouse.png", name:"Eco-Friendly House Design", price:7000},
+{image:"image/roofplan.png", name:"Roof Design Plan", price:1800},
+{image:"image/staircase.png", name:"Staircase Design Plan", price:1500},
+{image:"image/parkinglayout.png", name:"Parking Layout Design", price:2200},
+{image:"image/gardenlayout.png", name:"Garden Layout Plan", price:2500},
+{image:"image/smartHome.png", name:"Smart Home Design Plan", price:9000},
+{image:"image/minimalhouse.png", name:"Minimalist House Design", price:4800},
+{image:"image/traditionalhouse.png", name:"Traditional House Plan", price:4000},
+{image:"image/contemporaryhouse.png", name:"Contemporary House Design", price:7500},
+{image:"image/highrise.png", name:"High-Rise Building Plan", price:15000},
+{image:"image/hotelplan.png", name:"Hotel Building Plan", price:20000},
+{image:"image/hospitalplan.png", name:"Hospital Layout Plan", price:18000},
+{image:"image/schoolplan.png", name:"School Building Plan", price:16000},
+{image:"image/mallplan.png", name:"Shopping Mall Layout", price:25000},
+{image:"image/showroom.png", name:"Showroom Design Plan", price:9000},
+{image:"image/factorylayout.png", name:"Factory Layout Plan", price:14000},
+{image:"image/godown.png", name:"Godown/Warehouse Plan", price:10000}
   ],
 
   foundation: [
+    {image:"image/bricks.png",name:"Bricks Pack", price:700},
     {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
     {image:"image/concretemix.png",name:"Concrete Mix", price:600},
     {image:"image/foundationsand.png",name:"Foundation Sand", price:300},
-    {image:"image/bricks.png",name:"Bricks Pack", price:700},
     {image:"image/gravel.png",name:"Gravel Load", price:1500},
     {image:"image/acc.png",name:"ACC Cement", price:410},
   {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
@@ -42,7 +63,36 @@ img3:"image/3Dbuildingplan1.png"},
   {image:"image/laticrete315.png",name:"MYK Laticrete 315", price:420},
 
   {image:"image/flyashbricks.png",name:"Fly Ash Bricks Pack", price:650},
-  {image:"image/hollowblocks.png",name:"Hollow Blocks", price:800}
+  {image:"image/hollowblocks.png",name:"Hollow Blocks", price:800},
+  {image:"image/mSand.png", name:"M-Sand (Manufactured Sand)", price:350},
+{image:"image/pSand.png", name:"P-Sand (Plastering Sand)", price:400},
+
+{image:"image/redbricks.png", name:"Red Clay Bricks Pack", price:750},
+{image:"image/concreteblocks.png", name:"Concrete Solid Blocks", price:900},
+
+{image:"image/tmtbars.png", name:"TMT Steel Bars 12mm", price:65000},
+{image:"image/steelmesh.png", name:"Steel Mesh Roll", price:2500},
+
+{image:"image/readyconcrete.png", name:"Ready Mix Concrete (RMC)", price:5000},
+{image:"image/cementbags.png", name:"Cement Bulk Pack (10 Bags)", price:4000},
+
+{image:"image/waterproof.png", name:"Waterproofing Chemical", price:1200},
+{image:"image/dampproof.png", name:"Damp Proof Course Liquid", price:950},
+
+{image:"image/bindingwire.png", name:"Binding Wire Roll", price:300},
+{image:"image/shuttering.png", name:"Shuttering Plywood", price:1800},
+
+{image:"image/curingcompound.png", name:"Concrete Curing Compound", price:850},
+{image:"image/fiberreinforce.png", name:"Fiber Reinforcement Material", price:1100},
+
+{image:"image/expansionjoint.png", name:"Expansion Joint Filler", price:600},
+{image:"image/grouting.png", name:"Grouting Material", price:700},
+
+{image:"image/bitumen.png", name:"Bitumen Waterproofing Roll", price:2000},
+{image:"image/geotextile.png", name:"Geotextile Fabric", price:1500},
+
+{image:"image/foundationcoating.png", name:"Foundation Protective Coating", price:1300},
+{image:"image/soilstabilizer.png", name:"Soil Stabilizer Chemical", price:2200}
   ],
 
   electrical: [
@@ -136,7 +186,43 @@ img3:"image/3Dbuildingplan1.png"},
   {image:"image/placeholder.png", name:"Ball Valve", price:180},
   {image:"image/placeholder.png", name:"Pipe Clamp", price:120},
   {image:"image/placeholder.png", name:"Water Filter", price:4500},
-  {image:"image/placeholder.png", name:"Overhead Shower", price:2000}
+  {image:"image/placeholder.png", name:"Overhead Shower", price:2000},
+  {image:"image/upvcpipes.png", name:"UPVC Pipe", price:450},
+{image:"image/cpvcpipe.png", name:"CPVC Pipe", price:500},
+
+{image:"image/pprpipe.png", name:"PPR Pipe", price:600},
+{image:"image/hdpepipe.png", name:"HDPE Pipe", price:800},
+
+{image:"image/gipipe.png", name:"GI Pipe", price:700},
+{image:"image/flexiblepipe.png", name:"Flexible Hose Pipe", price:250},
+
+{image:"image/anglevalve.png", name:"Angle Valve", price:200},
+{image:"image/checkvalve.png", name:"Check Valve", price:350},
+{image:"image/gatevalve.png", name:"Gate Valve", price:500},
+
+{image:"image/stopcock.png", name:"Stop Cock Tap", price:180},
+{image:"image/bibcock.png", name:"Bib Cock Tap", price:220},
+
+{image:"image/washbasintap.png", name:"Wash Basin Tap", price:1200},
+{image:"image/kitchentap.png", name:"Kitchen Sink Tap", price:1500},
+
+{image:"image/healthfaucet.png", name:"Health Faucet", price:700},
+{image:"image/jetshower.png", name:"Jet Spray Shower", price:850},
+
+{image:"image/watermeter.png", name:"Water Meter", price:1800},
+{image:"image/pressurepump.png", name:"Water Pressure Pump", price:4500},
+
+{image:"image/sealtape.png", name:"PTFE Seal Tape", price:30},
+{image:"image/pipesolvent.png", name:"Pipe Solvent Cement", price:120},
+
+{image:"image/draincover.png", name:"Drain Cover", price:150},
+{image:"image/floortrap.png", name:"Floor Trap", price:300},
+
+{image:"image/greasetrap.png", name:"Grease Trap", price:2500},
+{image:"image/septic.png", name:"Septic Tank System", price:8000},
+
+{image:"image/watersoftener.png", name:"Water Softener", price:12000},
+{image:"image/rofilter.png", name:"RO Water Filter System", price:9000}
   ],
 
   paints: [
@@ -777,7 +863,7 @@ function placeOrder(){
   console.log("Sending:", orderData);
 
   // ✅ FETCH
-  fetch("https://rrangdoindia.com/create_order.php", {
+  fetch("/create_order", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -1070,12 +1156,25 @@ function confirmLocation(){
   // ✅ SAVE LOCATION
   localStorage.setItem("selectedLocation", address);
 
-  localStorage.setItem("userAddress", JSON.stringify({
-    name: localStorage.getItem("userName") || "User",
-    phone: "",
-    street: address,
-    city: ""
-  }));
+ let parts = address.split(",");
+
+localStorage.setItem("userAddress", JSON.stringify({
+
+  name: localStorage.getItem("userName") || "User",
+
+  phone: "",
+
+  house: parts[0] || "",
+
+  area: parts[1] || "",
+
+  city: parts[2] || "",
+
+  state: parts[3] || "",
+
+  pincode: ""
+
+}));
 
   // ✅ UPDATE NAVBAR TEXT
   let el = document.getElementById("selected-location");
@@ -1092,7 +1191,7 @@ function confirmLocation(){
 =================================*/
 
 function loadSavedAddresses(){
-  fetch("http://127.0.0.1:5000/get_addresses")
+  fetch("/get_addresses")
   .then(res => res.json())
   .then(data => {
 
@@ -1160,13 +1259,41 @@ if(document.getElementById("delivery-address")){
 
   if(address){
     document.getElementById("delivery-address").innerHTML = `
-      <h3>📍 Deliver To:</h3>
-      <p>${address.street}</p>
-    `
+  <h3>📍 Deliver To:</h3>
+
+  <p>
+    ${address.house},
+    ${address.area},
+    ${address.city},
+    ${address.state}
+  </p>
+`
   }
 }
 
 // CHANGE ADDRESS BUTTON
 function changeAddress(){
   window.location.href = "address.html"
+}
+
+// TEST BACKEND CONNECTION
+fetch("/api/test")
+  .then(res => res.json())
+  .then(data => console.log("API Response:", data));
+
+//SUBSCRIBE MAIL IN FOOTER
+  function subscribeEmail(){
+
+  let email = document.getElementById("newsletter-email").value;
+
+  if(email === ""){
+    alert("Please enter email ❌");
+    return;
+  }
+
+  localStorage.setItem("subscriberEmail", email);
+
+  alert("Subscribed successfully ✅");
+
+  document.getElementById("newsletter-email").value = "";
 }

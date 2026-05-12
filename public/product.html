@@ -1,95 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Details</title>
-<link rel="stylesheet" href="style.css">
+
+  <title>Product Details</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="navbar">
-  <div class="logo">RrangoDoIndia</div>
-  <div class="header-right">
-    <a href="index.html">🏠 Home</a>
-    <a href="cart.html">🛒 Cart</a>
-    <a href="wishlist.html">❤️</a>
-  </div>
-</div>
+  <!-- NAVBAR -->
+  <div class="navbar">
 
-<div class="product-details">
+    <div class="logo">
+      RrangoDoIndia
+    </div>
 
-<div class="product-left">
-  <img id="product-image">
-</div>
+    <div class="header-right">
 
-<div class="product-right">
+      <a href="index.html">
+        🏠 Home
+      </a>
 
-<h2 id="product-name"></h2>
-<p id="product-price"></p>
+      <a href="cart.html">
+        🛒 Cart
+      </a>
 
-<div class="cart-row">
+      <a href="wishlist.html">
+        ❤️ Wishlist
+      </a>
 
-  <!-- QTY ALWAYS VISIBLE -->
-  <div class="qty-control">
-    <button onclick="decreaseProductQty(name)">-</button>
-    <span id="qty-${product.name.replace(/\s/g,'')}">1</span>
-    <button onclick="increaseProductQty(name)">+</button>
+    </div>
+
   </div>
 
-  <!-- ADD BUTTON -->
-  <button class="add-btn"
-    onclick="addToCartWithQty(name, price, img1)">
-    ADD
-  </button>
+  <!-- PRODUCT DETAILS -->
+  <div class="product-details">
 
-  <!-- ❤️ -->
-  <button class="wish-btn"
-    onclick="addToWishlist(name, price, img1)">
-    ❤️
-  </button>
+    <!-- LEFT -->
+    <div class="product-left">
 
-</div>
+      <img
+        id="product-image"
+        alt="Product Image"
+      >
 
-</div>
-</div>
+    </div>
 
-<script>
-const params = new URLSearchParams(window.location.search)
+    <!-- RIGHT -->
+    <div class="product-right">
 
-const name = params.get("name")
-const price = Number(params.get("price"))
-const img1 = params.get("img1")
+      <h2 id="product-name"></h2>
 
-document.getElementById("product-name").innerText = name
-document.getElementById("product-price").innerText = "₹" + price
-document.getElementById("product-image").src = img1
+      <p id="product-price"></p>
 
-let productQty = {}
+      <!-- CART ROW -->
+      <div class="cart-row">
 
-function startAdd(name, price, image){
-  productQty[name] = 1
+        <!-- QTY -->
+        <div class="qty-control">
 
-  document.getElementById("add-btn").style.display = "none"
-  document.getElementById("qty-box").style.display = "flex"
+          <button onclick="decreaseProductQty()">
+            -
+          </button>
 
-  addToCartWithQty(name, price, image)
-}
+          <span id="qty">
+            1
+          </span>
 
-function increaseProductQty(name){
-  productQty[name]++
-  document.getElementById("qty").innerText = productQty[name]
-}
+          <button onclick="increaseProductQty()">
+            +
+          </button>
 
-function decreaseProductQty(name){
-  if(productQty[name] > 1){
-    productQty[name]--
-    document.getElementById("qty").innerText = productQty[name]
-  }
-}
-</script>
+        </div>
 
-<script src="script.js"></script>
+        <!-- ADD -->
+        <button
+          class="add-btn"
+          onclick="addCurrentProductToCart()"
+        >
+          ADD
+        </button>
+
+        <!-- WISHLIST -->
+        <button
+          class="wish-btn"
+          onclick="addCurrentProductToWishlist()"
+        >
+          ❤️
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    // URL PARAMS
+    const params = new URLSearchParams(window.location.search);
+
+    const name = params.get("name");
+    const price = Number(params.get("price"));
+    const img1 = params.get("img1");
+
+    // SET DATA
+    document.getElementById("product-name").innerText = name;
+
+    document.getElementById("product-price").innerText =
+      "₹" + price;
+
+    document.getElementById("product-image").src = img1;
+
+    // QTY
+    let productQty = 1;
+
+    function increaseProductQty() {
+
+      productQty++;
+
+      document.getElementById("qty").innerText =
+        productQty;
+
+    }
+
+    function decreaseProductQty() {
+
+      if (productQty > 1) {
+
+        productQty--;
+
+        document.getElementById("qty").innerText =
+          productQty;
+
+      }
+
+    }
+
+    // ADD TO CART
+    function addCurrentProductToCart() {
+
+      addToCartWithQty(
+        name,
+        price,
+        img1,
+        productQty
+      );
+
+    }
+
+    // ADD TO WISHLIST
+    function addCurrentProductToWishlist() {
+
+      addToWishlist(
+        name,
+        price,
+        img1
+      );
+
+    }
+
+  </script>
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>

@@ -10,7 +10,7 @@ function logout(){
 
 function loadOrders(){
 
-fetch("http://127.0.0.1:5000/orders")
+fetch("/orders")
 .then(res => res.json())
 .then(data => {
 
@@ -89,7 +89,7 @@ Delivered
 
 function updateStatus(id, status){
 
-fetch("http://127.0.0.1:5000/update_status", {
+fetch("/update_status", {
 method: "POST",
 headers: {"Content-Type": "application/json"},
 body: JSON.stringify({

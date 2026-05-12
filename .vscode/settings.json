@@ -71,5 +71,6 @@
       "database": "rrangdo",
       "username": "testuser"
     }
-  ]
+  ],
+  "workbench.browser.openLocalhostLinks": true
 }

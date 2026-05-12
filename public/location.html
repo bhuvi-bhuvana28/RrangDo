@@ -93,7 +93,23 @@
 
   <!-- ADDRESS -->
   <p id="selected-address">Detecting location...</p>
+<div class="address-form">
 
+  <input type="text" id="name" placeholder="Full Name">
+
+  <input type="text" id="phone" placeholder="Phone Number">
+
+  <input type="text" id="house" placeholder="House No / Building">
+
+  <input type="text" id="area" placeholder="Area / Street">
+
+  <input type="text" id="city" placeholder="City">
+
+  <input type="text" id="state" placeholder="State">
+
+  <input type="text" id="pincode" placeholder="Pincode">
+
+</div>
   <!-- BUTTON -->
  <button class="confirm-btn" onclick="confirmLocation()">
   Confirm & Continue
@@ -196,38 +212,95 @@ async function searchLocation(e){
 // ✅ CONFIRM LOCATION
 function confirmLocation(){
 
-  let addressEl = document.getElementById("selected-address");
-  let input = document.getElementById("location-search").value;
+  let addressEl =
+  document.getElementById("selected-address");
 
-  let address = addressEl.innerText;
+  let input =
+  document.getElementById("location-search").value;
 
-  if(!address || address.includes("Detecting")){
+  let fullAddress = addressEl.innerText;
+
+  if(!fullAddress || fullAddress.includes("Detecting")){
+
     if(input){
-      address = input;
-    } else {
+      fullAddress = input;
+    }else{
       alert("Select location ❌");
       return;
     }
   }
 
-  // ✅ SAVE LOCATION (IMPORTANT)
-  localStorage.setItem("selectedLocation", address);
+  // SIMPLE SPLIT
+  let parts = fullAddress.split(",");
 
-  // ✅ SAVE ADDRESS
-  localStorage.setItem("userAddress", JSON.stringify({
-    name: "User",
-    phone: "",
-    street: address,
-    city: ""
-  }));
+  let addressData = {
 
-  // ✅ CHECK FLOW
-  if(fromCheckout === "true"){
-    localStorage.removeItem("fromCheckout");
-    window.location.href = "checkout.html";
-  } else {
-    window.location.href = "index.html";
-  }
+  name: document.getElementById("name").value,
+
+  phone: document.getElementById("phone").value,
+
+  house: document.getElementById("house").value,
+
+  area: document.getElementById("area").value,
+
+  city: document.getElementById("city").value,
+
+  state: document.getElementById("state").value,
+
+  pincode: document.getElementById("pincode").value
+
+};
+
+  // SAVE LOCATION
+  localStorage.setItem(
+    "selectedLocation",
+    fullAddress
+  );
+
+  // SAVE ADDRESS
+  localStorage.setItem(
+    "userAddress",
+    JSON.stringify(addressData)
+  );
+
+  // SAVE DATABASE
+  fetch("/save_address", {
+
+    method: "POST",
+
+    headers: {
+      "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify(addressData)
+
+  })
+  .then(res => res.json())
+
+  .then(data => {
+
+    if(fromCheckout === "true"){
+
+      localStorage.removeItem("fromCheckout");
+
+      window.location.href = "checkout.html";
+
+    }else{
+
+      window.location.href = "index.html";
+
+    }
+
+  })
+
+  .catch(err => {
+
+    console.log(err);
+
+    alert("Address save failed ❌");
+
+  });
+
 }
 
 
