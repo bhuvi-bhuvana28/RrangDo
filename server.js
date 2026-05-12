@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const app = express();
 
+
 // ✅ MIDDLEWARE
 app.use(express.json());
 app.use(cors());
@@ -13,19 +14,21 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 
 // ✅ DATABASE CONNECTION
+require('dotenv').config();
+
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "spsrso@",
-  database: "rrangdo"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
-db.connect(err => {
-  if (err) {
-    console.log("DB Error ❌", err);
-  } else {
-    console.log("Database connected ✅");
-  }
+db.connect((err) => {
+    if (err) {
+        console.log("DB Error ❌", err);
+    } else {
+        console.log("Database Connected ✅");
+    }
 });
 
 // ===============================
