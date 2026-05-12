@@ -47,7 +47,9 @@ img3:"image/3Dbuildingplan1.png"},
   // CEMENT
   // =========================
 
-  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
+  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420,img1:"image/acc.png",
+img2:"image/acc2.png",
+img3:"image/acc3.png"},
 
   {image:"image/acc.png",name:"ACC Cement", price:410},
 
