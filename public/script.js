@@ -42,12 +42,15 @@ img3:"image/3Dbuildingplan1.png"},
   ],
 
   foundation: [
-    {image:"image/bricks.png",name:"Bricks Pack", price:700},
-    {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
-    {image:"image/concretemix.png",name:"Concrete Mix", price:600},
-    {image:"image/foundationsand.png",name:"Foundation Sand", price:300},
-    {image:"image/gravel.png",name:"Gravel Load", price:1500},
-    {image:"image/acc.png",name:"ACC Cement", price:410},
+
+  // =========================
+  // CEMENT
+  // =========================
+
+  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
+
+  {image:"image/acc.png",name:"ACC Cement", price:410},
+
   {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
   {image:"image/birlacement.png",name:"Birla Cement", price:415},
   {image:"image/shreecement.png",name:"Shree Cement", price:400},
