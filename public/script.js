@@ -937,7 +937,7 @@ img3:"image/3Dbuildingplan1.png"},
 
   {image:"image/acc.png",name:"ACC Cement", price:410},
 
-  {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
+  {image:"image/ambuja1.png",name:"Ambuja Cement", price:430},
 
   {image:"image/shreecement.png",name:"Shree Cement", price:400},
 
@@ -985,9 +985,7 @@ img3:"image/3Dbuildingplan1.png"},
 
   {image:"image/bangurcement.png",name:"Bangur Cement", price:422},
 
-  {image:"image/maacement.png",name:"MAA Cement", price:400},
-
-  {image:"image/supercement.png",name:"Super Cement", price:398},
+  {image:"image/mahacement.png",name:"MAHA Cement", price:400},
 
   // =========================
   // PREMIUM & SPECIAL CEMENTS
@@ -997,13 +995,7 @@ img3:"image/3Dbuildingplan1.png"},
 
   {image:"image/platinumcement.png",name:"Platinum Cement", price:470},
 
-  {image:"image/premiumcement.png",name:"Premium Cement", price:480},
-
-  {image:"image/strongcement.png",name:"Strong Cement", price:440},
-
   {image:"image/rapidcement.png",name:"Rapid Cement", price:450},
-
-  {image:"image/buildcement.png",name:"BuildPro Cement", price:445},
 
   {image:"image/maxcement.png",name:"Max Cement", price:430},
 
@@ -1016,8 +1008,6 @@ img3:"image/3Dbuildingplan1.png"},
   {image:"image/heidelberg.png",name:"Heidelberg Cement", price:450},
 
   {image:"image/zuaricement.png",name:"Zuari Cement", price:410},
-
-  {image:"image/deccancement.png",name:"Deccan Cement", price:415}
 
 ],
 
