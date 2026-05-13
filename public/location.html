@@ -1,312 +1,470 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Select Location</title>
 
-  <!-- MAP -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- LEAFLET MAP -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css">
+
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
     body{
-      font-family: Arial;
-      background: linear-gradient(to right, #0f7c5b, #16a085);
-      margin: 0;
-      color: #333;
+      background:linear-gradient(to right,#0f7c5b,#16a085);
+      min-height:100vh;
+      padding:30px 15px;
     }
 
     .container{
-      background: white;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      background:#ffffff;
+      max-width:700px;
+      margin:auto;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
     }
 
     h2{
-      color: #0f7c5b;
-      margin-bottom: 10px;
+      text-align:center;
+      color:#0f7c5b;
+      margin-bottom:20px;
     }
 
     #location-search{
-      padding: 12px;
-      width: 90%;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin: 10px 0;
-      outline: none;
+      width:100%;
+      padding:14px;
+      border:1px solid #cccccc;
+      border-radius:10px;
+      outline:none;
+      margin-bottom:15px;
+      font-size:15px;
     }
 
     #location-search:focus{
-      border-color: #0f7c5b;
+      border-color:#0f7c5b;
     }
 
     #map{
-      height: 350px;
-      width: 100%;
-      border-radius: 10px;
-      margin: 15px 0;
+      width:100%;
+      height:350px;
+      border-radius:12px;
+      margin-bottom:15px;
     }
 
     #selected-address{
-      font-size: 14px;
-      margin: 10px;
-      color: #555;
+      font-size:14px;
+      color:#444444;
+      margin-bottom:20px;
+      line-height:1.6;
     }
 
-    button{
-      background: #0f7c5b;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
+    .address-form{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      margin-bottom:20px;
     }
 
-    button:hover{
-      background: #0c5f46;
+    .address-form input{
+      padding:14px;
+      border-radius:10px;
+      border:1px solid #cccccc;
+      outline:none;
+      font-size:15px;
     }
+
+    .address-form input:focus{
+      border-color:#0f7c5b;
+    }
+
+    .confirm-btn{
+      width:100%;
+      padding:15px;
+      background:#0f7c5b;
+      color:white;
+      border:none;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .confirm-btn:hover{
+      background:#0c5f46;
+    }
+
+    @media(max-width:600px){
+
+      .container{
+        padding:18px;
+      }
+
+      h2{
+        font-size:22px;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <h2>📍 Select Your Location</h2>
+    <h2>📍 Select Your Location</h2>
 
-  <!-- SEARCH -->
-  <input
-    type="text"
-    id="location-search"
-    placeholder="Search location..."
-    onkeypress="searchLocation(event)"
-  >
+    <!-- SEARCH -->
+    <input
+      type="text"
+      id="location-search"
+      placeholder="Search location..."
+      aria-label="Search Location"
+      onkeypress="searchLocation(event)"
+    >
 
-  <!-- MAP -->
-  <div id="map"></div>
+    <!-- MAP -->
+    <div id="map"></div>
 
-  <!-- ADDRESS -->
-  <p id="selected-address">Detecting location...</p>
-<div class="address-form">
+    <!-- ADDRESS -->
+    <p id="selected-address">
+      Detecting location...
+    </p>
 
-  <input type="text" id="name" placeholder="Full Name">
+    <!-- ADDRESS FORM -->
+    <div class="address-form">
 
-  <input type="text" id="phone" placeholder="Phone Number">
+      <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+        aria-label="Full Name"
+      >
 
-  <input type="text" id="house" placeholder="House No / Building">
+      <input
+        type="text"
+        id="phone"
+        placeholder="Phone Number"
+        aria-label="Phone Number"
+      >
 
-  <input type="text" id="area" placeholder="Area / Street">
+      <input
+        type="text"
+        id="house"
+        placeholder="House No / Building"
+        aria-label="House Number"
+      >
 
-  <input type="text" id="city" placeholder="City">
+      <input
+        type="text"
+        id="area"
+        placeholder="Area / Street"
+        aria-label="Area"
+      >
 
-  <input type="text" id="state" placeholder="State">
+      <input
+        type="text"
+        id="city"
+        placeholder="City"
+        aria-label="City"
+      >
 
-  <input type="text" id="pincode" placeholder="Pincode">
+      <input
+        type="text"
+        id="state"
+        placeholder="State"
+        aria-label="State"
+      >
 
-</div>
-  <!-- BUTTON -->
- <button class="confirm-btn" onclick="confirmLocation()">
-  Confirm & Continue
-</button>
+      <input
+        type="text"
+        id="pincode"
+        placeholder="Pincode"
+        aria-label="Pincode"
+      >
 
-</div>
+    </div>
 
-<script>
-let userType = localStorage.getItem("userType");
+    <!-- BUTTON -->
+    <button
+      class="confirm-btn"
+      onclick="confirmLocation()"
+      aria-label="Confirm Address"
+    >
+      Confirm & Continue
+    </button>
 
-// ❌ if user not logged → go login
-if(!userType){
-  window.location.href = "login.html";
-}
-let map, marker;
-let fromCheckout = localStorage.getItem("fromCheckout");
-let address = localStorage.getItem("userAddress");
+  </div>
 
-if(address && fromCheckout !== "true"){
-  window.location.href = "index.html";
-}
-// ✅ INIT MAP
-function initMap(){
+  <script>
 
-  map = L.map('map').setView([20.5937, 78.9629], 5);
+    let userType = localStorage.getItem("userType");
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    maxZoom:19
-  }).addTo(map);
-
-  marker = L.marker([20.5937, 78.9629], {draggable:true}).addTo(map);
-
-  // AUTO LOCATION
-  getCurrentLocation();
-
-  marker.on('dragend', function(){
-    let pos = marker.getLatLng();
-    getAddress(pos.lat, pos.lng);
-  });
-}
-
-// ✅ GET CURRENT LOCATION
-function getCurrentLocation(){
-  if(navigator.geolocation){
-    navigator.geolocation.getCurrentPosition(position => {
-
-      let lat = position.coords.latitude;
-      let lng = position.coords.longitude;
-
-      map.setView([lat, lng], 15);
-      marker.setLatLng([lat, lng]);
-
-      getAddress(lat, lng);
-    });
-  }
-}
-
-// ✅ GET ADDRESS FROM LAT LNG
-async function getAddress(lat, lng){
-  let res = await fetch(
-    `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`
-  );
-  let data = await res.json();
-
-  document.getElementById("selected-address").innerText = data.display_name;
-}
-
-// ✅ SEARCH LOCATION (ENTER KEY)
-async function searchLocation(e){
-
-  if(e.key !== "Enter") return;
-
-  let query = document.getElementById("location-search").value;
-
-  if(!query){
-    alert("Enter location ❌");
-    return;
-  }
-
-  let res = await fetch(
-    `https://nominatim.openstreetmap.org/search?q=${query}&format=json`
-  );
-
-  let data = await res.json();
-
-  if(data.length === 0){
-    alert("Location not found ❌");
-    return;
-  }
-
-  let lat = data[0].lat;
-  let lon = data[0].lon;
-
-  map.setView([lat, lon], 15);
-  marker.setLatLng([lat, lon]);
-
-  getAddress(lat, lon);
-}
-
-// ✅ CONFIRM LOCATION
-function confirmLocation(){
-
-  let addressEl =
-  document.getElementById("selected-address");
-
-  let input =
-  document.getElementById("location-search").value;
-
-  let fullAddress = addressEl.innerText;
-
-  if(!fullAddress || fullAddress.includes("Detecting")){
-
-    if(input){
-      fullAddress = input;
-    }else{
-      alert("Select location ❌");
-      return;
+    // LOGIN CHECK
+    if(!userType){
+      window.location.href = "login.html";
     }
-  }
 
-  // SIMPLE SPLIT
-  let parts = fullAddress.split(",");
+    let map, marker;
 
-  let addressData = {
+    let fromCheckout =
+    localStorage.getItem("fromCheckout");
 
-  name: document.getElementById("name").value,
+    let address =
+    localStorage.getItem("userAddress");
 
-  phone: document.getElementById("phone").value,
-
-  house: document.getElementById("house").value,
-
-  area: document.getElementById("area").value,
-
-  city: document.getElementById("city").value,
-
-  state: document.getElementById("state").value,
-
-  pincode: document.getElementById("pincode").value
-
-};
-
-  // SAVE LOCATION
-  localStorage.setItem(
-    "selectedLocation",
-    fullAddress
-  );
-
-  // SAVE ADDRESS
-  localStorage.setItem(
-    "userAddress",
-    JSON.stringify(addressData)
-  );
-
-  // SAVE DATABASE
-  fetch("/save_address", {
-
-    method: "POST",
-
-    headers: {
-      "Content-Type": "application/json"
-    },
-
-    body: JSON.stringify(addressData)
-
-  })
-  .then(res => res.json())
-
-  .then(data => {
-
-    if(fromCheckout === "true"){
-
-      localStorage.removeItem("fromCheckout");
-
-      window.location.href = "checkout.html";
-
-    }else{
-
+    if(address && fromCheckout !== "true"){
       window.location.href = "index.html";
+    }
+
+    // INIT MAP
+    function initMap(){
+
+      map = L.map('map').setView(
+        [20.5937, 78.9629],
+        5
+      );
+
+      L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+          maxZoom:19
+        }
+      ).addTo(map);
+
+      marker = L.marker(
+        [20.5937, 78.9629],
+        {draggable:true}
+      ).addTo(map);
+
+      // AUTO LOCATION
+      getCurrentLocation();
+
+      // DRAG EVENT
+      marker.on('dragend', function(){
+
+        let pos = marker.getLatLng();
+
+        getAddress(pos.lat, pos.lng);
+
+      });
 
     }
 
-  })
+    // GET CURRENT LOCATION
+    function getCurrentLocation(){
 
-  .catch(err => {
+      if(navigator.geolocation){
 
-    console.log(err);
+        navigator.geolocation.getCurrentPosition(
+          position => {
 
-    alert("Address save failed ❌");
+            let lat = position.coords.latitude;
+            let lng = position.coords.longitude;
 
-  });
+            map.setView([lat, lng], 15);
 
-}
+            marker.setLatLng([lat, lng]);
 
+            getAddress(lat, lng);
 
-initMap()
+          }
+        );
 
-</script>
+      }
+
+    }
+
+    // GET ADDRESS
+    async function getAddress(lat, lng){
+
+      let res = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`
+      );
+
+      let data = await res.json();
+
+      document.getElementById(
+        "selected-address"
+      ).innerText = data.display_name;
+
+    }
+
+    // SEARCH LOCATION
+    async function searchLocation(e){
+
+      if(e.key !== "Enter") return;
+
+      let query =
+      document.getElementById(
+        "location-search"
+      ).value;
+
+      if(!query){
+
+        alert("Enter location ❌");
+
+        return;
+      }
+
+      let res = await fetch(
+        `https://nominatim.openstreetmap.org/search?q=${query}&format=json`
+      );
+
+      let data = await res.json();
+
+      if(data.length === 0){
+
+        alert("Location not found ❌");
+
+        return;
+      }
+
+      let lat = data[0].lat;
+      let lon = data[0].lon;
+
+      map.setView([lat, lon], 15);
+
+      marker.setLatLng([lat, lon]);
+
+      getAddress(lat, lon);
+
+    }
+
+    // CONFIRM LOCATION
+    function confirmLocation(){
+
+      let addressEl =
+      document.getElementById(
+        "selected-address"
+      );
+
+      let input =
+      document.getElementById(
+        "location-search"
+      ).value;
+
+      let fullAddress =
+      addressEl.innerText;
+
+      if(
+        !fullAddress ||
+        fullAddress.includes("Detecting")
+      ){
+
+        if(input){
+
+          fullAddress = input;
+
+        }else{
+
+          alert("Select location ❌");
+
+          return;
+        }
+
+      }
+
+      let addressData = {
+
+        name:
+        document.getElementById("name").value,
+
+        phone:
+        document.getElementById("phone").value,
+
+        house:
+        document.getElementById("house").value,
+
+        area:
+        document.getElementById("area").value,
+
+        city:
+        document.getElementById("city").value,
+
+        state:
+        document.getElementById("state").value,
+
+        pincode:
+        document.getElementById("pincode").value
+
+      };
+
+      // SAVE LOCATION
+      localStorage.setItem(
+        "selectedLocation",
+        fullAddress
+      );
+
+      // SAVE ADDRESS
+      localStorage.setItem(
+        "userAddress",
+        JSON.stringify(addressData)
+      );
+
+      // SAVE DATABASE
+      fetch("/save_address", {
+
+        method:"POST",
+
+        headers:{
+          "Content-Type":"application/json"
+        },
+
+        body:JSON.stringify(addressData)
+
+      })
+
+      .then(res => res.json())
+
+      .then(data => {
+
+        if(fromCheckout === "true"){
+
+          localStorage.removeItem(
+            "fromCheckout"
+          );
+
+          window.location.href =
+          "checkout.html";
+
+        }else{
+
+          window.location.href =
+          "index.html";
+
+        }
+
+      })
+
+      .catch(err => {
+
+        console.log(err);
+
+        alert("Address save failed ❌");
+
+      });
+
+    }
+
+    // START MAP
+    initMap();
+
+  </script>
 
 </body>
 </html>

@@ -1,162 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RrangoDoIndia⚡</title>
 
-  <title>RrangoDoIndia ⚡</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- LEAFLET -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- LEAFLET MAP -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
-
 <body>
-
-<!-- 🔴 BANNER -->
+  <!-- BANNER -->
 <div class="banner">
   🚀 Fast Delivery of Construction Materials
 </div>
-
-<!-- 🔵 NAVBAR -->
+<!-- NAVBAR -->
 <div class="navbar">
   <div class="logo">
-    <img src="image/logo.png" alt="RrangoDo logo" class="logo-img">
-    <span>RrangoDo</span>
-  </div>
+  <img src="image/logo.png" alt="logo" class="logo-img">
+  <span>RrangDo</span>
+</div>
+</div>
 
-  <div class="location-box" onclick="openLocationPopup()">
-    <i class="fa-solid fa-location-dot"></i>
-    <span id="selected-location">Select Location</span>
+
+<!-- LOCATION + SEARCH -->
+<div class="navbar">
+
+  <div class="location-box" onclick="openLocationPopup()" style="
+background:#ffffff;
+padding:8px 15px;
+border-radius:20px;
+cursor:pointer;
+font-weight:500;
+">
+  <i class="fa-solid fa-location-dot"></i> 
+  <span id="selected-location">Select Location</span>
   </div>
 
   <div class="search-box">
     <i class="fa-solid fa-magnifying-glass"></i>
-    <input type="text" placeholder="Search" onkeypress="handleSearch(event)">
+  <input type="text" placeholder="Search"
+    onkeypress="handleSearch(event)">
   </div>
 
   <div class="nav-buttons">
-    <a href="wishlist.html" title="Wishlist">
-      <i class="fa-regular fa-heart"></i>
-    </a>
-    <a href="cart.html" title="Cart">
-      <i class="fa-solid fa-cart-shopping"></i>
-    </a>
+    
+    <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     <span id="auth-btn"></span>
   </div>
+  
+
 </div>
 
-<!-- 🟣 SLIDER -->
+
+
+<!-- SLIDER -->
 <div class="banner-slider">
   <div class="slides">
-    <img src="image/banner1.png" alt="Banner 1" class="banner-img">
+    <img
+        src="image/banner1.png"
+        alt="Banner 1"
+        class="banner-img"
+      >
+    <!-- 7/4/26 -->
+    <video
+        class="banner-img"
+        autoplay
+        muted
+        loop
+      >
+        <source
+          src="video/banner.mp4"
+          type="video/mp4"
+        >
+      </video>
 
-    <video class="banner-img" autoplay muted loop>
-      <source src="video/banner.mp4" type="video/mp4">
-    </video>
+      <img
+        src="image/banner2.png"
+        alt="Banner 2"
+        class="banner-img"
+      >
 
-    <img src="image/banner2.png" alt="Banner 2" class="banner-img">
-    <img src="image/banner3.png" alt="Banner 3" class="banner-img">
-  </div>
+      <img
+        src="image/banner3.png"
+        alt="Banner 3"
+        class="banner-img"
+      >
+    </div>
 </div>
 
-<!-- 🟢 CATEGORY -->
+<!-- CATEGORY -->
 <div class="category-section">
-  <h2>Shop by Category</h2>
+<h2>Shop by Category</h2>
 
-  <div class="category-scroll">
+<div class="category-scroll">
 
-    <div class="category-card" onclick="goCategory('architecture')">
-      <img src="image/architecture.png" alt="Architecture">
-      <p>Architecture</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('foundation')">
-      <img src="image/foundation.png" alt="Foundation">
-      <p>Foundation</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('electrical')">
-      <img src="image/electrical.png" alt="Electrical">
-      <p>Electrical</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('plumbing')">
-      <img src="image/plumbing.png" alt="Plumbing">
-      <p>Plumbing</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('paints')">
-      <img src="image/paints.png" alt="Paints">
-      <p>Paints</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('tiles')">
-      <img src="image/tiles.png" alt="Tiles">
-      <p>Tiles</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('tools')">
-      <img src="image/tools.png" alt="Tools">
-      <p>Tools</p>
-    </div>
-
-    <div class="category-card" onclick="goCategory('auto')">
-      <img src="image/automobile.png" alt="Automobile">
-      <p>Automobile</p>
-    </div>
-
-  </div>
+<div class="category-card" onclick="goCategory('architecture')">
+  <img src="image/3Dbuildingplan.png" 
+        alt="Architecture">
+  <p>Architecture</p>
 </div>
 
-<!-- 🟡 QUICK CATEGORY -->
+<div class="category-card" onclick="goCategory('foundation')">
+  <img src="image/ultratechcement.png" 
+        alt="Ultratech Cement">
+  <p>Foundation</p>
+</div>
+
+<div class="category-card" onclick="goCategory('electrical')">
+  <img src="image/electrical.png" 
+        alt="Electrical">
+  <p>Electrical</p>
+</div>
+
+<div class="category-card" onclick="goCategory('plumbing')">
+  <img src="image/pipes.png" 
+        alt="Pipes">
+  <p>Plumbing</p>
+</div>
+
+<div class="category-card" onclick="goCategory('paints')">
+  <img src="image/paints.png" 
+        alt="Paints">
+  <p>Paints</p>
+</div>
+
+<div class="category-card" onclick="goCategory('tiles')">
+  <img src="image/tiles.png" 
+        alt="Tiles">
+  <p>Tiles</p>
+</div>
+
+<div class="category-card" onclick="goCategory('tools')">
+  <img src="image/tools.png" alt="tiles">
+  <p>Tools</p>
+</div>
+
+<div class="category-card" onclick="goCategory('auto')">
+  <img src="image/automobiles.png" alt="automobiles">
+  <p>Automobile</p>
+</div>
+
+</div>
+</div>
+
+<!-- QUICK CATEGORY -->
+
 <div class="category-section">
   <h2>Quick Categories</h2>
 
   <div class="category-scroll">
 
     <div class="category-card" onclick="goCategory('cement')">
-      <img src="image/ultratechcement.png" alt="Cement">
+      <img src="image/ultratechcement.png" alt="Ultratech Cement">
       <p>Cement</p>
     </div>
 
     <div class="category-card" onclick="goCategory('steel')">
-      <img src="image/tmtbars.png" alt="Steel">
+      <img src="image/tmtsteelbar.png" alt="TMT Steel Bar">
       <p>Steel</p>
     </div>
 
     <div class="category-card" onclick="goCategory('pipes')">
-      <img src="image/pipe.png" alt="Pipes">
+      <img src="image/pvcpipe.png" alt="PVC Pipe">
       <p>Pipes</p>
     </div>
 
     <div class="category-card" onclick="goCategory('paints')">
-      <img src="image/paints.png" alt="Paints">
+      <img src="image/asianpaints.png" alt="Asian Paints">
       <p>Paints</p>
     </div>
 
     <div class="category-card" onclick="goCategory('tiles')">
-      <img src="image/tiles.png" alt="Tiles">
+      <img src="image/granitetiles.png" alt="Granite Tiles">
       <p>Tiles</p>
     </div>
 
     <div class="category-card" onclick="goCategory('tools')">
-      <img src="image/tools.png" alt="Tools">
+      <img src="image/drillmachine.png" alt="Drill Machine">
       <p>Tools</p>
     </div>
 
   </div>
 </div>
 
-<!-- 🔵 PRODUCTS -->
+<!-- PRODUCTS -->
 <h3 class="section-title">Popular Products</h3>
 
 <div class="product-container">
@@ -168,7 +202,7 @@
   </div>
 
   <div class="product-card">
-    <img src="image/tmtbars.png" alt="TMT Steel Bar">
+    <img src="image/tmtsteelbar.png" alt="TMT Steel Bar">
     <h4>TMT Steel Bar</h4>
     <p>₹65/kg</p>
   </div>
@@ -181,8 +215,9 @@
 
 </div>
 
-<!-- 🟣 LOCATION POPUP -->
+<!-- LOCATION POPUP -->
 <div id="location-popup" class="location-popup">
+
   <div class="location-modal">
 
     <div class="location-header">
@@ -190,19 +225,16 @@
       <span onclick="closeLocationPopup()">✖</span>
     </div>
 
-    <input type="text" id="location-search"
-      placeholder="Search location"
-      onkeyup="searchLocation(event)">
-
+    <input type="text" id="location-search" placeholder="🔍 Search location" onkeyup="searchLocation(event)">
     <div class="gps-card">
       <div>
         <h4>📍 Use My Current Location</h4>
-        <p>Enable your location</p>
+        <p>Enable your current location</p>
       </div>
       <button onclick="getCurrentLocation()">Enable</button>
     </div>
 
-    <div class="center-box">
+    <div id="map" style="height:250px;"></div>
 
     <p id="selected-address">Select location...</p>
 
@@ -211,42 +243,72 @@
     </button>
 
   </div>
+
 </div>
-
-<!-- 🟢 FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-col">
-      <h3>RrangoDoIndia</h3>
-      <p>Premium construction materials across India.</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Policy</h4>
-      <ul>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 RrangoDoIndia
-  </div>
-</footer>
 
 <!-- SCRIPT -->
 <script src="script.js"></script>
 
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <h3>RrangDo</h3>
+      <p>Premium building materials & hardware solutions across India.</p>
+
+      <div class="socials">
+        <span>📘</span>
+        <span>📷</span>
+        <span>▶️</span>
+      </div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Price List</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+
+    <!-- POLICY -->
+    <div class="footer-col">
+      <h4>Policy</h4>
+      <ul>
+        <li>Refund Policy</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Shipping Policy</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: support@rrangdoindia.com</p>
+      <p>Bangalore, India</p>
+    </div>
+
+  </div>
+
+  <!-- SUBSCRIBE -->
+  <div class="footer-subscribe">
+    <p>Get updates on offers & new products</p>
+    <div class="subscribe-box">
+      <input type="email" placeholder="Enter your email">
+      <button>→</button>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © 2025 RrangoDoIndia • All Rights Reserved
+  </div>
+</footer>
 </body>
 </html>
