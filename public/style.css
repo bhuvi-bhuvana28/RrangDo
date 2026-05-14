@@ -1799,3 +1799,31 @@ p{
   text-align: center;
   margin-top: 20px;
 }
+.price-box{
+  margin-top: 5px;
+}
+
+.old-price{
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.new-price{
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.normal-price{
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.product-note{
+  color: orange;
+  font-size: 12px;
+  margin-top: 4px;
+}

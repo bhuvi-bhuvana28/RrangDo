@@ -929,85 +929,205 @@ img3:"image/3Dbuildingplan1.png"},
 
   cement: [
 
-  // =========================
-  // TOP CEMENT BRANDS
-  // =========================
+  {
+    image:"image/ultratechcement.png",
+    name:"UltraTech Cement",
+    price:410,
+    discountPrice:385
+  },
 
-  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420,img1:"t",img2:"t2",img3:"t3"},
+  {
+    image:"image/acc.png",
+    name:"ACC Cement",
+    price:400,
+    discountPrice:380
+  },
 
-  {image:"image/acc.png",name:"ACC Cement", price:410},
+  {
+    image:"image/ambuja1.png",
+    name:"Ambuja Cement",
+    price:390,
+    discountPrice:375
+  },
 
-  {image:"image/ambuja1.png",name:"Ambuja Cement", price:430},
+  {
+    image:"image/shreecement.png",
+    name:"Shree Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/shreecement.png",name:"Shree Cement", price:400},
+  {
+    image:"image/birlacement.png",
+    name:"Birla Cement",
+    price:430,
+    discountPrice:415
+  },
 
-  {image:"image/birlacement.png",name:"Birla Cement", price:415},
+  {
+    image:"image/jkcement.png",
+    name:"JK Cement",
+    price:390,
+    discountPrice:375
+  },
 
-  {image:"image/jkcement.png",name:"JK Cement", price:435},
+  {
+    image:"image/ramco.png",
+    name:"Ramco Cement",
+    price:405,
+    discountPrice:395
+  },
 
-  {image:"image/ramco.png",name:"Ramco Cement", price:440},
+  {
+    image:"image/dalmia.png",
+    name:"Dalmia Cement",
+    price:400,
+    discountPrice:385,
+    note:"Only for West Bengal"
+  },
 
-  {image:"image/dalmia.png",name:"Dalmia Cement", price:425},
+  {
+    image:"image/wondercement.png",
+    name:"Wonder Cement",
+    price:"Not Available"
+  },
 
-  // =========================
-  // POPULAR REGIONAL BRANDS
-  // =========================
+  {
+    image:"image/nuvocement.png",
+    name:"Nuvoco Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/wondercement.png",name:"Wonder Cement", price:455},
+  {
+    image:"image/chettinadcement.png",
+    name:"Chettinad Cement",
+    price:400,
+    discountPrice:385,
+    note:"Only Andhra"
+  },
 
-  {image:"image/nuvocement.png",name:"Nuvoco Cement", price:438},
+  {
+    image:"image/bharathicement.png",
+    name:"Bharathi Cement",
+    price:400,
+    discountPrice:385
+  },
 
-  {image:"image/chettinadcement.png",name:"Chettinad Cement", price:425},
+  {
+    image:"image/starcement.png",
+    name:"Star Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/bharathicement.png",name:"Bharathi Cement", price:445},
+  {
+    image:"image/indiaCement.png",
+    name:"India Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/starcement.png",name:"Star Cement", price:435},
+  {
+    image:"image/orientcement.png",
+    name:"Orient Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/indiaCement.png",name:"India Cement", price:430},
+  {
+    image:"image/prismcement.png",
+    name:"Prism Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/orientcement.png",name:"Orient Cement", price:420},
+  {
+    image:"image/pennacement.png",
+    name:"Penna Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/prismcement.png",name:"Prism Cement", price:405},
+  {
+    image:"image/sanghicement.png",
+    name:"Sanghi Cement",
+    price:"Not Available"
+  },
 
-  // =========================
-  // ECONOMY & LOCAL BRANDS
-  // =========================
+  {
+    image:"image/kcpcement.png",
+    name:"KCP Cement",
+    price:405,
+    discountPrice:395
+  },
 
-  {image:"image/pennacement.png",name:"Penna Cement", price:398},
+  {
+    image:"image/sagarcement.png",
+    name:"Sagar Cement",
+    price:400,
+    discountPrice:385,
+    note:"Only Andhra"
+  },
 
-  {image:"image/sanghicement.png",name:"Sanghi Cement", price:415},
+  {
+    image:"image/konarkcement.png",
+    name:"Konark Cement",
+    price:400,
+    discountPrice:387,
+    note:"West Bengal"
+  },
 
-  {image:"image/kcpcement.png",name:"KCP Cement", price:405},
+  {
+    image:"image/bangurcement.png",
+    name:"Bangur Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/sagarcement.png",name:"Sagar Cement", price:420},
+  {
+    image:"image/mahacement.png",
+    name:"MAHA Cement",
+    price:370,
+    discountPrice:335
+  },
 
-  {image:"image/konarkcement.png",name:"Konark Cement", price:418},
+  {
+    image:"image/goldcement.png",
+    name:"Gold Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/bangurcement.png",name:"Bangur Cement", price:422},
+  {
+    image:"image/platinumcement.png",
+    name:"Platinum Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/mahacement.png",name:"MAHA Cement", price:400},
+  {
+    image:"image/rapidcement.png",
+    name:"Rapid Cement",
+    price:450
+  },
 
-  // =========================
-  // PREMIUM & SPECIAL CEMENTS
-  // =========================
+  {
+    image:"image/maxcement.png",
+    name:"Max Cement",
+    price:400,
+    discountPrice:387,
+    note:"Only Andhra"
+  },
 
-  {image:"image/goldcement.png",name:"Gold Cement", price:460},
+  {
+    image:"image/mycemcement.png",
+    name:"Mycem Cement",
+    price:432
+  },
 
-  {image:"image/platinumcement.png",name:"Platinum Cement", price:470},
+  {
+    image:"image/heidelberg.png",
+    name:"Heidelberg Cement",
+    price:450
+  },
 
-  {image:"image/rapidcement.png",name:"Rapid Cement", price:450},
-
-  {image:"image/maxcement.png",name:"Max Cement", price:430},
-
-  {image:"image/mycemcement.png",name:"Mycem Cement", price:432},
-
-  // =========================
-  // INTERNATIONAL & OTHER
-  // =========================
-
-  {image:"image/heidelberg.png",name:"Heidelberg Cement", price:450},
-
-  {image:"image/zuaricement.png",name:"Zuari Cement", price:410},
+  {
+    image:"image/zuaricement.png",
+    name:"Zuari Cement",
+    price:430,
+    discountPrice:415
+  }
 
 ],
 
@@ -1168,7 +1288,25 @@ document.addEventListener("DOMContentLoaded", function(){
         ${product.image ? `<img src="${product.image}" class="product-img">` : ""}
 
         <h4>${product.name}</h4>
-        <p>₹${product.price}</p>
+
+<div class="price-box">
+
+  ${
+    product.discountPrice
+    ? `
+      <span class="old-price">₹${product.price}</span>
+      <span class="new-price">₹${product.discountPrice}</span>
+    `
+    : `
+      <span class="normal-price">
+        ${typeof product.price === "number" ? "₹" + product.price : product.price}
+      </span>
+    `
+  }
+
+</div>
+
+${product.note ? `<p class="product-note">${product.note}</p>` : ""}
 
         </a>
 
