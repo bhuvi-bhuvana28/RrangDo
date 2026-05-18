@@ -2336,11 +2336,7 @@ document.addEventListener("DOMContentLoaded", function(){
         ${product.image ? `<img src="${product.image}" class="product-img">` : ""}
 
         <h4>${product.name}</h4>
-<<<<<<< HEAD
-=======
-
 <div class="price-box">
-
   ${
     product.discountPrice
     ? `
@@ -2349,15 +2345,12 @@ document.addEventListener("DOMContentLoaded", function(){
     `
     : `
       <span class="normal-price">
-        ${typeof product.price === "number" ? "₹" + product.price : product.price}
+        ₹${product.price}
       </span>
     `
   }
-
 </div>
-
 ${product.note ? `<p class="product-note">${product.note}</p>` : ""}
->>>>>>> 63475c73a14a83613335c0559369721afd6ae0d2
 
 <div class="price-offer-row">
 

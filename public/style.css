@@ -1800,3 +1800,19 @@ p{
   text-align: center;
   margin-top: 20px;
 }
+.price-box {
+  margin: 8px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.new-price {
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+}
