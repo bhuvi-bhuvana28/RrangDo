@@ -1800,3 +1800,33 @@ p{
   text-align: center;
   margin-top: 20px;
 }
+
+
+/* ===============================
+   PRODUCT DETAIL PAGE
+=================================*/
+.price-offer-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin-top:8px;
+}
+
+.product-price{
+  color:#10b981;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.old-price{
+  color:red;
+  text-decoration:line-through;
+  font-size:16px;
+}
+
+.offer-text{
+  color:red;
+  font-size:16px;
+  font-weight:bold;
+}

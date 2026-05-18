@@ -1744,7 +1744,7 @@ img3:"image/3Dbuildingplan1.png"},
   },
 
   {
-    image:"image/ambuja1.png",
+    image:"image/ambuja.png",
     name:"Ambuja Cement",
     price:390,
     discountPrice:375
@@ -2340,12 +2340,24 @@ document.addEventListener("DOMContentLoaded", function(){
 <div class="price-offer-row">
 
   <span class="product-price">
-    ₹${product.sizes ? product.sizes[0].price : product.price}
+    ₹${
+      product.discountPrice
+      ? product.discountPrice
+      : (product.sizes ? product.sizes[0].price : product.price)
+    }
   </span>
 
-  <span class="offer-text">
-    ${product.sizes ? product.sizes[0].offer : (product.offer || "")}
-  </span>
+  ${
+    product.discountPrice
+    ?
+    `<span class="old-price">
+      ₹${product.price}
+    </span>`
+    :
+    `<span class="offer-text">
+      ${product.sizes ? product.sizes[0].offer : (product.offer || "")}
+    </span>`
+  }
 
 </div>
         </a>
