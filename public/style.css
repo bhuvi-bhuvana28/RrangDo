@@ -330,9 +330,10 @@ cursor:pointer;
 /* ===============================
    SECTION TITLE
 =================================*/
-.section-title {
-  padding: 0 15px;
-  font-size: 18px;
+.section-title{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px;
 }
 /* ===============================
    CART PAGE (ZEPTO STYLE)
@@ -622,7 +623,7 @@ body{
 ========================================= */
 
 .section-title{
-  font-size:38px;
+  font-size:30px;
   font-weight:700;
   padding:25px 20px 10px;
   color:#111827;
@@ -1798,4 +1799,34 @@ p{
 .center-box {
   text-align: center;
   margin-top: 20px;
+}
+
+
+/* ===============================
+   OFFER TEXT INLINE WITH PRICE
+=================================*/
+.offer-text{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -8px;
+}
+.price-offer-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.product-price{
+  color: #10b981;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.offer-text{
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
 }

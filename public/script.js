@@ -531,87 +531,381 @@ img3:"image/3Dbuildingplan1.png"},
   // FLOOR TILES
   // =========================
 
-  {image:"image/floortiles.png",name:"Floor Tiles", price:60},
+  {
+    image:"image/floortiles.png",
+    name:"Floor Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:60, offer:"8% OFF"},
+      {size:"4x2 Feet", price:120, offer:"12% OFF"},
+      {size:"6x2 Feet", price:180, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/vitrifiedtiles.png", name:"Vitrified Tiles", price:95},
+  {
+    image:"image/vitrifiedtiles.png",
+    name:"Vitrified Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:95, offer:"10% OFF"},
+      {size:"4x2 Feet", price:180, offer:"15% OFF"},
+      {size:"6x2 Feet", price:260, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/ceramictiles.png", name:"Ceramic Tiles", price:70},
+  {
+    image:"image/ceramictiles.png",
+    name:"Ceramic Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:70, offer:"8% OFF"},
+      {size:"4x2 Feet", price:140, offer:"12% OFF"},
+      {size:"6x2 Feet", price:220, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/porcelaintiles.png", name:"Porcelain Tiles", price:110},
+  {
+    image:"image/porcelaintiles.png",
+    name:"Porcelain Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:110, offer:"10% OFF"},
+      {size:"4x2 Feet", price:210, offer:"15% OFF"},
+      {size:"6x2 Feet", price:320, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/granitetiles.png",name:"Granite Tiles", price:75},
+  {
+    image:"image/granitetiles.png",
+    name:"Granite Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:75, offer:"8% OFF"},
+      {size:"4x2 Feet", price:160, offer:"12% OFF"},
+      {size:"6x2 Feet", price:250, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/marbletiles.png",name:"Marble Tiles", price:90},
+  {
+    image:"image/marbletiles.png",
+    name:"Marble Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:90, offer:"10% OFF"},
+      {size:"4x2 Feet", price:180, offer:"15% OFF"},
+      {size:"6x2 Feet", price:300, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/doublecharge.png", name:"Double Charge Tiles", price:140},
+  {
+    image:"image/doublecharge.png",
+    name:"Double Charge Tiles",
+    sizes:[
+      {size:"600x600 mm", price:140, offer:"10% OFF"},
+      {size:"800x800 mm", price:240, offer:"15% OFF"},
+      {size:"1200x1200 mm", price:420, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/germfreetiles.png", name:"Germ Free Tiles", price:180},
+  {
+    image:"image/highglosstiles.png",
+    name:"High Gloss Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:160, offer:"10% OFF"},
+      {size:"4x2 Feet", price:260, offer:"15% OFF"},
+      {size:"6x2 Feet", price:380, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/highglosstiles.png", name:"High Gloss Tiles", price:160},
+  {
+    image:"image/woodfineshtiles.png",
+    name:"Wood Finish Tiles",
+    sizes:[
+      {size:"4x1 Feet", price:130, offer:"8% OFF"},
+      {size:"6x1 Feet", price:240, offer:"12% OFF"},
+      {size:"8x1 Feet", price:360, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/woodfineshtiles.png", name:"Wood Finish Tiles", price:130},
-
-  {image:"image/designtiles.png", name:"Designer Tiles", price:150},
-
-  {image:"image/3dtiles.png", name:"3D Floor Tiles", price:220},
-
-  {image:"image/mosaictiles.png", name:"Mosaic Tiles", price:170},
-
-  {image:"image/stonetiles.png", name:"Stone Finish Tiles", price:145},
+  {
+    image:"image/designtiles.png",
+    name:"Designer Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:150, offer:"10% OFF"},
+      {size:"4x2 Feet", price:280, offer:"15% OFF"},
+      {size:"6x2 Feet", price:450, offer:"20% OFF"}
+    ]
+  },
 
   // =========================
   // WALL TILES
   // =========================
 
-  {image:"image/walltiles.png",name:"Wall Tiles", price:55},
+  {
+    image:"image/walltiles.png",
+    name:"Wall Tiles",
+    sizes:[
+      {size:"1x1 Feet", price:55, offer:"5% OFF"},
+      {size:"2x1 Feet", price:95, offer:"10% OFF"},
+      {size:"4x2 Feet", price:150, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/kitchentiles.png", name:"Kitchen Tiles", price:80},
+  {
+    image:"image/kitchentiles.png",
+    name:"Kitchen Tiles",
+    sizes:[
+      {size:"2x1 Feet", price:80, offer:"8% OFF"},
+      {size:"4x2 Feet", price:150, offer:"12% OFF"},
+      {size:"6x2 Feet", price:240, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/bathroomtiles.png",name:"Bathroom Tiles", price:85},
+  {
+    image:"image/bathroomtiles.png",
+    name:"Bathroom Tiles",
+    sizes:[
+      {size:"1x1 Feet", price:85, offer:"8% OFF"},
+      {size:"2x2 Feet", price:160, offer:"12% OFF"},
+      {size:"4x2 Feet", price:260, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/elevationtiles.png", name:"Elevation Wall Tiles", price:190},
+  {
+    image:"image/elevationtiles.png",
+    name:"Elevation Wall Tiles",
+    sizes:[
+      {size:"1x2 Feet", price:190, offer:"10% OFF"},
+      {size:"2x4 Feet", price:320, offer:"15% OFF"},
+      {size:"4x4 Feet", price:480, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/subwaytiles.png", name:"Subway Tiles", price:120},
+  {
+    image:"image/subwaytiles.png",
+    name:"Subway Tiles",
+    sizes:[
+      {size:"300x100 mm", price:120, offer:"8% OFF"},
+      {size:"600x200 mm", price:220, offer:"12% OFF"},
+      {size:"900x300 mm", price:340, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/digitaltiles.png", name:"Digital Wall Tiles", price:155},
+  {
+    image:"image/digitaltiles.png",
+    name:"Digital Wall Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:155, offer:"10% OFF"},
+      {size:"4x2 Feet", price:280, offer:"15% OFF"},
+      {size:"6x2 Feet", price:420, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/printedtiles.png", name:"Printed Tiles", price:135},
+  {
+    image:"image/printedtiles.png",
+    name:"Printed Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:135, offer:"8% OFF"},
+      {size:"4x2 Feet", price:250, offer:"12% OFF"},
+      {size:"6x2 Feet", price:390, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/glassmosaic.png", name:"Glass Mosaic Tiles", price:200},
+  {
+    image:"image/glassmosaic.png",
+    name:"Glass Mosaic Tiles",
+    sizes:[
+      {size:"300x300 mm", price:200, offer:"10% OFF"},
+      {size:"600x600 mm", price:360, offer:"15% OFF"},
+      {size:"900x900 mm", price:580, offer:"20% OFF"}
+    ]
+  },
 
   // =========================
   // OUTDOOR TILES
   // =========================
 
-  {image:"image/outdoortiles.png", name:"Outdoor Tiles", price:120},
+  {
+    image:"image/outdoortiles.png",
+    name:"Outdoor Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:120, offer:"8% OFF"},
+      {size:"4x2 Feet", price:220, offer:"12% OFF"},
+      {size:"6x2 Feet", price:340, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/parkingtiles.png", name:"Parking Tiles", price:100},
+  {
+    image:"image/parkingtiles.png",
+    name:"Parking Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:100, offer:"8% OFF"},
+      {size:"4x2 Feet", price:180, offer:"12% OFF"},
+      {size:"6x2 Feet", price:280, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/antiskidtiles.png", name:"Anti-Skid Tiles", price:115},
+  {
+    image:"image/antiskidtiles.png",
+    name:"Anti-Skid Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:115, offer:"10% OFF"},
+      {size:"4x2 Feet", price:220, offer:"15% OFF"},
+      {size:"6x2 Feet", price:340, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/terracetiles.png", name:"Terrace Tiles", price:140},
+  {
+    image:"image/terracetiles.png",
+    name:"Terrace Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:140, offer:"8% OFF"},
+      {size:"4x2 Feet", price:260, offer:"12% OFF"},
+      {size:"6x2 Feet", price:390, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/gardentiles.png", name:"Garden Tiles", price:130},
+  {
+    image:"image/gardentiles.png",
+    name:"Garden Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:130, offer:"8% OFF"},
+      {size:"4x2 Feet", price:240, offer:"12% OFF"},
+      {size:"6x2 Feet", price:360, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/pathtiles.png", name:"Pathway Tiles", price:125},
+  {
+    image:"image/pathtiles.png",
+    name:"Pathway Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:125, offer:"8% OFF"},
+      {size:"4x2 Feet", price:230, offer:"12% OFF"},
+      {size:"6x2 Feet", price:350, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/interlocktiles.png", name:"Interlock Tiles", price:150},
+  {
+    image:"image/interlocktiles.png",
+    name:"Interlock Tiles",
+    sizes:[
+      {size:"200x100 mm", price:150, offer:"10% OFF"},
+      {size:"300x300 mm", price:280, offer:"15% OFF"},
+      {size:"600x600 mm", price:450, offer:"20% OFF"}
+    ]
+  },
 
   // =========================
   // SPECIALITY TILES
   // =========================
 
-  {image:"image/heavydutytiles.png", name:"Heavy Duty Tiles", price:210},
+  {
+    image:"image/heavydutytiles.png",
+    name:"Heavy Duty Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:210, offer:"10% OFF"},
+      {size:"4x2 Feet", price:380, offer:"15% OFF"},
+      {size:"6x2 Feet", price:580, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/fireprooftiles.png", name:"Fire Resistant Tiles", price:240},
+  {
+    image:"image/fireprooftiles.png",
+    name:"Fire Resistant Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:240, offer:"10% OFF"},
+      {size:"4x2 Feet", price:420, offer:"15% OFF"},
+      {size:"6x2 Feet", price:620, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/acoustictiles.png", name:"Acoustic Tiles", price:260},
+  {
+    image:"image/acoustictiles.png",
+    name:"Acoustic Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:260, offer:"10% OFF"},
+      {size:"4x2 Feet", price:450, offer:"15% OFF"},
+      {size:"6x2 Feet", price:680, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/ceilingtiles.png", name:"Ceiling Tiles", price:175},
+  {
+    image:"image/ceilingtiles.png",
+    name:"Ceiling Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:175, offer:"8% OFF"},
+      {size:"4x2 Feet", price:320, offer:"12% OFF"},
+      {size:"6x2 Feet", price:480, offer:"18% OFF"}
+    ]
+  },
 
-  {image:"image/reflectivetiles.png", name:"Reflective Tiles", price:195},
+  {
+    image:"image/reflectivetiles.png",
+    name:"Reflective Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:195, offer:"10% OFF"},
+      {size:"4x2 Feet", price:350, offer:"15% OFF"},
+      {size:"6x2 Feet", price:520, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/quartztile.png", name:"Quartz Tiles", price:280}
+  {
+    image:"image/quartztile.png",
+    name:"Quartz Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:280, offer:"10% OFF"},
+      {size:"4x2 Feet", price:520, offer:"15% OFF"},
+      {size:"6x2 Feet", price:780, offer:"20% OFF"}
+    ]
+  },
+
+  // =========================
+  // EXTRA TILE PRODUCTS
+  // =========================
+
+  {
+    image:"image/3dtiles.png",
+    name:"3D Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:220, offer:"10% OFF"},
+      {size:"4x2 Feet", price:420, offer:"15% OFF"},
+      {size:"6x2 Feet", price:640, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/mosaictiles.png",
+    name:"Mosaic Tiles",
+    sizes:[
+      {size:"300x300 mm", price:170, offer:"8% OFF"},
+      {size:"600x600 mm", price:320, offer:"12% OFF"},
+      {size:"900x900 mm", price:520, offer:"18% OFF"}
+    ]
+  },
+
+  {
+    image:"image/stonetiles.png",
+    name:"Stone Finish Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:145, offer:"8% OFF"},
+      {size:"4x2 Feet", price:260, offer:"12% OFF"},
+      {size:"6x2 Feet", price:420, offer:"18% OFF"}
+    ]
+  },
+
+  {
+    image:"image/germfreetiles.png",
+    name:"Germ Free Tiles",
+    sizes:[
+      {size:"2x2 Feet", price:180, offer:"10% OFF"},
+      {size:"4x2 Feet", price:340, offer:"15% OFF"},
+      {size:"6x2 Feet", price:520, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/luxurytiles.png",
+    name:"Luxury Premium Tiles",
+    sizes:[
+      {size:"4x2 Feet", price:320, offer:"12% OFF"},
+      {size:"6x2 Feet", price:580, offer:"18% OFF"},
+      {size:"8x4 Feet", price:920, offer:"25% OFF"}
+    ]
+  }
 
 ],
 
@@ -621,97 +915,385 @@ img3:"image/3Dbuildingplan1.png"},
   // WATER SUPPLY PIPES
   // =========================
 
-  {image:"image/pvcpipe.png",name:"PVC Pipe", price:300},
+  {
+    image:"image/pvcpipe.png",
+    name:"PVC Pipe",
+    sizes:[
+      {size:"1 Inch", price:250, offer:"5% OFF"},
+      {size:"2 Inch", price:450, offer:"10% OFF"},
+      {size:"4 Inch", price:850, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/cpvcpipe.png",name:"CPVC Pipe", price:420},
+  {
+    image:"image/cpvcpipe.png",
+    name:"CPVC Pipe",
+    sizes:[
+      {size:"1 Inch", price:420, offer:"5% OFF"},
+      {size:"2 Inch", price:620, offer:"10% OFF"},
+      {size:"3 Inch", price:920, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/upvcpipe.png",name:"UPVC Pipe", price:390},
+  {
+    image:"image/upvcpipe.png",
+    name:"UPVC Pipe",
+    sizes:[
+      {size:"1 Inch", price:350, offer:"5% OFF"},
+      {size:"2 Inch", price:550, offer:"8% OFF"},
+      {size:"4 Inch", price:950, offer:"12% OFF"}
+    ]
+  },
 
-  {image:"image/pprpipe.png",name:"PPR Pipe", price:480},
+  {
+    image:"image/pprpipe.png",
+    name:"PPR Pipe",
+    sizes:[
+      {size:"20mm", price:480, offer:"5% OFF"},
+      {size:"25mm", price:780, offer:"10% OFF"},
+      {size:"32mm", price:1200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/hdpepipe.png",name:"HDPE Pipe", price:680},
+  {
+    image:"image/hdpepipe.png",
+    name:"HDPE Pipe",
+    sizes:[
+      {size:"1 Inch", price:680, offer:"5% OFF"},
+      {size:"2 Inch", price:1200, offer:"10% OFF"},
+      {size:"4 Inch", price:2400, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/gipipe.png",name:"GI Pipe", price:600},
+  {
+    image:"image/gipipe.png",
+    name:"GI Pipe",
+    sizes:[
+      {size:"1 Inch", price:600, offer:"5% OFF"},
+      {size:"2 Inch", price:950, offer:"10% OFF"},
+      {size:"4 Inch", price:1800, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/copperpipe.png",name:"Copper Pipe", price:750},
+  {
+    image:"image/copperpipe.png",
+    name:"Copper Pipe",
+    sizes:[
+      {size:"15mm", price:750, offer:"5% OFF"},
+      {size:"22mm", price:1400, offer:"10% OFF"},
+      {size:"28mm", price:2600, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/watersupplypipe.png",name:"Water Supply Pipe", price:450},
+  {
+    image:"image/watersupplypipe.png",
+    name:"Water Supply Pipe",
+    sizes:[
+      {size:"1 Inch", price:450, offer:"5% OFF"},
+      {size:"2 Inch", price:850, offer:"10% OFF"},
+      {size:"3 Inch", price:1500, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/pressurepipe.png",name:"Pressure Pipe", price:670},
+  {
+    image:"image/pressurepipe.png",
+    name:"Pressure Pipe",
+    sizes:[
+      {size:"2 Inch", price:670, offer:"5% OFF"},
+      {size:"4 Inch", price:1300, offer:"10% OFF"},
+      {size:"6 Inch", price:2400, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/greenpipe.png",name:"Green PVC Pipe", price:380},
+  {
+    image:"image/greenpipe.png",
+    name:"Green PVC Pipe",
+    sizes:[
+      {size:"1 Inch", price:380, offer:"5% OFF"},
+      {size:"2 Inch", price:700, offer:"10% OFF"},
+      {size:"4 Inch", price:1300, offer:"15% OFF"}
+    ]
+  },
 
   // =========================
-  // DRAINAGE & SEWER PIPES
+  // DRAINAGE & SEWER
   // =========================
 
-  {image:"image/pvcdrainpipe.png",name:"PVC Drain Pipe", price:350},
+  {
+    image:"image/pvcdrainpipe.png",
+    name:"PVC Drain Pipe",
+    sizes:[
+      {size:"2 Inch", price:350, offer:"5% OFF"},
+      {size:"4 Inch", price:650, offer:"10% OFF"},
+      {size:"6 Inch", price:1200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/drainagepipe.png",name:"Drainage Pipe", price:340},
+  {
+    image:"image/drainagepipe.png",
+    name:"Drainage Pipe",
+    sizes:[
+      {size:"2 Inch", price:340, offer:"5% OFF"},
+      {size:"4 Inch", price:620, offer:"10% OFF"},
+      {size:"6 Inch", price:1180, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/sewerpipe.png",name:"Sewer Pipe", price:550},
+  {
+    image:"image/sewerpipe.png",
+    name:"Sewer Pipe",
+    sizes:[
+      {size:"4 Inch", price:550, offer:"5% OFF"},
+      {size:"6 Inch", price:1050, offer:"10% OFF"},
+      {size:"8 Inch", price:1900, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/undergroundpipe.png",name:"Underground Pipe", price:610},
+  {
+    image:"image/undergroundpipe.png",
+    name:"Underground Pipe",
+    sizes:[
+      {size:"4 Inch", price:610, offer:"5% OFF"},
+      {size:"6 Inch", price:1250, offer:"10% OFF"},
+      {size:"8 Inch", price:2300, offer:"15% OFF"}
+    ]
+  },
 
   // =========================
   // AGRICULTURE & IRRIGATION
   // =========================
 
-  {image:"image/agriculturalpipe.png",name:"Agricultural Pipe", price:450},
+  {
+    image:"image/agriculturalpipe.png",
+    name:"Agricultural Pipe",
+    sizes:[
+      {size:"2 Inch", price:450, offer:"5% OFF"},
+      {size:"4 Inch", price:850, offer:"10% OFF"},
+      {size:"6 Inch", price:1650, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/irrigationpipe.png",name:"Irrigation Pipe", price:520},
+  {
+    image:"image/irrigationpipe.png",
+    name:"Irrigation Pipe",
+    sizes:[
+      {size:"2 Inch", price:520, offer:"5% OFF"},
+      {size:"4 Inch", price:980, offer:"10% OFF"},
+      {size:"6 Inch", price:1800, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/borewellpipe.png",name:"Borewell Pipe", price:890},
+  {
+    image:"image/borewellpipe.png",
+    name:"Borewell Pipe",
+    sizes:[
+      {size:"3 Inch", price:890, offer:"5% OFF"},
+      {size:"5 Inch", price:1600, offer:"10% OFF"},
+      {size:"8 Inch", price:2900, offer:"15% OFF"}
+    ]
+  },
 
   // =========================
   // INDUSTRIAL PIPES
   // =========================
 
-  {image:"image/industrialpipe.png",name:"Industrial Pipe", price:900},
+  {
+    image:"image/industrialpipe.png",
+    name:"Industrial Pipe",
+    sizes:[
+      {size:"2 Inch", price:900, offer:"5% OFF"},
+      {size:"4 Inch", price:1700, offer:"10% OFF"},
+      {size:"6 Inch", price:3200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/chemicalpipe.png",name:"Chemical Pipe", price:930},
+  {
+    image:"image/chemicalpipe.png",
+    name:"Chemical Pipe",
+    sizes:[
+      {size:"2 Inch", price:930, offer:"5% OFF"},
+      {size:"4 Inch", price:1800, offer:"10% OFF"},
+      {size:"6 Inch", price:3400, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/thermalpipe.png",name:"Thermal Resistant Pipe", price:860},
+  {
+    image:"image/thermalpipe.png",
+    name:"Thermal Resistant Pipe",
+    sizes:[
+      {size:"2 Inch", price:860, offer:"5% OFF"},
+      {size:"4 Inch", price:1680, offer:"10% OFF"},
+      {size:"6 Inch", price:3100, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/heavydutypipe.png",name:"Heavy Duty Pipe", price:990},
+  {
+    image:"image/heavydutypipe.png",
+    name:"Heavy Duty Pipe",
+    sizes:[
+      {size:"4 Inch", price:990, offer:"5% OFF"},
+      {size:"6 Inch", price:1900, offer:"10% OFF"},
+      {size:"8 Inch", price:3600, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/firepipe.png",name:"Fire Sprinkler Pipe", price:850},
+  {
+    image:"image/firepipe.png",
+    name:"Fire Sprinkler Pipe",
+    sizes:[
+      {size:"2 Inch", price:850, offer:"5% OFF"},
+      {size:"4 Inch", price:1650, offer:"10% OFF"},
+      {size:"6 Inch", price:3200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/gaspipe.png",name:"Gas Pipe", price:950},
+  {
+    image:"image/gaspipe.png",
+    name:"Gas Pipe",
+    sizes:[
+      {size:"1 Inch", price:950, offer:"5% OFF"},
+      {size:"2 Inch", price:1800, offer:"10% OFF"},
+      {size:"4 Inch", price:3500, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/constructionpipe.png",name:"Construction Pipe", price:560},
+  {
+    image:"image/constructionpipe.png",
+    name:"Construction Pipe",
+    sizes:[
+      {size:"2 Inch", price:560, offer:"5% OFF"},
+      {size:"4 Inch", price:1050, offer:"10% OFF"},
+      {size:"6 Inch", price:2100, offer:"15% OFF"}
+    ]
+  },
 
   // =========================
   // METAL PIPES
   // =========================
 
-  {image:"image/steelpipe.png",name:"Steel Pipe", price:500},
+  {
+    image:"image/steelpipe.png",
+    name:"Steel Pipe",
+    sizes:[
+      {size:"1 Inch", price:500, offer:"5% OFF"},
+      {size:"2 Inch", price:850, offer:"10% OFF"},
+      {size:"4 Inch", price:1600, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/blackpipe.png",name:"Black Steel Pipe", price:700},
+  {
+    image:"image/blackpipe.png",
+    name:"Black Steel Pipe",
+    sizes:[
+      {size:"1 Inch", price:700, offer:"5% OFF"},
+      {size:"2 Inch", price:1300, offer:"10% OFF"},
+      {size:"4 Inch", price:2500, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/stainlesspipe.png",name:"Stainless Steel Pipe", price:1200},
+  {
+    image:"image/stainlesspipe.png",
+    name:"Stainless Steel Pipe",
+    sizes:[
+      {size:"1 Inch", price:1200, offer:"5% OFF"},
+      {size:"2 Inch", price:2200, offer:"10% OFF"},
+      {size:"4 Inch", price:4200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/aluminumpipe.png",name:"Aluminium Pipe", price:720},
+  {
+    image:"image/aluminumpipe.png",
+    name:"Aluminium Pipe",
+    sizes:[
+      {size:"1 Inch", price:720, offer:"5% OFF"},
+      {size:"2 Inch", price:1350, offer:"10% OFF"},
+      {size:"4 Inch", price:2600, offer:"15% OFF"}
+    ]
+  },
 
   // =========================
-  // SHAPES & SPECIAL PIPES
+  // SHAPES & SPECIAL
   // =========================
 
-  {image:"image/roundpipe.png",name:"Round Pipe", price:400},
+  {
+    image:"image/roundpipe.png",
+    name:"Round Pipe",
+    sizes:[
+      {size:"1 Inch", price:400, offer:"5% OFF"},
+      {size:"2 Inch", price:750, offer:"10% OFF"},
+      {size:"4 Inch", price:1450, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/squarepipe.png",name:"Square Pipe", price:530},
+  {
+    image:"image/squarepipe.png",
+    name:"Square Pipe",
+    sizes:[
+      {size:"1x1", price:530, offer:"5% OFF"},
+      {size:"2x2", price:980, offer:"10% OFF"},
+      {size:"4x4", price:1900, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/rectangularpipe.png",name:"Rectangular Pipe", price:610},
+  {
+    image:"image/rectangularpipe.png",
+    name:"Rectangular Pipe",
+    sizes:[
+      {size:"2x1", price:610, offer:"5% OFF"},
+      {size:"4x2", price:1150, offer:"10% OFF"},
+      {size:"6x4", price:2200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/sandwichpipe.png",name:"Sandwich Pipe", price:780},
+  {
+    image:"image/sandwichpipe.png",
+    name:"Sandwich Pipe",
+    sizes:[
+      {size:"Small", price:780, offer:"5% OFF"},
+      {size:"Medium", price:1450, offer:"10% OFF"},
+      {size:"Large", price:2800, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/flexiblepipe.png",name:"Flexible Pipe", price:300},
+  {
+    image:"image/flexiblepipe.png",
+    name:"Flexible Pipe",
+    sizes:[
+      {size:"1 Meter", price:300, offer:"5% OFF"},
+      {size:"3 Meter", price:650, offer:"10% OFF"},
+      {size:"5 Meter", price:1200, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/lightpipe.png",name:"Light Weight Pipe", price:320},
+  {
+    image:"image/lightpipe.png",
+    name:"Light Weight Pipe",
+    sizes:[
+      {size:"1 Inch", price:320, offer:"5% OFF"},
+      {size:"2 Inch", price:620, offer:"10% OFF"},
+      {size:"4 Inch", price:1180, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/plasticpipe.png",name:"Plastic Pipe", price:260},
+  {
+    image:"image/plasticpipe.png",
+    name:"Plastic Pipe",
+    sizes:[
+      {size:"1 Inch", price:260, offer:"5% OFF"},
+      {size:"2 Inch", price:480, offer:"10% OFF"},
+      {size:"4 Inch", price:920, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/conduitpipe.png",name:"Electrical Conduit Pipe", price:410}
+  {
+    image:"image/conduitpipe.png",
+    name:"Electrical Conduit Pipe",
+    sizes:[
+      {size:"20mm", price:410, offer:"5% OFF"},
+      {size:"25mm", price:780, offer:"10% OFF"},
+      {size:"32mm", price:1450, offer:"15% OFF"}
+    ]
+  }
 
 ],
 
@@ -721,183 +1303,401 @@ img3:"image/3Dbuildingplan1.png"},
   // POWER TOOLS
   // =========================
 
-  {image:"image/drillmachine.png",name:"Drill Machine", price:1800},
+  {
+    image:"image/drillmachine.png",
+    name:"Drill Machine",
+    sizes:[
+      {size:"500W", price:1800, offer:"10% OFF"},
+      {size:"800W", price:2600, offer:"15% OFF"},
+      {size:"1200W", price:4200, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/anglegrinder.png", name:"Angle Grinder", price:2200},
+  {
+    image:"image/anglegrinder.png",
+    name:"Angle Grinder",
+    sizes:[
+      {size:"4 Inch", price:2200, offer:"10% OFF"},
+      {size:"5 Inch", price:3200, offer:"15% OFF"},
+      {size:"7 Inch", price:4800, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/circularsaw.png", name:"Circular Saw", price:3500},
+  {
+    image:"image/circularsaw.png",
+    name:"Circular Saw",
+    sizes:[
+      {size:"1200W", price:3500, offer:"10% OFF"},
+      {size:"1500W", price:4800, offer:"15% OFF"},
+      {size:"1800W", price:6500, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/powercutter.png", name:"Power Cutter", price:5000},
+  {
+    image:"image/powercutter.png",
+    name:"Power Cutter",
+    sizes:[
+      {size:"12 Inch", price:5000, offer:"10% OFF"},
+      {size:"14 Inch", price:7200, offer:"15% OFF"},
+      {size:"16 Inch", price:9500, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/electriccutter.png", name:"Electric Cutter", price:4200},
+  {
+    image:"image/electriccutter.png",
+    name:"Electric Cutter",
+    sizes:[
+      {size:"Small", price:4200, offer:"10% OFF"},
+      {size:"Medium", price:6200, offer:"15% OFF"},
+      {size:"Large", price:8400, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/electricsander.png", name:"Electric Sander", price:2400},
+  {
+    image:"image/chainsaw.png",
+    name:"Chainsaw",
+    sizes:[
+      {size:"14 Inch", price:6500, offer:"10% OFF"},
+      {size:"16 Inch", price:8200, offer:"15% OFF"},
+      {size:"18 Inch", price:11000, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/nailgun.png", name:"Nail Gun", price:3800},
+  {
+    image:"image/aircompressor.png",
+    name:"Air Compressor",
+    sizes:[
+      {size:"25L", price:8500, offer:"10% OFF"},
+      {size:"50L", price:12500, offer:"15% OFF"},
+      {size:"100L", price:22000, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/steelcutter.png", name:"Steel Cutter", price:5200},
+  {
+    image:"image/nailgun.png",
+    name:"Nail Gun",
+    sizes:[
+      {size:"Small", price:3800, offer:"10% OFF"},
+      {size:"Medium", price:5200, offer:"15% OFF"},
+      {size:"Large", price:7200, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/paintspraygun.png", name:"Paint Spray Gun", price:1600},
+  {
+    image:"image/presssurewasher.png",
+    name:"Pressure Washer",
+    sizes:[
+      {size:"120 Bar", price:7200, offer:"10% OFF"},
+      {size:"160 Bar", price:9800, offer:"15% OFF"},
+      {size:"220 Bar", price:14500, offer:"20% OFF"}
+    ]
+  },
 
-  // =========================
-  // HEAVY EQUIPMENT
-  // =========================
-
-  {image:"image/concretemixer.png",name:"Concrete Mixer", price:12000},
-
-  {image:"image/concretevibrator.png", name:"Concrete Vibrator", price:4800},
-
-  {image:"image/aircompressor.png", name:"Air Compressor", price:8500},
-
-  {image:"image/pressurewasher.png", name:"Pressure Washer", price:7200},
-
-  {image:"image/waterpump.png", name:"Water Pump", price:4600},
-
-  {image:"image/wheelbarrow.png", name:"Wheel Barrow", price:3200},
-
-  {image:"image/ladder.png", name:"Ladder", price:2500},
-
-  // =========================
-  // HAND TOOLS
-  // =========================
-
-  {image:"image/hammer.png",name:"Hammer", price:250},
-
-  {image:"image/handsaw.png", name:"Hand Saw", price:300},
-
-  {image:"image/screwdriverset.png", name:"Screwdriver Set", price:400},
-
-  {image:"image/spannerset.png", name:"Spanner Set", price:650},
-
-  {image:"image/wrench.png", name:"Wrench", price:350},
-
-  {image:"image/pipewrench.png", name:"Pipe Wrench", price:750},
-
-  {image:"image/pliersset.png", name:"Pliers Set", price:500},
-
-  {image:"image/boltcutter.png", name:"Bolt Cutter", price:1400},
-
-  {image:"image/caulkinggun.png", name:"Caulking Gun", price:280},
-
-  {image:"image/measuringtape.png",name:"Measuring Tape", price:150},
-
-  // =========================
-  // SAFETY PRODUCTS
-  // =========================
-
-  {image:"image/safetyhelmet.png",name:"Safety Helmet", price:450},
-
-  {image:"image/safetygloves.png", name:"Safety Gloves", price:200},
-
-  {image:"image/safetyjacket.png", name:"Safety Jacket", price:650},
-
-  {image:"image/faceshield.png", name:"Face Shield", price:350},
-
-  // =========================
-  // TESTING & SPECIAL TOOLS
-  // =========================
-
-  {image:"image/laserlevel.png", name:"Laser Level", price:2700},
-
-  {image:"image/digitalmultimeter.png", name:"Digital Multimeter", price:950},
-
-  {image:"image/toolkitbox.png", name:"Tool Kit Box", price:1200},
-
-  {image:"image/tilecutter.png", name:"Tile Cutter", price:2800},
-
-  {image:"image/chainsaw.png", name:"Chainsaw", price:6500}
-
-],tools: [
-
-  // =========================
-  // POWER TOOLS
-  // =========================
-
-  {image:"image/drillmachine.png",name:"Drill Machine", price:1800},
-
-  {image:"image/anglegrinder.png", name:"Angle Grinder", price:2200},
-
-  {image:"image/circularsaw.png", name:"Circular Saw", price:3500},
-
-  {image:"image/powercutter.png", name:"Power Cutter", price:5000},
-
-  {image:"image/electriccutter.png", name:"Electric Cutter", price:4200},
-
-  {image:"image/electricsander.png", name:"Electric Sander", price:2400},
-
-  {image:"image/nailgun.png", name:"Nail Gun", price:3800},
-
-  {image:"image/steelcutter.png", name:"Steel Cutter", price:5200},
-
-  {image:"image/paintspraygun.png", name:"Paint Spray Gun", price:1600},
-
-  // =========================
-  // HEAVY EQUIPMENT
-  // =========================
-
-  {image:"image/concretemixer.png",name:"Concrete Mixer", price:12000},
-
-  {image:"image/concretevibrator.png", name:"Concrete Vibrator", price:4800},
-
-  {image:"image/aircompressor.png", name:"Air Compressor", price:8500},
-
-  {image:"image/pressurewasher.png", name:"Pressure Washer", price:7200},
-
-  {image:"image/waterpump.png", name:"Water Pump", price:4600},
-
-  {image:"image/wheelbarrow.png", name:"Wheel Barrow", price:3200},
-
-  {image:"image/ladder.png", name:"Ladder", price:2500},
+  {
+    image:"image/electricsander.png",
+    name:"Electric Sander",
+    sizes:[
+      {size:"200W", price:2400, offer:"10% OFF"},
+      {size:"350W", price:3600, offer:"15% OFF"},
+      {size:"500W", price:5200, offer:"20% OFF"}
+    ]
+  },
 
   // =========================
   // HAND TOOLS
   // =========================
 
-  {image:"image/hammer.png",name:"Hammer", price:250},
+  {
+    image:"image/hammer.png",
+    name:"Hammer",
+    sizes:[
+      {size:"Small", price:250, offer:"5% OFF"},
+      {size:"Medium", price:450, offer:"10% OFF"},
+      {size:"Large", price:650, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/handsaw.png", name:"Hand Saw", price:300},
+  {
+    image:"image/handsaw.png",
+    name:"Hand Saw",
+    sizes:[
+      {size:"12 Inch", price:300, offer:"5% OFF"},
+      {size:"18 Inch", price:520, offer:"10% OFF"},
+      {size:"24 Inch", price:780, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/screwdriverset.png", name:"Screwdriver Set", price:400},
+  {
+    image:"image/screwdriverset.png",
+    name:"Screwdriver Set",
+    sizes:[
+      {size:"6 Pieces", price:400, offer:"10% OFF"},
+      {size:"12 Pieces", price:680, offer:"15% OFF"},
+      {size:"24 Pieces", price:1200, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/spannerset.png", name:"Spanner Set", price:650},
+  {
+    image:"image/spannerset.png",
+    name:"Spanner Set",
+    sizes:[
+      {size:"6 Pieces", price:650, offer:"10% OFF"},
+      {size:"12 Pieces", price:1100, offer:"15% OFF"},
+      {size:"24 Pieces", price:1850, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/wrench.png", name:"Wrench", price:350},
+  {
+    image:"image/wrench.png",
+    name:"Wrench",
+    sizes:[
+      {size:"8 Inch", price:350, offer:"5% OFF"},
+      {size:"12 Inch", price:620, offer:"10% OFF"},
+      {size:"18 Inch", price:980, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/pipewrench.png", name:"Pipe Wrench", price:750},
+  {
+    image:"image/pipewrench.png",
+    name:"Pipe Wrench",
+    sizes:[
+      {size:"10 Inch", price:750, offer:"10% OFF"},
+      {size:"14 Inch", price:1200, offer:"15% OFF"},
+      {size:"18 Inch", price:1800, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/pliersset.png", name:"Pliers Set", price:500},
+  {
+    image:"image/pliersset.png",
+    name:"Pliers Set",
+    sizes:[
+      {size:"3 Pieces", price:500, offer:"10% OFF"},
+      {size:"6 Pieces", price:850, offer:"15% OFF"},
+      {size:"10 Pieces", price:1450, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/boltcutter.png", name:"Bolt Cutter", price:1400},
+  {
+    image:"image/boltcutter.png",
+    name:"Bolt Cutter",
+    sizes:[
+      {size:"12 Inch", price:1400, offer:"10% OFF"},
+      {size:"18 Inch", price:2200, offer:"15% OFF"},
+      {size:"24 Inch", price:3200, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/caulkinggun.png", name:"Caulking Gun", price:280},
+  {
+    image:"image/caulkinggun.png",
+    name:"Caulking Gun",
+    sizes:[
+      {size:"Standard", price:280, offer:"5% OFF"},
+      {size:"Professional", price:520, offer:"10% OFF"},
+      {size:"Heavy Duty", price:880, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/measuringtape.png",name:"Measuring Tape", price:150},
+  {
+    image:"image/measuringtape.png",
+    name:"Measuring Tape",
+    sizes:[
+      {size:"3 Meter", price:150, offer:"5% OFF"},
+      {size:"5 Meter", price:250, offer:"10% OFF"},
+      {size:"10 Meter", price:450, offer:"15% OFF"}
+    ]
+  },
 
   // =========================
-  // SAFETY PRODUCTS
+  // CONSTRUCTION EQUIPMENT
   // =========================
 
-  {image:"image/safetyhelmet.png",name:"Safety Helmet", price:450},
+  {
+    image:"image/concretemixer.png",
+    name:"Concrete Mixer",
+    sizes:[
+      {size:"50L", price:12000, offer:"10% OFF"},
+      {size:"100L", price:22000, offer:"15% OFF"},
+      {size:"200L", price:42000, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/safetygloves.png", name:"Safety Gloves", price:200},
+  {
+    image:"image/concretevibrator.png",
+    name:"Concrete Vibrator",
+    sizes:[
+      {size:"1HP", price:4800, offer:"10% OFF"},
+      {size:"2HP", price:7200, offer:"15% OFF"},
+      {size:"3HP", price:9800, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/safetyjacket.png", name:"Safety Jacket", price:650},
+  {
+    image:"image/wheelbarrow.png",
+    name:"Wheel Barrow",
+    sizes:[
+      {size:"Small", price:3200, offer:"10% OFF"},
+      {size:"Medium", price:4800, offer:"15% OFF"},
+      {size:"Large", price:6800, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/faceshield.png", name:"Face Shield", price:350},
+  {
+    image:"image/ladder.png",
+    name:"Ladder",
+    sizes:[
+      {size:"6 Feet", price:2500, offer:"10% OFF"},
+      {size:"10 Feet", price:4200, offer:"15% OFF"},
+      {size:"15 Feet", price:7200, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/tilecutter.png",
+    name:"Tile Cutter",
+    sizes:[
+      {size:"600mm", price:2800, offer:"10% OFF"},
+      {size:"900mm", price:4200, offer:"15% OFF"},
+      {size:"1200mm", price:6200, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/steelcutter.png",
+    name:"Steel Cutter",
+    sizes:[
+      {size:"14 Inch", price:5200, offer:"10% OFF"},
+      {size:"16 Inch", price:7200, offer:"15% OFF"},
+      {size:"18 Inch", price:9800, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/waterpump.png",
+    name:"Water Pump",
+    sizes:[
+      {size:"0.5HP", price:4600, offer:"10% OFF"},
+      {size:"1HP", price:7200, offer:"15% OFF"},
+      {size:"2HP", price:11500, offer:"20% OFF"}
+    ]
+  },
 
   // =========================
-  // TESTING & SPECIAL TOOLS
+  // SAFETY EQUIPMENT
   // =========================
 
-  {image:"image/laserlevel.png", name:"Laser Level", price:2700},
+  {
+    image:"image/safetyhelmet.png",
+    name:"Safety Helmet",
+    sizes:[
+      {size:"Standard", price:450, offer:"10% OFF"},
+      {size:"Industrial", price:720, offer:"15% OFF"},
+      {size:"Premium", price:1200, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/digitalmultimeter.png", name:"Digital Multimeter", price:950},
+  {
+    image:"image/safetygloves.png",
+    name:"Safety Gloves",
+    sizes:[
+      {size:"Small", price:200, offer:"5% OFF"},
+      {size:"Medium", price:320, offer:"10% OFF"},
+      {size:"Large", price:480, offer:"15% OFF"}
+    ]
+  },
 
-  {image:"image/toolkitbox.png", name:"Tool Kit Box", price:1200},
+  {
+    image:"image/faceshield.png",
+    name:"Face Shield",
+    sizes:[
+      {size:"Standard", price:350, offer:"10% OFF"},
+      {size:"Industrial", price:580, offer:"15% OFF"},
+      {size:"Premium", price:920, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/tilecutter.png", name:"Tile Cutter", price:2800},
+  {
+    image:"image/safetyjacket.png",
+    name:"Safety Jacket",
+    sizes:[
+      {size:"Small", price:650, offer:"10% OFF"},
+      {size:"Medium", price:920, offer:"15% OFF"},
+      {size:"Large", price:1400, offer:"20% OFF"}
+    ]
+  },
 
-  {image:"image/chainsaw.png", name:"Chainsaw", price:6500}
+  {
+    image:"image/safetygoggles.png",
+    name:"Safety Goggles",
+    sizes:[
+      {size:"Standard", price:280, offer:"10% OFF"},
+      {size:"Anti Fog", price:420, offer:"15% OFF"},
+      {size:"Premium", price:650, offer:"20% OFF"}
+    ]
+  },
+
+  // =========================
+  // MEASURING & TESTING
+  // =========================
+
+  {
+    image:"image/laserlevel.png",
+    name:"Laser Level",
+    sizes:[
+      {size:"2 Line", price:2700, offer:"10% OFF"},
+      {size:"4 Line", price:4200, offer:"15% OFF"},
+      {size:"8 Line", price:6800, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/digitalmultimeter.png",
+    name:"Digital Multimeter",
+    sizes:[
+      {size:"Basic", price:950, offer:"10% OFF"},
+      {size:"Advanced", price:1800, offer:"15% OFF"},
+      {size:"Professional", price:3200, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/voltagetester.png",
+    name:"Voltage Tester",
+    sizes:[
+      {size:"Basic", price:350, offer:"10% OFF"},
+      {size:"Digital", price:680, offer:"15% OFF"},
+      {size:"Professional", price:1200, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/clampmeter.png",
+    name:"Clamp Meter",
+    sizes:[
+      {size:"Standard", price:1200, offer:"10% OFF"},
+      {size:"Digital", price:2200, offer:"15% OFF"},
+      {size:"Professional", price:3800, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/thermometergun.png",
+    name:"Infrared Thermometer Gun",
+    sizes:[
+      {size:"Basic", price:1800, offer:"10% OFF"},
+      {size:"Advanced", price:2800, offer:"15% OFF"},
+      {size:"Industrial", price:4200, offer:"20% OFF"}
+    ]
+  },
+
+  {
+    image:"image/toolkitbox.png",
+    name:"Tool Kit Box",
+    sizes:[
+      {size:"Small", price:1200, offer:"10% OFF"},
+      {size:"Medium", price:2200, offer:"15% OFF"},
+      {size:"Large", price:3800, offer:"20% OFF"}
+    ]
+  }
 
 ],
 
@@ -1013,107 +1813,355 @@ img3:"image/3Dbuildingplan1.png"},
 
   steel: [
 
-  // =========================
-  // TMT & REINFORCEMENT BARS
-  // =========================
+  {
+    image:"image/jswtmt.png",
+    name:"JSW TMT Steel Bar",
+    grade:"FE500",
+    sizes:[
+      {size:"8mm", originalPrice:66500, offerPrice:65300, unit:"Per Ton", offer:"2% OFF"},
+      {size:"16mm-32mm", originalPrice:72000, offerPrice:70290, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/tmtsteelbar.png",name:"TMT Steel Bar", price:65},
+  {
+    image:"image/tatatiscon.png",
+    name:"Tata Tiscon TMT",
+    grade:"FE550D",
+    sizes:[
+      {size:"8mm", originalPrice:71000, offerPrice:69800, unit:"Per Ton", offer:"2% OFF"},
+      {size:"12mm-25mm", originalPrice:74000, offerPrice:72850, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/jswsteelrod.png",name:"JSW Steel Rod", price:70},
+  {
+    image:"image/minakshitmt.png",
+    name:"Minakshi TMT",
+    grade:"ISI FE500D",
+    sizes:[
+      {size:"10mm-25mm", originalPrice:58000, offerPrice:56800, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/ironrod10mm.png",name:"Iron Rod 10mm", price:550},
+  {
+    image:"image/industmt.png",
+    name:"Indus TMT",
+    grade:"FE555",
+    sizes:[
+      {size:"10mm", originalPrice:64000, offerPrice:63400, unit:"Per Ton", offer:"1% OFF"},
+      {size:"12mm-25mm", originalPrice:64000, offerPrice:63300, unit:"Per Ton", offer:"1% OFF"}
+    ]
+  },
 
-  {image:"image/roundbar.png",name:"Round Steel Bar", price:650},
+  {
+    image:"image/kamdhenutmt.png",
+    name:"Kamdhenu NXT TMT",
+    grade:"FE500",
+    sizes:[
+      {size:"12mm-25mm", originalPrice:57000, offerPrice:56000, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/deformedbar.png",name:"Deformed Steel Bar", price:690},
+  {
+    image:"image/sailtmt.png",
+    name:"SAIL TMT Bar",
+    grade:"FE550D",
+    sizes:[
+      {size:"8mm", originalPrice:69000, offerPrice:67800, unit:"Per Ton", offer:"2% OFF"},
+      {size:"12mm-32mm", originalPrice:72500, offerPrice:71300, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/reinforcementbar.png",name:"Reinforcement Bar", price:720},
+  {
+    image:"image/vizagsteel.png",
+    name:"Vizag Steel TMT",
+    grade:"FE500D",
+    sizes:[
+      {size:"8mm", originalPrice:67500, offerPrice:66300, unit:"Per Ton", offer:"2% OFF"},
+      {size:"12mm-25mm", originalPrice:71000, offerPrice:69900, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/highstrengthbar.png",name:"High Strength Steel Bar", price:850},
+  {
+    image:"image/shyamsteel.png",
+    name:"Shyam Steel TMT",
+    grade:"FE550",
+    sizes:[
+      {size:"8mm", originalPrice:66000, offerPrice:64900, unit:"Per Ton", offer:"2% OFF"},
+      {size:"12mm-25mm", originalPrice:69500, offerPrice:68400, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/flatbar.png",name:"Flat Steel Bar", price:620},
+  {
+    image:"image/srmbtmt.png",
+    name:"SRMB TMT",
+    grade:"FE500D",
+    sizes:[
+      {size:"8mm", originalPrice:65000, offerPrice:64000, unit:"Per Ton", offer:"1.5% OFF"},
+      {size:"12mm-25mm", originalPrice:68500, offerPrice:67400, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  // =========================
-  // SHEETS & PLATES
-  // =========================
+  {
+    image:"image/jindalpanther.png",
+    name:"Jindal Panther TMT",
+    grade:"FE550D",
+    sizes:[
+      {size:"8mm", originalPrice:70000, offerPrice:68900, unit:"Per Ton", offer:"2% OFF"},
+      {size:"12mm-32mm", originalPrice:73500, offerPrice:72300, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/steelsheet.png",name:"Steel Sheet", price:1200},
+  {
+    image:"image/electrosteel.png",
+    name:"Electrosteel TMT",
+    grade:"FE500",
+    sizes:[
+      {size:"8mm", originalPrice:64000, offerPrice:63100, unit:"Per Ton", offer:"1.5% OFF"},
+      {size:"12mm-25mm", originalPrice:67500, offerPrice:66500, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  {image:"image/galvanizedsheet.png",name:"Galvanized Steel Sheet", price:1350},
+  {
+    image:"image/asteel.png",
+    name:"A-One TMT Steel",
+    grade:"FE500D",
+    sizes:[
+      {size:"10mm", originalPrice:62000, offerPrice:61100, unit:"Per Ton", offer:"1.5% OFF"},
+      {size:"12mm-25mm", originalPrice:66000, offerPrice:64900, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/roofsheet.png",name:"Roofing Steel Sheet", price:1450},
+  {
+    image:"image/agni.png",
+    name:"Agni TMT",
+    grade:"FE550",
+    sizes:[
+      {size:"8mm", originalPrice:61000, offerPrice:60100, unit:"Per Ton", offer:"1.5% OFF"},
+      {size:"12mm-20mm", originalPrice:64500, offerPrice:63500, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  {image:"image/hrsheet.png",name:"Hot Rolled Sheet", price:1550},
+  {
+    image:"image/apollosteel.png",
+    name:"Apollo Steel TMT",
+    grade:"FE500",
+    sizes:[
+      {size:"10mm", originalPrice:63000, offerPrice:62000, unit:"Per Ton", offer:"2% OFF"},
+      {size:"16mm-25mm", originalPrice:67000, offerPrice:65800, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/crsheet.png",name:"Cold Rolled Sheet", price:1600},
+  {
+    image:"image/beststeel.png",
+    name:"Best Steel TMT",
+    grade:"FE500D",
+    sizes:[
+      {size:"8mm", originalPrice:60000, offerPrice:59200, unit:"Per Ton", offer:"1% OFF"},
+      {size:"12mm-20mm", originalPrice:64000, offerPrice:63000, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  {image:"image/steelplate.png",name:"Steel Plate", price:1700},
+  {
+    image:"image/bhushansteel.png",
+    name:"Bhushan Steel Rod",
+    grade:"FE550",
+    sizes:[
+      {size:"10mm", originalPrice:65000, offerPrice:63900, unit:"Per Ton", offer:"2% OFF"},
+      {size:"12mm-25mm", originalPrice:69000, offerPrice:67800, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/steelcoil.png",name:"Steel Coil", price:1500},
+  {
+    image:"image/constructionsteel.png",
+    name:"Construction Steel Bar",
+    grade:"FE500",
+    sizes:[
+      {size:"8mm", originalPrice:59000, offerPrice:58200, unit:"Per Ton", offer:"1% OFF"},
+      {size:"16mm", originalPrice:64000, offerPrice:63100, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  {image:"image/steelstrip.png",name:"Steel Strip", price:770},
+  {
+    image:"image/deformedbar.png",
+    name:"Deformed Steel Bar",
+    grade:"FE500D",
+    sizes:[
+      {size:"10mm", originalPrice:62000, offerPrice:61200, unit:"Per Ton", offer:"1% OFF"},
+      {size:"20mm", originalPrice:68000, offerPrice:66900, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  // =========================
-  // CHANNELS & ANGLES
-  // =========================
+  {
+    image:"image/durasteel.png",
+    name:"Dura Steel TMT",
+    grade:"FE550",
+    sizes:[
+      {size:"8mm", originalPrice:61500, offerPrice:60600, unit:"Per Ton", offer:"1.5% OFF"},
+      {size:"16mm", originalPrice:67000, offerPrice:65900, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/steelchannel.png",name:"Steel Channel", price:900},
+  {
+    image:"image/essarsteel.png",
+    name:"Essar Steel Rod",
+    grade:"FE500",
+    sizes:[
+      {size:"10mm", originalPrice:64000, offerPrice:63100, unit:"Per Ton", offer:"1.5% OFF"},
+      {size:"25mm", originalPrice:70000, offerPrice:68900, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/mschannel.png",name:"MS Channel", price:890},
+  {
+    image:"image/fortsteel.png",
+    name:"Fortune Steel TMT",
+    grade:"FE500D",
+    sizes:[
+      {size:"8mm", originalPrice:60000, offerPrice:59200, unit:"Per Ton", offer:"1% OFF"},
+      {size:"12mm-20mm", originalPrice:65000, offerPrice:64000, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  {image:"image/uctchannel.png",name:"UCT Steel Channel", price:980},
+  {
+    image:"image/goldsteel.png",
+    name:"Gold Steel TMT",
+    grade:"FE550",
+    sizes:[
+      {size:"10mm", originalPrice:65500, offerPrice:64400, unit:"Per Ton", offer:"2% OFF"},
+      {size:"20mm", originalPrice:71000, offerPrice:69900, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/msangle.png",name:"MS Angle", price:850},
+  {
+    image:"image/highstrengthbar.png",
+    name:"High Strength Steel Bar",
+    grade:"FE600",
+    sizes:[
+      {size:"12mm", originalPrice:72000, offerPrice:70800, unit:"Per Ton", offer:"2% OFF"},
+      {size:"25mm", originalPrice:78000, offerPrice:76600, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  // =========================
-  // PIPES & TUBES
-  // =========================
+  {
+    image:"image/ironrod10mm.png",
+    name:"Iron Rod 10mm",
+    grade:"FE500",
+    sizes:[
+      {size:"10mm", originalPrice:55000, offerPrice:54200, unit:"Per Ton", offer:"1% OFF"}
+    ]
+  },
 
-  {image:"image/hollowpipe.png",name:"Hollow Steel Pipe", price:700},
+  {
+    image:"image/jswneo.png",
+    name:"JSW Neo Steel",
+    grade:"FE550D",
+    sizes:[
+      {size:"12mm", originalPrice:73000, offerPrice:71900, unit:"Per Ton", offer:"2% OFF"},
+      {size:"20mm", originalPrice:76000, offerPrice:74800, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/squarepipe.png",name:"Square Steel Pipe", price:780},
+  {
+    image:"image/kironsteel.png",
+    name:"K Iron Steel",
+    grade:"FE500",
+    sizes:[
+      {size:"8mm", originalPrice:59500, offerPrice:58700, unit:"Per Ton", offer:"1% OFF"},
+      {size:"16mm", originalPrice:65000, offerPrice:64000, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  {image:"image/mspipe.png",name:"MS Pipe", price:720},
+  {
+    image:"image/maxsteel.png",
+    name:"Max Steel TMT",
+    grade:"FE550",
+    sizes:[
+      {size:"10mm", originalPrice:64500, offerPrice:63400, unit:"Per Ton", offer:"2% OFF"},
+      {size:"20mm", originalPrice:70000, offerPrice:68800, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/stainlesspipe.png",name:"Stainless Steel Pipe", price:2100},
+  {
+    image:"image/mschannel.png",
+    name:"MS Channel",
+    grade:"Industrial",
+    sizes:[
+      {size:"75x40", originalPrice:89000, offerPrice:87200, unit:"Per Ton", offer:"2% OFF"}
+    ]
+  },
 
-  {image:"image/ssrod.png",name:"Stainless Steel Rod", price:1950},
+  {
+    image:"image/mspipe.png",
+    name:"MS Pipe",
+    grade:"Heavy Duty",
+    sizes:[
+      {size:"2 Inch", originalPrice:72000, offerPrice:70900, unit:"Per Ton", offer:"1.5% OFF"}
+    ]
+  },
 
-  // =========================
-  // STRUCTURAL STEEL
-  // =========================
+  {
+    image:"image/roofsheet.png",
+    name:"Roofing Steel Sheet",
+    grade:"Galvanized",
+    sizes:[
+      {size:"0.45mm", originalPrice:1450, offerPrice:1380, unit:"Per Sheet", offer:"5% OFF"}
+    ]
+  },
 
-  {image:"image/steelbeam.png",name:"Steel Beam", price:1800},
+  {
+    image:"image/steelbeam.png",
+    name:"Steel Beam",
+    grade:"Structural",
+    sizes:[
+      {size:"100x50", originalPrice:1800, offerPrice:1720, unit:"Per Piece", offer:"5% OFF"}
+    ]
+  },
 
-  {image:"image/heavybeam.png",name:"Heavy Steel Beam", price:3200},
+  {
+    image:"image/steelchannel.png",
+    name:"Steel Channel",
+    grade:"Industrial",
+    sizes:[
+      {size:"100x50", originalPrice:900, offerPrice:860, unit:"Per Piece", offer:"5% OFF"}
+    ]
+  },
 
-  {image:"image/steelgirder.png",name:"Steel Girder", price:2500},
+  {
+    image:"image/steelcoil.png",
+    name:"Steel Coil",
+    grade:"Premium",
+    sizes:[
+      {size:"2 Ton", originalPrice:150000, offerPrice:146000, unit:"Per Coil", offer:"3% OFF"}
+    ]
+  },
 
-  {image:"image/steelcolumn.png",name:"Steel Column", price:2600},
+  {
+    image:"image/steelgirder.png",
+    name:"Steel Girder",
+    grade:"Heavy Structural",
+    sizes:[
+      {size:"10 Feet", originalPrice:2500, offerPrice:2380, unit:"Per Piece", offer:"5% OFF"}
+    ]
+  },
 
-  {image:"image/steelframe.png",name:"Steel Frame", price:2800},
+  {
+    image:"image/steelmesh.png",
+    name:"Steel Mesh",
+    grade:"Construction",
+    sizes:[
+      {size:"6x6 Feet", originalPrice:980, offerPrice:930, unit:"Per Sheet", offer:"5% OFF"}
+    ]
+  },
 
-  {image:"image/structuralsteel.png",name:"Structural Steel", price:3000},
+  {
+    image:"image/steelsheet.png",
+    name:"Steel Sheet",
+    grade:"Cold Rolled",
+    sizes:[
+      {size:"2mm", originalPrice:1200, offerPrice:1140, unit:"Per Sheet", offer:"5% OFF"}
+    ]
+  }
 
-  // =========================
-  // WIRES & MESH
-  // =========================
-
-  {image:"image/steelwire.png",name:"Steel Binding Wire", price:300},
-
-  {image:"image/giwire.png",name:"GI Wire", price:350},
-
-  {image:"image/steelmesh.png",name:"Steel Mesh", price:980},
-
-  // =========================
-  // ACCESSORIES
-  // =========================
-
-  {image:"image/steelbracket.png",name:"Steel Bracket", price:450}
-
-],
-
- 
+]
   
 };
 
@@ -1160,7 +2208,7 @@ document.addEventListener("DOMContentLoaded", function(){
       <div class="product-card">
 
         <a href="product.html?name=${encodeURIComponent(product.name)}
-        &price=${product.price}
+        &price=${product.sizes ? product.sizes[0].price : product.price}
         &img1=${encodeURIComponent(product.img1 || product.image)}
         &img2=${encodeURIComponent(product.img2 || product.image)}
         &img3=${encodeURIComponent(product.img3 || product.image)}">
@@ -1168,8 +2216,18 @@ document.addEventListener("DOMContentLoaded", function(){
         ${product.image ? `<img src="${product.image}" class="product-img">` : ""}
 
         <h4>${product.name}</h4>
-        <p>₹${product.price}</p>
 
+<div class="price-offer-row">
+
+  <span class="product-price">
+    ₹${product.sizes ? product.sizes[0].price : product.price}
+  </span>
+
+  <span class="offer-text">
+    ${product.sizes ? product.sizes[0].offer : (product.offer || "")}
+  </span>
+
+</div>
         </a>
 
         <div class="cart-row">
@@ -1181,12 +2239,12 @@ document.addEventListener("DOMContentLoaded", function(){
           </div>
 
           <button class="add-btn"
-            onclick="addToCartWithQty('${product.name}', ${product.price}, '${product.image}')">
+            onclick="addToCartWithQty('${product.name}', ${product.sizes ? product.sizes[0].price : product.price}, '${product.image}')">
             ADD
           </button>
 
-          <button onclick="addToWishlist('${product.name}',${product.price},'${product.image}')">
-            ❤️
+          <button onclick="addToWishlist('${product.name}',${product.sizes ? product.sizes[0].price : product.price},'${product.image}')">
+          ❤️
           </button>
 
         </div>
