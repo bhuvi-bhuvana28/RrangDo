@@ -1800,33 +1800,3 @@ p{
   text-align: center;
   margin-top: 20px;
 }
-
-
-/* ===============================
-   OFFER TEXT INLINE WITH PRICE
-=================================*/
-.offer-text{
-  color: red;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: -8px;
-}
-.price-offer-row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.product-price{
-  color: #10b981;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.offer-text{
-  color: red;
-  font-size: 13px;
-  font-weight: 600;
-}
