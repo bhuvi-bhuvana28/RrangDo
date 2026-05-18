@@ -1744,7 +1744,7 @@ img3:"image/3Dbuildingplan1.png"},
   },
 
   {
-    image:"image/ambuja1.png",
+    image:"image/ambuja.png",
     name:"Ambuja Cement",
     price:390,
     discountPrice:375
@@ -2336,31 +2336,29 @@ document.addEventListener("DOMContentLoaded", function(){
         ${product.image ? `<img src="${product.image}" class="product-img">` : ""}
 
         <h4>${product.name}</h4>
-<div class="price-box">
-  ${
-    product.discountPrice
-    ? `
-      <span class="old-price">₹${product.price}</span>
-      <span class="new-price">₹${product.discountPrice}</span>
-    `
-    : `
-      <span class="normal-price">
-        ₹${product.price}
-      </span>
-    `
-  }
-</div>
-${product.note ? `<p class="product-note">${product.note}</p>` : ""}
+
 
 <div class="price-offer-row">
 
   <span class="product-price">
-    ₹${product.sizes ? product.sizes[0].price : product.price}
+    ₹${
+      product.discountPrice
+      ? product.discountPrice
+      : (product.sizes ? product.sizes[0].price : product.price)
+    }
   </span>
 
-  <span class="offer-text">
-    ${product.sizes ? product.sizes[0].offer : (product.offer || "")}
-  </span>
+  ${
+    product.discountPrice
+    ?
+    `<span class="old-price">
+      ₹${product.price}
+    </span>`
+    :
+    `<span class="offer-text">
+      ${product.sizes ? product.sizes[0].offer : (product.offer || "")}
+    </span>`
+  }
 
 </div>
         </a>
