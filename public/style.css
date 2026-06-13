@@ -2072,6 +2072,23 @@ p{
   text-align: center;
   margin-top: 20px;
 }
+<<<<<<< HEAD
+.price-box {
+  margin: 8px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.new-price {
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+=======
 
 
 
@@ -2121,6 +2138,7 @@ p{
   color:red;
   font-size:16px;
   font-weight:bold;
+<<<<<<< HEAD
 }
 
 
@@ -2388,4 +2406,7 @@ p{
   .banner{
     font-size:9px;
   }
+=======
+>>>>>>> 2ab11f2e527427f4db5eeab2c18c4de76d1b7e8f
+>>>>>>> 7c1a72a5668334bbe39de1cadaac65dd5d593579
 }

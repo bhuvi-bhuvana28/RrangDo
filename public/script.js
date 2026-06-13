@@ -2550,6 +2550,7 @@ openProduct(
         <h4>${product.name}</h4>
         
 
+
 <div class="price-offer-row">
 
   <div class="price-offer-row">
