@@ -2,78 +2,143 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cart</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <div class="logo">RrangoDoIndia</div>
+    <!-- NAVBAR -->
+    <div class="navbar">
 
-  <div class="nav-buttons">
-    <a href="index.html">🏠 Home</a>
-    <a href="cart.html">🛒 Cart</a>
-    <a href="wishlist.html">❤️ Wishlist</a>
-  </div>
-</div>
+        <div class="logo">
+            RrangoDoIndia
+        </div>
 
-<!-- CART -->
-<div class="cart-container">
+        <div class="nav-buttons">
 
-<h2>🛒 My Cart</h2>
+            <div class="header-right">
 
-<!-- PRODUCTS -->
-<div id="cart-items"></div>
+                <a href="index.html"
+                    title="Home"
+                    aria-label="Home">
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
-<!-- COUPON SECTION -->
-<div class="coupon-section">
+                <a href="wishlist.html"
+                    title="Wishlist"
+                    aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
 
-  <div class="coupon-box">
-    <input type="text" id="coupon-input" placeholder="Apply Coupon Code">
-    <button onclick="applyCoupon()">Apply</button>
-  </div>
+                <a href="cart.html"
+                    title="Cart"
+                    aria-label="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
 
-  <button onclick="toggleCoupons()" class="view-coupon-btn">
-    🎁 View Coupons
-  </button>
+            </div>
 
-  <div id="coupon-list" class="coupon-list">
+        </div>
 
-    <div class="coupon-card" onclick="applyCouponCode('RRANDO123')">
-      <h4>RRANDO123</h4>
-      <p>20% OFF 💸</p>
     </div>
 
-    <div class="coupon-card" onclick="applyCouponCode('NEWUSER09')">
-      <h4>NEWUSER09</h4>
-      <p>Free Delivery 🚚</p>
+    <!-- CART -->
+    <div class="cart-container">
+
+        <h2>🛒 My Cart</h2>
+
+        <!-- PRODUCTS -->
+        <div id="cart-items"></div>
+
+        <!-- COUPON SECTION -->
+        <div class="coupon-section">
+
+            <div class="coupon-box">
+
+                <input
+                    type="text"
+                    id="coupon-input"
+                    placeholder="Apply Coupon Code"
+                    aria-label="Coupon Code">
+
+                <button onclick="applyCoupon()">
+                    Apply
+                </button>
+
+            </div>
+
+            <button
+                onclick="toggleCoupons()"
+                class="view-coupon-btn">
+
+                🎁 View Coupons
+
+            </button>
+
+            <div
+                id="coupon-list"
+                class="coupon-list">
+
+                <div
+                    class="coupon-card"
+                    onclick="applyCouponCode('RRANDO123')">
+
+                    <h4>RRANDO123</h4>
+                    <p>20% OFF 💸</p>
+
+                </div>
+
+                <div
+                    class="coupon-card"
+                    onclick="applyCouponCode('NEWUSER09')">
+
+                    <h4>NEWUSER09</h4>
+                    <p>Free Delivery 🚚</p>
+
+                </div>
+
+            </div>
+
+            <p
+                id="applied-coupon"
+                class="applied-text">
+            </p>
+
+        </div>
+
+        <h3>You might also like ❤️</h3>
+
+        <div id="recommended-products"></div>
+
+        <!-- TOTAL -->
+        <div class="cart-summary">
+
+            <h3 id="total-price">
+                Total: ₹0
+            </h3>
+
+            <button
+                class="checkout-btn"
+                onclick="proceedCheckout()">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
     </div>
 
-  </div>
-
-  <p id="applied-coupon" class="applied-text"></p>
-
-</div>
-
-<h3>You might also like ❤️</h3>
-<div id="recommended-products"></div>
-
-<!-- TOTAL -->
-<div class="cart-summary">
-  <h3 id="total-price">Total: ₹0</h3>
-
-  <button class="checkout-btn" onclick="proceedCheckout()">
-    Proceed to Checkout
-  </button>
-</div>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

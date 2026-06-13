@@ -1,48 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup - RrangoDoIndia</title>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Signup - RrangDo</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="login-body">
 
-<div class="login-container">
-  <h2>Create Account</h2>
+    <div class="login-container">
 
-  <input type="text" id="name" placeholder="Full Name">
-  <input type="email" id="email" placeholder="Email Address">
-  <input type="password" id="password" placeholder="Password">
+        <h2>Create Account</h2>
 
-  <button onclick="signupUser()">Sign Up</button>
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            aria-label="Full Name">
 
-  <p class="signup-text">
-    Already have an account?
-    <a href="login.html">Login</a>
-  </p>
-</div>
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            aria-label="Email Address">
 
-<script>
-function signupUser(){
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let password = document.getElementById("password").value;
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            aria-label="Password">
 
-  if(name === "" || email === "" || password === ""){
-    alert("Please fill all fields");
-    return;
-  }
+        <button onclick="signupUser()">
+            Sign Up
+        </button>
 
-  // Store in localStorage (frontend only)
-  localStorage.setItem("userName", name);
-  localStorage.setItem("userEmail", email);
-  localStorage.setItem("userPassword", password);
+        <p class="signup-text">
+            Already have an account?
 
-  alert("Signup Successful! Please Login.");
-  window.location.href = "login.html";
-}
-</script>
+            <a href="login.html">
+                Login
+            </a>
+        </p>
+
+    </div>
+
+    <script>
+
+        function signupUser() {
+
+            let name =
+                document.getElementById("name").value.trim();
+
+            let email =
+                document.getElementById("email").value.trim();
+
+            let password =
+                document.getElementById("password").value.trim();
+
+            if (
+                name === "" ||
+                email === "" ||
+                password === ""
+            ) {
+
+                alert("Please fill all fields");
+
+                return;
+            }
+
+            localStorage.setItem(
+                "userName",
+                name
+            );
+
+            localStorage.setItem(
+                "userEmail",
+                email
+            );
+
+            localStorage.setItem(
+                "userPassword",
+                password
+            );
+
+            alert(
+                "Signup Successful! Please Login."
+            );
+
+            window.location.href =
+                "login.html";
+
+        }
+
+    </script>
 
 </body>
+
 </html>

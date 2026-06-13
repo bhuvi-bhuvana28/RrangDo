@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wishlist - RrangoDoIndia</title>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wishlist - RrangDo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<h2 class="section-title">❤️ Your Wishlist</h2>
+    <!-- NAVBAR -->
+    <div class="navbar">
 
-<div id="wishlist-items" class="wishlist-container"></div>
+        <div class="logo">
+            RrangDo
+        </div>
 
-<script src="script.js"></script>
+        <div class="header-right">
+
+            <a href="index.html"
+               title="Home"
+               aria-label="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+
+            <a href="wishlist.html"
+               title="Wishlist"
+               aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html"
+               title="Cart"
+               aria-label="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- PAGE TITLE -->
+    <h2 class="section-title">
+        ❤️ Your Wishlist
+    </h2>
+
+    <!-- WISHLIST ITEMS -->
+    <div
+        id="wishlist-items"
+        class="wishlist-container">
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

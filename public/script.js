@@ -47,115 +47,306 @@ img3:"image/3Dbuildingplan1.png"},
   // CEMENT
   // =========================
 
-  {image:"image/ultratechcement.png",name:"UltraTech Cement", price:420},
+  {
+    image:"image/ultratechcement.png",
+    name:"UltraTech Cement",
+    price:410,
+    discountPrice:385
+  },
 
-  {image:"image/acc.png",name:"ACC Cement", price:410},
+  {
+    image:"image/acc.png",
+    name:"ACC Cement",
+    price:400,
+    discountPrice:380
+  },
 
-  {image:"image/ambuja.png",name:"Ambuja Cement", price:430},
+  {
+    image:"image/ambuja.png",
+    name:"Ambuja Cement",
+    price:390,
+    discountPrice:375
+  },
 
-  {image:"image/birlacement.png",name:"Birla Cement", price:415},
+  {
+    image:"image/shreecement.png",
+    name:"Shree Cement",
+    price:"Not Available"
+  },
 
-  {image:"image/shreecement.png",name:"Shree Cement", price:400},
+  {
+    image:"image/birlacement.png",
+    name:"Birla Cement",
+    price:430,
+    discountPrice:415
+  },
 
-  {image:"image/whitecement.png",name:"White Cement 25kg", price:750},
+  {
+    image:"image/jkcement.png",
+    name:"JK Cement",
+    price:390,
+    discountPrice:375
+  },
 
-  {image:"image/cementbags.png",name:"Cement Bulk Pack (10 Bags)", price:4000},
+  {
+    image:"image/ramco.png",
+    name:"Ramco Cement",
+    price:405,
+    discountPrice:395
+  },
 
+  {
+    image:"image/dalmia.png",
+    name:"Dalmia Cement",
+    price:400,
+    discountPrice:385,
+    note:"Only for West Bengal"
+  },
+
+  {
+    image:"image/wondercement.png",
+    name:"Wonder Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/nuvocement.png",
+    name:"Nuvoco Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/chettinadcement.png",
+    name:"Chettinad Cement",
+    price:400,
+    discountPrice:385,
+    note:"Only Andhra"
+  },
+
+  {
+    image:"image/bharathicement.png",
+    name:"Bharathi Cement",
+    price:400,
+    discountPrice:385
+  },
+
+  {
+    image:"image/starcement.png",
+    name:"Star Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/indiaCement.png",
+    name:"India Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/orientcement.png",
+    name:"Orient Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/prismcement.png",
+    name:"Prism Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/pennacement.png",
+    name:"Penna Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/sanghicement.png",
+    name:"Sanghi Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/kcpcement.png",
+    name:"KCP Cement",
+    price:405,
+    discountPrice:395
+  },
+
+  {
+    image:"image/sagarcement.png",
+    name:"Sagar Cement",
+    price:400,
+    discountPrice:385,
+    note:"Only Andhra"
+  },
+
+  {
+    image:"image/konarkcement.png",
+    name:"Konark Cement",
+    price:400,
+    discountPrice:387,
+    note:"West Bengal"
+  },
+
+  {
+    image:"image/bangurcement.png",
+    name:"Bangur Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/mahacement.png",
+    name:"MAHA Cement",
+    price:370,
+    discountPrice:335
+  },
+
+  {
+    image:"image/goldcement.png",
+    name:"Gold Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/platinumcement.png",
+    name:"Platinum Cement",
+    price:"Not Available"
+  },
+
+  {
+    image:"image/rapidcement.png",
+    name:"Rapid Cement",
+    price:450
+  },
+
+  {
+    image:"image/maxcement.png",
+    name:"Max Cement",
+    price:400,
+    discountPrice:387,
+    note:"Only Andhra"
+  },
+
+  {
+    image:"image/mycemcement.png",
+    name:"Mycem Cement",
+    price:432
+  },
+
+  {
+    image:"image/heidelberg.png",
+    name:"Heidelberg Cement",
+    price:450
+  },
+
+  {
+    image:"image/zuaricement.png",
+    name:"Zuari Cement",
+    price:430,
+    discountPrice:415
+  },
   // =========================
-  // SAND & AGGREGATES
-  // =========================
+// SAND & AGGREGATES
+// =========================
 
-  {image:"image/foundationsand.png",name:"Foundation Sand", price:300},
+{image:"image/foundationsand.png", name:"Foundation Sand", price:300, offer:"5% OFF"},
 
-  {image:"image/mSand.png", name:"M-Sand (Manufactured Sand)", price:350},
+{image:"image/mSand.png", name:"M-Sand (Manufactured Sand)", price:350, offer:"8% OFF"},
 
-  {image:"image/pSand.png", name:"P-Sand (Plastering Sand)", price:400},
+{image:"image/pSand.png", name:"P-Sand (Plastering Sand)", price:400, offer:"10% OFF"},
 
-  {image:"image/gravel.png",name:"Gravel Load", price:1500},
+{image:"image/gravel.png", name:"Gravel Load", price:1500, offer:"12% OFF"},
 
-  // =========================
-  // BRICKS & BLOCKS
-  // =========================
 
-  {image:"image/bricks.png",name:"Bricks Pack", price:700},
+// =========================
+// BRICKS & BLOCKS
+// =========================
 
-  {image:"image/redbricks.png", name:"Red Clay Bricks Pack", price:750},
+{image:"image/bricks.png", name:"Bricks Pack", price:700, offer:"5% OFF"},
 
-  {image:"image/flyashbricks.png",name:"Fly Ash Bricks Pack", price:650},
+{image:"image/redbricks.png", name:"Red Clay Bricks Pack", price:750, offer:"8% OFF"},
 
-  {image:"image/hollowblocks.png",name:"Hollow Blocks", price:800},
+{image:"image/flyashbricks.png", name:"Fly Ash Bricks Pack", price:650, offer:"10% OFF"},
 
-  {image:"image/concreteblocks.png", name:"Concrete Solid Blocks", price:900},
+{image:"image/hollowblocks.png", name:"Hollow Blocks", price:800, offer:"12% OFF"},
 
-  // =========================
-  // CONCRETE PRODUCTS
-  // =========================
+{image:"image/concreteblocks.png", name:"Concrete Solid Blocks", price:900, offer:"15% OFF"},
 
-  {image:"image/concretemix.png",name:"Concrete Mix", price:600},
 
-  {image:"image/readyconcrete.png", name:"Ready Mix Concrete (RMC)", price:5000},
+// =========================
+// CONCRETE PRODUCTS
+// =========================
 
-  // =========================
-  // STEEL & REINFORCEMENT
-  // =========================
+{image:"image/concretemix.png", name:"Concrete Mix", price:600, offer:"8% OFF"},
 
-  {image:"image/tmtbars.png", name:"TMT Steel Bars 12mm", price:65000},
+{image:"image/readyconcrete.png", name:"Ready Mix Concrete (RMC)", price:5000, offer:"10% OFF"},
 
-  {image:"image/steelmesh.png", name:"Steel Mesh Roll", price:2500},
 
-  {image:"image/bindingwire.png", name:"Binding Wire Roll", price:300},
+// =========================
+// STEEL & REINFORCEMENT
+// =========================
 
-  {image:"image/fiberreinforce.png", name:"Fiber Reinforcement Material", price:1100},
+{image:"image/tmtbars.png", name:"TMT Steel Bars 12mm", price:65000, offer:"15% OFF"},
 
-  // =========================
-  // TILE ADHESIVES
-  // =========================
+{image:"image/steelmesh.png", name:"Steel Mesh Roll", price:2500, offer:"10% OFF"},
 
-  {image:"image/roff_t01.png",name:"Roff T01 Tile Adhesive", price:405},
+{image:"image/bindingwire.png", name:"Binding Wire Roll", price:300, offer:"5% OFF"},
 
-  {image:"image/roff_t02.png",name:"Roff T02 Tile Adhesive", price:695},
+{image:"image/fiberreinforce.png", name:"Fiber Reinforcement Material", price:1100, offer:"12% OFF"},
 
-  {image:"image/roff_t09.png",name:"Roff T09 Tile Adhesive", price:560},
 
-  {image:"image/laticrete305.png",name:"MYK Laticrete 305", price:385},
+// =========================
+// TILE ADHESIVES
+// =========================
 
-  {image:"image/laticrete315.png",name:"MYK Laticrete 315", price:420},
+{image:"image/roff_t01.png", name:"Roff T01 Tile Adhesive", price:405, offer:"8% OFF"},
 
-  // =========================
-  // WATERPROOFING
-  // =========================
+{image:"image/roff_t02.png", name:"Roff T02 Tile Adhesive", price:695, offer:"10% OFF"},
 
-  {image:"image/waterproof.png", name:"Waterproofing Chemical", price:1200},
+{image:"image/roff_t09.png", name:"Roff T09 Tile Adhesive", price:560, offer:"12% OFF"},
 
-  {image:"image/dampproof.png", name:"Damp Proof Course Liquid", price:950},
+{image:"image/laticrete305.png", name:"MYK Laticrete 305", price:385, offer:"8% OFF"},
 
-  {image:"image/bitumen.png", name:"Bitumen Waterproofing Roll", price:2000},
+{image:"image/laticrete315.png", name:"MYK Laticrete 315", price:420, offer:"10% OFF"},
 
-  {image:"image/foundationcoating.png", name:"Foundation Protective Coating", price:1300},
 
-  // =========================
-  // CHEMICALS & COMPOUNDS
-  // =========================
+// =========================
+// WATERPROOFING
+// =========================
 
-  {image:"image/wallputty.png",name:"Wall Putty 20kg", price:900},
+{image:"image/waterproof.png", name:"Waterproofing Chemical", price:1200, offer:"15% OFF"},
 
-  {image:"image/curingcompound.png", name:"Concrete Curing Compound", price:850},
+{image:"image/dampproof.png", name:"Damp Proof Course Liquid", price:950, offer:"10% OFF"},
 
-  {image:"image/grouting.png", name:"Grouting Material", price:700},
+{image:"image/bitumen.png", name:"Bitumen Waterproofing Roll", price:2000, offer:"18% OFF"},
 
-  {image:"image/expansionjoint.png", name:"Expansion Joint Filler", price:600},
+{image:"image/foundationcoating.png", name:"Foundation Protective Coating", price:1300, offer:"12% OFF"},
 
-  {image:"image/soilstabilizer.png", name:"Soil Stabilizer Chemical", price:2200},
 
-  // =========================
-  // CONSTRUCTION SUPPORT
-  // =========================
+// =========================
+// CHEMICALS & COMPOUNDS
+// =========================
 
-  {image:"image/shuttering.png", name:"Shuttering Plywood", price:1800},
+{image:"image/wallputty.png", name:"Wall Putty 20kg", price:900, offer:"10% OFF"},
 
-  {image:"image/geotextile.png", name:"Geotextile Fabric", price:1500}
+{image:"image/curingcompound.png", name:"Concrete Curing Compound", price:850, offer:"8% OFF"},
 
-],
+{image:"image/grouting.png", name:"Grouting Material", price:700, offer:"10% OFF"},
+
+{image:"image/expansionjoint.png", name:"Expansion Joint Filler", price:600, offer:"8% OFF"},
+
+{image:"image/soilstabilizer.png", name:"Soil Stabilizer Chemical", price:2200, offer:"15% OFF"},
+
+
+// =========================
+// CONSTRUCTION SUPPORT
+// =========================
+
+{image:"image/shuttering.png", name:"Shuttering Plywood", price:1800, offer:"12% OFF"},
+
+{image:"image/geotextile.png", name:"Geotextile Fabric", price:1500, offer:"10% OFF"}
+  ],
 
   electrical: [
 
@@ -163,163 +354,172 @@ img3:"image/3Dbuildingplan1.png"},
   // WIRES & CABLES
   // =========================
 
-  {image:"image/electricalwire.png",name:"Electrical Wire Roll", price:1200},
+  {image:"image/electricalwire.png", name:"Electrical Wire Roll", price:1200, offer:"10% OFF"},
 
-  {image:"image/wire.png", name:"Single Core Wire", price:1500},
+  {image:"image/wire.png", name:"Single Core Wire", price:1500, offer:"12% OFF"},
 
-  {image:"image/multicore.png", name:"Multi Core Cable", price:3000},
+  {image:"image/multicore.png", name:"Multi Core Cable", price:3000, offer:"15% OFF"},
 
-  {image:"image/lan.png", name:"LAN Cable", price:2500},
+  {image:"image/lan.png", name:"LAN Cable", price:2500, offer:"10% OFF"},
 
-  {image:"image/coaxial.png", name:"Coaxial Cable", price:1800},
+  {image:"image/coaxial.png", name:"Coaxial Cable", price:1800, offer:"12% OFF"},
+
 
   // =========================
   // SWITCHES & SOCKETS
   // =========================
 
-  {image:"image/switch.png", name:"Switch", price:50},
+  {image:"image/switch.png", name:"Switch", price:50, offer:"5% OFF"},
 
-  {image:"image/socket.png", name:"Socket", price:60},
+  {image:"image/socket.png", name:"Socket", price:60, offer:"5% OFF"},
 
-  {image:"image/dimmer.png", name:"Dimmer", price:250},
+  {image:"image/dimmer.png", name:"Dimmer", price:250, offer:"8% OFF"},
 
-  {image:"image/regulator.png", name:"Fan Regulator", price:300},
+  {image:"image/regulator.png", name:"Fan Regulator", price:300, offer:"10% OFF"},
 
-  {image:"image/indicator.png", name:"Indicator", price:40},
+  {image:"image/indicator.png", name:"Indicator", price:40, offer:"5% OFF"},
 
-  {image:"image/dpswitch.png", name:"DP Switch", price:250},
+  {image:"image/dpswitch.png", name:"DP Switch", price:250, offer:"8% OFF"},
 
-  {image:"image/socket.png", name:"Power Socket", price:120},
+  {image:"image/socket.png", name:"Power Socket", price:120, offer:"10% OFF"},
+
 
   // =========================
   // CONDUITS & FITTINGS
   // =========================
 
-  {image:"image/conduitpipe.png", name:"PVC Conduit Pipe", price:120},
+  {image:"image/conduitpipe.png", name:"PVC Conduit Pipe", price:120, offer:"8% OFF"},
 
-  {image:"image/elbow.png", name:"Elbow", price:15},
+  {image:"image/elbow.png", name:"Elbow", price:15, offer:"5% OFF"},
 
-  {image:"image/tee.png", name:"Tee", price:18},
+  {image:"image/tee.png", name:"Tee", price:18, offer:"5% OFF"},
 
-  {image:"image/coupling.png", name:"Coupling", price:10},
+  {image:"image/coupling.png", name:"Coupling", price:10, offer:"5% OFF"},
 
-  {image:"image/bend.png", name:"Bend", price:20},
+  {image:"image/bend.png", name:"Bend", price:20, offer:"5% OFF"},
 
-  {image:"image/saddle.png", name:"Saddle Patti", price:5},
+  {image:"image/saddle.png", name:"Saddle Patti", price:5, offer:"5% OFF"},
 
-  {image:"image/reducer.png", name:"Reducer", price:12},
+  {image:"image/reducer.png", name:"Reducer", price:12, offer:"5% OFF"},
 
-  {image:"image/extensionring.png", name:"Extension Ring", price:25},
+  {image:"image/extensionring.png", name:"Extension Ring", price:25, offer:"5% OFF"},
 
-  {image:"image/bush.png", name:"Female Bush Adapter", price:10},
+  {image:"image/bush.png", name:"Female Bush Adapter", price:10, offer:"5% OFF"},
 
-  {image:"image/pvccement.png", name:"PVC Cement", price:90},
+  {image:"image/pvccement.png", name:"PVC Cement", price:90, offer:"8% OFF"},
 
-  {image:"image/bendingspring.png", name:"Bending Spring", price:150},
+  {image:"image/bendingspring.png", name:"Bending Spring", price:150, offer:"10% OFF"},
 
-  {image:"image/casing.png", name:"Casing Capping", price:80},
+  {image:"image/casing.png", name:"Casing Capping", price:80, offer:"8% OFF"},
 
-  {image:"image/internalbend.png", name:"Internal Bend", price:20},
+  {image:"image/internalbend.png", name:"Internal Bend", price:20, offer:"5% OFF"},
 
-  {image:"image/externalbend.png", name:"External Bend", price:20},
+  {image:"image/externalbend.png", name:"External Bend", price:20, offer:"5% OFF"},
+
 
   // =========================
   // BOXES & BOARDS
   // =========================
 
-  {image:"image/gangbox.png", name:"Gang Box", price:40},
+  {image:"image/gangbox.png", name:"Gang Box", price:40, offer:"5% OFF"},
 
-  {image:"image/squarebox.png", name:"Square Box", price:50},
+  {image:"image/squarebox.png", name:"Square Box", price:50, offer:"5% OFF"},
 
-  {image:"image/junctionbox.png", name:"Junction Box", price:40},
+  {image:"image/junctionbox.png", name:"Junction Box", price:40, offer:"5% OFF"},
 
-  {image:"image/fanbox.png", name:"Fan Box", price:120},
+  {image:"image/fanbox.png", name:"Fan Box", price:120, offer:"8% OFF"},
 
-  {image:"image/surfacebox.png", name:"Surface Box", price:60},
+  {image:"image/surfacebox.png", name:"Surface Box", price:60, offer:"5% OFF"},
 
-  {image:"image/concealedbox.png", name:"Concealed Box", price:50},
+  {image:"image/concealedbox.png", name:"Concealed Box", price:50, offer:"5% OFF"},
 
-  {image:"image/switchboard.png", name:"Switch Board", price:200},
+  {image:"image/switchboard.png", name:"Switch Board", price:200, offer:"10% OFF"},
 
-  {image:"image/mcbbox.png", name:"MCB Box", price:400},
+  {image:"image/mcbbox.png", name:"MCB Box", price:400, offer:"12% OFF"},
 
-  {image:"image/db.png", name:"Distribution Board", price:1500},
+  {image:"image/db.png", name:"Distribution Board", price:1500, offer:"15% OFF"},
 
-  {image:"image/paneltrunking.png", name:"Panel Trunking", price:300},
+  {image:"image/paneltrunking.png", name:"Panel Trunking", price:300, offer:"10% OFF"},
+
 
   // =========================
   // PROTECTION DEVICES
   // =========================
 
-  {image:"image/mcb.png", name:"MCB", price:350},
+  {image:"image/mcb.png", name:"MCB", price:350, offer:"10% OFF"},
 
-  {image:"image/rccb.png", name:"RCCB", price:1200},
+  {image:"image/rccb.png", name:"RCCB", price:1200, offer:"15% OFF"},
 
-  {image:"image/isolator.png", name:"Isolator", price:500},
+  {image:"image/isolator.png", name:"Isolator", price:500, offer:"10% OFF"},
 
-  {image:"image/circuitbreaker.png", name:"Circuit Breaker", price:800},
+  {image:"image/circuitbreaker.png", name:"Circuit Breaker", price:800, offer:"12% OFF"},
 
-  {image:"image/fuse.png", name:"Fuse", price:30},
+  {image:"image/fuse.png", name:"Fuse", price:30, offer:"5% OFF"},
+
 
   // =========================
   // LIGHTING
   // =========================
 
-  {image:"image/ledbulb.png",name:"LED Bulb Pack", price:500},
+  {image:"image/ledbulb.png", name:"LED Bulb Pack", price:500, offer:"15% OFF"},
 
-  {image:"image/tubelights.png", name:"Tube Light Set", price:600},
+  {image:"image/tubelights.png", name:"Tube Light Set", price:600, offer:"12% OFF"},
 
-  {image:"image/bulbholder.png", name:"Bulb Holder", price:40},
+  {image:"image/bulbholder.png", name:"Bulb Holder", price:40, offer:"5% OFF"},
+
 
   // =========================
   // FANS & POWER
   // =========================
 
-  {image:"image/exhaustfan.png", name:"Exhaust Fan", price:1500},
+  {image:"image/exhaustfan.png", name:"Exhaust Fan", price:1500, offer:"15% OFF"},
 
-  {image:"image/inverter.png", name:"Inverter", price:8500},
+  {image:"image/inverter.png", name:"Inverter", price:8500, offer:"20% OFF"},
 
-  {image:"image/battery.png", name:"Inverter Battery", price:9500},
+  {image:"image/battery.png", name:"Inverter Battery", price:9500, offer:"18% OFF"},
 
-  {image:"image/stabilizer.png", name:"Voltage Stabilizer", price:3000},
+  {image:"image/stabilizer.png", name:"Voltage Stabilizer", price:3000, offer:"15% OFF"},
+
 
   // =========================
   // ACCESSORIES
   // =========================
 
-  {image:"image/pvctape.png", name:"PVC Tape", price:20},
+  {image:"image/pvctape.png", name:"PVC Tape", price:20, offer:"5% OFF"},
 
-  {image:"image/cabletie.png", name:"Cable Tie", price:2},
+  {image:"image/cabletie.png", name:"Cable Tie", price:2, offer:"5% OFF"},
 
-  {image:"image/wallplug.png", name:"Wall Plug", price:3},
+  {image:"image/wallplug.png", name:"Wall Plug", price:3, offer:"5% OFF"},
 
-  {image:"image/wireclip.png", name:"Wire Clip", price:2},
+  {image:"image/wireclip.png", name:"Wire Clip", price:2, offer:"5% OFF"},
 
-  {image:"image/multiplug.png", name:"Multiplug", price:200},
+  {image:"image/multiplug.png", name:"Multiplug", price:200, offer:"10% OFF"},
 
-  {image:"image/spikeguard.png", name:"Spike Guard", price:500},
+  {image:"image/spikeguard.png", name:"Spike Guard", price:500, offer:"12% OFF"},
 
-  {image:"image/extensionboard.png", name:"Extension Board", price:450},
+  {image:"image/extensionboard.png", name:"Extension Board", price:450, offer:"10% OFF"},
 
-  {image:"image/extensionbox.png", name:"Extension Box", price:300},
+  {image:"image/extensionbox.png", name:"Extension Box", price:300, offer:"10% OFF"},
+
 
   // =========================
   // TOOLS & TESTING
   // =========================
 
-  {image:"image/linetester.png", name:"Line Tester", price:120},
+  {image:"image/linetester.png", name:"Line Tester", price:120, offer:"8% OFF"},
 
-  {image:"image/electricalpanel.png",name:"Electrical Panel", price:4500},
+  {image:"image/electricalpanel.png", name:"Electrical Panel", price:4500, offer:"18% OFF"},
+
 
   // =========================
   // SMART & HOME
   // =========================
 
-  {image:"image/smartplug.png", name:"Smart Plug", price:900},
+  {image:"image/smartplug.png", name:"Smart Plug", price:900, offer:"12% OFF"},
 
-  {image:"image/doorbell.png", name:"Door Bell", price:250},
+  {image:"image/doorbell.png", name:"Door Bell", price:250, offer:"8% OFF"},
 
-  {image:"image/wirelessbell.png", name:"Wireless Door Bell", price:800}
+  {image:"image/wirelessbell.png", name:"Wireless Door Bell", price:800, offer:"10% OFF"}
 
 ],
 
@@ -329,105 +529,110 @@ img3:"image/3Dbuildingplan1.png"},
   // PIPES
   // =========================
 
-  {image:"image/pvcpipe.png",name:"PVC Pipe", price:300},
+  {image:"image/pvcpipe.png", name:"PVC Pipe", price:300, offer:"8% OFF"},
 
-  {image:"image/upvcpipes.png", name:"UPVC Pipe", price:450},
+  {image:"image/upvcpipes.png", name:"UPVC Pipe", price:450, offer:"10% OFF"},
 
-  {image:"image/cpvcpipe.png", name:"CPVC Pipe", price:500},
+  {image:"image/cpvcpipe.png", name:"CPVC Pipe", price:500, offer:"12% OFF"},
 
-  {image:"image/pprpipe.png", name:"PPR Pipe", price:600},
+  {image:"image/pprpipe.png", name:"PPR Pipe", price:600, offer:"15% OFF"},
 
-  {image:"image/hdpepipe.png", name:"HDPE Pipe", price:800},
+  {image:"image/hdpepipe.png", name:"HDPE Pipe", price:800, offer:"18% OFF"},
 
-  {image:"image/gipipe.png", name:"GI Pipe", price:700},
+  {image:"image/gipipe.png", name:"GI Pipe", price:700, offer:"12% OFF"},
 
-  {image:"image/drainagepipe.png",name:"Drainage Pipe", price:400},
+  {image:"image/drainagepipe.png", name:"Drainage Pipe", price:400, offer:"10% OFF"},
 
-  {image:"image/sinkpipe.png", name:"Sink Pipe", price:350},
+  {image:"image/sinkpipe.png", name:"Sink Pipe", price:350, offer:"8% OFF"},
 
-  {image:"image/flexiblepipe.png", name:"Flexible Hose Pipe", price:250},
+  {image:"image/flexiblepipe.png", name:"Flexible Hose Pipe", price:250, offer:"8% OFF"},
+
 
   // =========================
   // TAPS & FAUCETS
   // =========================
 
-  {image:"image/watertap.png",name:"Water Tap", price:250},
+  {image:"image/watertap.png", name:"Water Tap", price:250, offer:"10% OFF"},
 
-  {image:"image/stopcock.png", name:"Stop Cock Tap", price:180},
+  {image:"image/stopcock.png", name:"Stop Cock Tap", price:180, offer:"8% OFF"},
 
-  {image:"image/bibcock.png", name:"Bib Cock Tap", price:220},
+  {image:"image/bibcock.png", name:"Bib Cock Tap", price:220, offer:"10% OFF"},
 
-  {image:"image/wallmixertap.png", name:"Wall Mixer Tap", price:2200},
+  {image:"image/wallmixertap.png", name:"Wall Mixer Tap", price:2200, offer:"18% OFF"},
 
-  {image:"image/washbasintap.png", name:"Wash Basin Tap", price:1200},
+  {image:"image/washbasintap.png", name:"Wash Basin Tap", price:1200, offer:"15% OFF"},
 
-  {image:"image/kitchentap.png", name:"Kitchen Sink Tap", price:1500},
+  {image:"image/kitchentap.png", name:"Kitchen Sink Tap", price:1500, offer:"15% OFF"},
 
-  {image:"image/anglevalve.png", name:"Angle Valve", price:200},
+  {image:"image/anglevalve.png", name:"Angle Valve", price:200, offer:"8% OFF"},
+
 
   // =========================
   // VALVES & FITTINGS
   // =========================
 
-  {image:"image/ballvalve.png", name:"Ball Valve", price:180},
+  {image:"image/ballvalve.png", name:"Ball Valve", price:180, offer:"8% OFF"},
 
-  {image:"image/checkvalve.png", name:"Check Valve", price:350},
+  {image:"image/checkvalve.png", name:"Check Valve", price:350, offer:"10% OFF"},
 
-  {image:"image/gatevalve.png", name:"Gate Valve", price:500},
+  {image:"image/gatevalve.png", name:"Gate Valve", price:500, offer:"12% OFF"},
 
-  {image:"image/pipeclamp.png", name:"Pipe Clamp", price:120},
+  {image:"image/pipeclamp.png", name:"Pipe Clamp", price:120, offer:"5% OFF"},
 
-  {image:"image/sealtape.png", name:"PTFE Seal Tape", price:30},
+  {image:"image/sealtape.png", name:"PTFE Seal Tape", price:30, offer:"5% OFF"},
 
-  {image:"image/pipesolvent.png", name:"Pipe Solvent Cement", price:120},
+  {image:"image/pipesolvent.png", name:"Pipe Solvent Cement", price:120, offer:"8% OFF"},
+
 
   // =========================
   // BATHROOM PRODUCTS
   // =========================
 
-  {image:"image/shower.png",name:"Shower Set", price:1800},
+  {image:"image/shower.png", name:"Shower Set", price:1800, offer:"15% OFF"},
 
-  {image:"image/handshower.png", name:"Hand Shower", price:900},
+  {image:"image/handshower.png", name:"Hand Shower", price:900, offer:"12% OFF"},
 
-  {image:"image/overheadshower.png", name:"Overhead Shower", price:2000},
+  {image:"image/overheadshower.png", name:"Overhead Shower", price:2000, offer:"18% OFF"},
 
-  {image:"image/healthfaucet.png", name:"Health Faucet", price:700},
+  {image:"image/healthfaucet.png", name:"Health Faucet", price:700, offer:"10% OFF"},
 
-  {image:"image/jetshower.png", name:"Jet Spray Shower", price:850},
+  {image:"image/jetshower.png", name:"Jet Spray Shower", price:850, offer:"12% OFF"},
 
-  {image:"image/washtub.png", name:"Wash Basin", price:2500},
+  {image:"image/washtub.png", name:"Wash Basin", price:2500, offer:"20% OFF"},
 
-  {image:"image/toiletseat.png", name:"Toilet Seat", price:3000},
+  {image:"image/toiletseat.png", name:"Toilet Seat", price:3000, offer:"18% OFF"},
 
-  {image:"image/flushtank.png", name:"Flush Tank", price:1200},
+  {image:"image/flushtank.png", name:"Flush Tank", price:1200, offer:"12% OFF"},
+
 
   // =========================
   // WATER STORAGE & SYSTEMS
   // =========================
 
-  {image:"image/watertank.png",name:"Water Tank 500L", price:3500},
+  {image:"image/watertank.png", name:"Water Tank 500L", price:3500, offer:"20% OFF"},
 
-  {image:"image/watermeter.png", name:"Water Meter", price:1800},
+  {image:"image/watermeter.png", name:"Water Meter", price:1800, offer:"15% OFF"},
 
-  {image:"image/pressurepump.png", name:"Water Pressure Pump", price:4500},
+  {image:"image/pressurepump.png", name:"Water Pressure Pump", price:4500, offer:"22% OFF"},
 
-  {image:"image/waterfilter.png", name:"Water Filter", price:4500},
+  {image:"image/waterfilter.png", name:"Water Filter", price:4500, offer:"20% OFF"},
 
-  {image:"image/watersoftener.png", name:"Water Softener", price:12000},
+  {image:"image/watersoftener.png", name:"Water Softener", price:12000, offer:"25% OFF"},
 
-  {image:"image/rofilter.png", name:"RO Water Filter System", price:9000},
+  {image:"image/rofilter.png", name:"RO Water Filter System", price:9000, offer:"22% OFF"},
+
 
   // =========================
   // DRAINAGE SYSTEM
   // =========================
 
-  {image:"image/draincover.png", name:"Drain Cover", price:150},
+  {image:"image/draincover.png", name:"Drain Cover", price:150, offer:"5% OFF"},
 
-  {image:"image/floortrap.png", name:"Floor Trap", price:300},
+  {image:"image/floortrap.png", name:"Floor Trap", price:300, offer:"8% OFF"},
 
-  {image:"image/greasetrap.png", name:"Grease Trap", price:2500},
+  {image:"image/greasetrap.png", name:"Grease Trap", price:2500, offer:"18% OFF"},
 
-  {image:"image/septic.png", name:"Septic Tank System", price:8000}
+  {image:"image/septic.png", name:"Septic Tank System", price:8000, offer:"20% OFF"}
 
 ],
 
@@ -437,91 +642,95 @@ img3:"image/3Dbuildingplan1.png"},
   // INTERIOR PAINTS
   // =========================
 
-  {image:"image/asianpaints.png", name:"Asian Paints Premium Emulsion", price:950},
+  {image:"image/asianpaints.png", name:"Asian Paints Premium Emulsion", price:950, offer:"15% OFF"},
 
-  {image:"image/bergerpaint.png", name:"Berger Easy Clean Paint", price:880},
+  {image:"image/bergerpaint.png", name:"Berger Easy Clean Paint", price:880, offer:"12% OFF"},
 
-  {image:"image/interioremulsion.png", name:"Interior Emulsion Paint", price:1100},
+  {image:"image/interioremulsion.png", name:"Interior Emulsion Paint", price:1100, offer:"18% OFF"},
 
-  {image:"image/distemper.png", name:"Distemper Paint", price:500},
+  {image:"image/distemper.png", name:"Distemper Paint", price:500, offer:"10% OFF"},
 
-  {image:"image/plasticpaint.png", name:"Plastic Paint", price:950},
+  {image:"image/plasticpaint.png", name:"Plastic Paint", price:950, offer:"15% OFF"},
 
-  {image:"image/latexpaint.png", name:"Latex Paint", price:1200},
+  {image:"image/latexpaint.png", name:"Latex Paint", price:1200, offer:"20% OFF"},
 
-  {image:"image/mattepaint.png", name:"Matte Finish Paint", price:1150},
+  {image:"image/mattepaint.png", name:"Matte Finish Paint", price:1150, offer:"18% OFF"},
 
-  {image:"image/satinpaint.png", name:"Satin Finish Paint", price:1250},
+  {image:"image/satinpaint.png", name:"Satin Finish Paint", price:1250, offer:"20% OFF"},
 
-  {image:"image/glosspaint.png", name:"Gloss Finish Paint", price:1300},
+  {image:"image/glosspaint.png", name:"Gloss Finish Paint", price:1300, offer:"22% OFF"},
 
-  {image:"image/ceilingpaint.png", name:"Ceiling Paint", price:700},
+  {image:"image/ceilingpaint.png", name:"Ceiling Paint", price:700, offer:"10% OFF"},
+
 
   // =========================
   // EXTERIOR PAINTS
   // =========================
 
-  {image:"image/exteriorpaint.png", name:"Exterior Weather Paint", price:1200},
+  {image:"image/exteriorpaint.png", name:"Exterior Weather Paint", price:1200, offer:"20% OFF"},
 
-  {image:"image/waterproofpaint.png", name:"Waterproof Paint", price:1300},
+  {image:"image/waterproofpaint.png", name:"Waterproof Paint", price:1300, offer:"22% OFF"},
 
-  {image:"image/antidamp.png", name:"Anti Damp Paint", price:1400},
+  {image:"image/antidamp.png", name:"Anti Damp Paint", price:1400, offer:"25% OFF"},
 
-  {image:"image/primerexterior.png", name:"Exterior Primer", price:700},
+  {image:"image/primerexterior.png", name:"Exterior Primer", price:700, offer:"12% OFF"},
+
 
   // =========================
   // PRIMERS & PUTTY
   // =========================
 
-  {image:"image/wallprimer.png", name:"Wall Primer", price:600},
+  {image:"image/wallprimer.png", name:"Wall Primer", price:600, offer:"10% OFF"},
 
-  {image:"image/woodprimer.png", name:"Wood Primer", price:650},
+  {image:"image/woodprimer.png", name:"Wood Primer", price:650, offer:"12% OFF"},
 
-  {image:"image/putty.png", name:"Wall Putty", price:900},
+  {image:"image/putty.png", name:"Wall Putty", price:900, offer:"15% OFF"},
 
-  {image:"image/sealer.png", name:"Surface Sealer", price:750},
+  {image:"image/sealer.png", name:"Surface Sealer", price:750, offer:"12% OFF"},
+
 
   // =========================
   // WOOD & METAL FINISHES
   // =========================
 
-  {image:"image/woodpolish.png", name:"Wood Polish", price:900},
+  {image:"image/woodpolish.png", name:"Wood Polish", price:900, offer:"15% OFF"},
 
-  {image:"image/stain.png", name:"Wood Stain", price:850},
+  {image:"image/stain.png", name:"Wood Stain", price:850, offer:"12% OFF"},
 
-  {image:"image/metalpaint.png", name:"Metal Paint", price:850},
+  {image:"image/metalpaint.png", name:"Metal Paint", price:850, offer:"15% OFF"},
 
-  {image:"image/rustproof.png", name:"Anti Rust Paint", price:1000},
+  {image:"image/rustproof.png", name:"Anti Rust Paint", price:1000, offer:"18% OFF"},
 
-  {image:"image/aluminiumpaint.png", name:"Aluminium Paint", price:950},
+  {image:"image/aluminiumpaint.png", name:"Aluminium Paint", price:950, offer:"15% OFF"},
 
-  {image:"image/clearcoat.png", name:"Clear Coat Finish", price:1100},
+  {image:"image/clearcoat.png", name:"Clear Coat Finish", price:1100, offer:"18% OFF"},
+
 
   // =========================
   // SPECIALITY PAINTS
   // =========================
 
-  {image:"image/enamelpaint.png", name:"Enamel Paint", price:750},
+  {image:"image/enamelpaint.png", name:"Enamel Paint", price:750, offer:"12% OFF"},
 
-  {image:"image/oilpaint.png", name:"Oil Based Paint", price:800},
+  {image:"image/oilpaint.png", name:"Oil Based Paint", price:800, offer:"15% OFF"},
 
-  {image:"image/texturepaint.png", name:"Texture Paint", price:1800},
+  {image:"image/texturepaint.png", name:"Texture Paint", price:1800, offer:"25% OFF"},
 
-  {image:"image/spraypaint.png", name:"Spray Paint", price:300},
+  {image:"image/spraypaint.png", name:"Spray Paint", price:300, offer:"8% OFF"},
 
-  {image:"image/chalkpaint.png", name:"Chalk Paint", price:900},
+  {image:"image/chalkpaint.png", name:"Chalk Paint", price:900, offer:"15% OFF"},
 
-  {image:"image/heatresistant.png", name:"Heat Resistant Paint", price:1700},
+  {image:"image/heatresistant.png", name:"Heat Resistant Paint", price:1700, offer:"22% OFF"},
 
-  {image:"image/fireproof.png", name:"Fire Resistant Paint", price:2200},
+  {image:"image/fireproof.png", name:"Fire Resistant Paint", price:2200, offer:"28% OFF"},
 
-  {image:"image/bitumenpaint.png", name:"Bitumen Paint", price:1200},
+  {image:"image/bitumenpaint.png", name:"Bitumen Paint", price:1200, offer:"18% OFF"},
 
-  {image:"image/epoxypaint.png", name:"Epoxy Floor Paint", price:2000},
+  {image:"image/epoxypaint.png", name:"Epoxy Floor Paint", price:2000, offer:"25% OFF"},
 
-  {image:"image/floorpaint.png", name:"Floor Coating Paint", price:1500},
+  {image:"image/floorpaint.png", name:"Floor Coating Paint", price:1500, offer:"20% OFF"},
 
-  {image:"image/roadmarking.png", name:"Road Marking Paint", price:2500}
+  {image:"image/roadmarking.png", name:"Road Marking Paint", price:2500, offer:"30% OFF"}
 
 ],
  
@@ -2327,37 +2536,93 @@ document.addEventListener("DOMContentLoaded", function(){
       container.innerHTML += `
       <div class="product-card">
 
-        <a href="product.html?name=${encodeURIComponent(product.name)}
-        &price=${product.sizes ? product.sizes[0].price : product.price}
-        &img1=${encodeURIComponent(product.img1 || product.image)}
-        &img2=${encodeURIComponent(product.img2 || product.image)}
-        &img3=${encodeURIComponent(product.img3 || product.image)}">
-
+        <a href="javascript:void(0)"
+onclick="
+openProduct(
+'${product.name.replace(/\s/g,'')}',
+'${product.name}',
+'${product.img1 || product.image}',
+'${product.img2 || product.image}',
+'${product.img3 || product.image}'
+)">
         ${product.image ? `<img src="${product.image}" class="product-img">` : ""}
 
         <h4>${product.name}</h4>
+        
 
 <div class="price-offer-row">
 
-  <span class="product-price">
-    ₹${
-      product.discountPrice
-      ? product.discountPrice
-      : (product.sizes ? product.sizes[0].price : product.price)
-    }
-  </span>
+  <div class="price-offer-row">
 
   ${
     product.discountPrice
     ?
-    `<span class="old-price">
-      ₹${product.price}
-    </span>`
+    `
+      <span class="old-price">
+        ₹${product.price}
+      </span>
+
+      <span class="product-price">
+        ₹${product.discountPrice}
+      </span>
+    `
     :
-    `<span class="offer-text">
-      ${product.sizes ? product.sizes[0].offer : (product.offer || "")}
-    </span>`
+    `
+      <span
+        class="product-price"
+        id="price-${product.name.replace(/\s/g,'')}"
+      >
+        ₹${product.sizes ? product.sizes[0].price : product.price}
+      </span>
+    `
   }
+
+  <span
+    class="offer-text"
+    id="offer-${product.name.replace(/\s/g,'')}"
+  >
+    ${
+      product.sizes
+      ? product.sizes[0].offer
+      : (product.offer || "")
+    }
+  </span>
+
+</div>
+
+${
+  product.sizes
+  ?
+  `
+  <select
+  class="size-dropdown"
+  id="size-${product.name.replace(/\s/g,'')}"
+  onclick="event.stopPropagation()"
+  onchange="
+    event.stopPropagation();
+    changeSize(
+      '${product.name.replace(/\s/g,'')}',
+      this
+    )
+  "
+>
+
+    ${
+      product.sizes.map(size => `
+        <option
+          value="${size.price}"
+          data-offer="${size.offer}"
+        >
+          ${size.size}
+        </option>
+      `).join("")
+    }
+
+  </select>
+  `
+  :
+  ""
+}
 
 </div>
         </a>
@@ -2403,7 +2668,49 @@ function goCategory(type){
 window.location.href = "category.html?type=" + type;
 }
 
+function changeSize(id, select){
 
+  const price = select.value;
+
+  const offer =
+    select.options[select.selectedIndex]
+    .dataset.offer;
+
+  document.getElementById(
+    "price-" + id
+  ).innerText = "₹" + price;
+
+  document.getElementById(
+    "offer-" + id
+  ).innerText = offer;
+
+  console.log(
+    "Selected:",
+    select.options[select.selectedIndex].text,
+    price
+  );
+}
+
+function openProduct(id,name,img1,img2,img3){
+
+  const sizeDropdown =
+    document.getElementById("size-" + id);
+
+  let selectedPrice =
+    sizeDropdown ?
+    sizeDropdown.value :
+    "";
+
+  let selectedSize =
+    sizeDropdown ?
+    sizeDropdown.options[
+      sizeDropdown.selectedIndex
+    ].text :
+    "";
+
+  window.location.href =
+  `product.html?name=${encodeURIComponent(name)}&price=${selectedPrice}&size=${encodeURIComponent(selectedSize)}&img1=${encodeURIComponent(img1)}&img2=${encodeURIComponent(img2)}&img3=${encodeURIComponent(img3)}`;
+}
 /* ===============================
    UPDATE CART COUNT (WORKS EVERYWHERE)
 =================================*/
@@ -2806,10 +3113,8 @@ function proceedCheckout(){
 /* ===============================
    placeOrder
 =================================*/
-
 function placeOrder(){
 
-  // ✅ ADD HERE (TOP OF FUNCTION)
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if(cart.length === 0){
@@ -2824,7 +3129,6 @@ function placeOrder(){
     return;
   }
 
-  // ✅ NOW CREATE ORDER DATA
   let total = cart.reduce((sum, item) => 
     sum + item.price * item.quantity, 0
   );
@@ -2835,31 +3139,62 @@ function placeOrder(){
     address: address
   };
 
-  console.log("Sending:", orderData);
+  let method = document.getElementById("payment-method").value;
 
-  // ✅ FETCH
-  fetch("/create_order", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(orderData)
-  })
-  .then(res => res.json())
-  .then(data => {
+  // ✅ COD
+  if(method === "cod"){
 
-    if(data.error){
-      alert("❌ " + data.error);
-    } else {
-      alert("🎉 Order placed successfully!");
+    fetch("/create_order", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(orderData)
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert("📦 Order placed (COD)");
       localStorage.removeItem("cart");
       window.location.href = "index.html";
-    }
+    });
 
-  })
-  .catch(err => {
-    alert("REAL ERROR: " + err.message);
-  });
+  }
+
+  // ✅ UPI / CARD → RAZORPAY
+  else if(method === "upi" || method === "card"){
+
+    let options = {
+      key: "rzp_test_xxxxxxxx",   // 🔥 PUT YOUR KEY HERE
+      amount: total * 100,
+      currency: "INR",
+      name: "RrangoDoIndia",
+
+      handler: function (){
+
+        fetch("/create_order", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(orderData)
+        })
+        .then(res => res.json())
+        .then(data => {
+          alert("✅ Payment + Order Success!");
+          localStorage.removeItem("cart");
+          window.location.href = "success.html";
+        });
+
+      }
+    };
+
+    let rzp = new Razorpay(options);
+    rzp.open();   // 🔥 THIS LINE OPENS UPI APPS
+  }
+
+  else{
+    alert("Select payment method");
+  }
 }
 
 /* ===============================
@@ -2952,13 +3287,20 @@ card.style.display = "none"
 
 //
 
-function handleSearch(e){
+function handleSearch(event){
 
-if(e.key === "Enter"){
-let value = document.getElementById("search-input").value.toLowerCase()
-window.location.href = "category.html?search=" + value
-}
+  if(event.key === "Enter"){
 
+    const searchText = event.target.value.toLowerCase().trim();
+
+    if(searchText === ""){
+      return;
+    }
+
+    window.location.href =
+      "category.html?search=" +
+      encodeURIComponent(searchText);
+  }
 }
 
 // 👇👇 ADD HERE (LAST LINE OF FILE)

@@ -2,171 +2,194 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Product Details</title>
+    <title>Product Details - RrangDo</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <div class="navbar">
+    <!-- NAVBAR -->
+    <div class="navbar">
 
-    <div class="logo">
-      RrangoDoIndia
-    </div>
+        <div class="logo">
+            RrangDo
+        </div>
 
-    <div class="header-right">
+        <div class="header-right">
 
-      <a href="index.html">
-        🏠 Home
-      </a>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
 
-      <a href="cart.html">
-        🛒 Cart
-      </a>
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
 
-      <a href="wishlist.html">
-        ❤️ Wishlist
-      </a>
-
-    </div>
-
-  </div>
-
-  <!-- PRODUCT DETAILS -->
-  <div class="product-details">
-
-    <!-- LEFT -->
-    <div class="product-left">
-
-      <img
-        id="product-image"
-        alt="Product Image"
-      >
-
-    </div>
-
-    <!-- RIGHT -->
-    <div class="product-right">
-
-      <h2 id="product-name"></h2>
-
-      <p id="product-price"></p>
-
-      <!-- CART ROW -->
-      <div class="cart-row">
-
-        <!-- QTY -->
-        <div class="qty-control">
-
-          <button onclick="decreaseProductQty()">
-            -
-          </button>
-
-          <span id="qty">
-            1
-          </span>
-
-          <button onclick="increaseProductQty()">
-            +
-          </button>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
 
         </div>
 
-        <!-- ADD -->
-        <button
-          class="add-btn"
-          onclick="addCurrentProductToCart()"
-        >
-          ADD
-        </button>
+    </div>
 
-        <!-- WISHLIST -->
-        <button
-          class="wish-btn"
-          onclick="addCurrentProductToWishlist()"
-        >
-          ❤️
-        </button>
+    <!-- PRODUCT DETAILS -->
+    <div class="product-details">
 
-      </div>
+        <!-- LEFT -->
+        <div class="product-left">
+
+            <img
+                id="product-image"
+                src=""
+                alt="Product Image">
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="product-right">
+
+            <h2 id="product-name"></h2>
+
+            <p id="product-price"></p>
+
+            <p id="product-size"></p>
+
+            <!-- CART ROW -->
+            <div class="cart-row">
+
+                <div class="qty-control">
+
+                    <button onclick="decreaseProductQty()">
+                        -
+                    </button>
+
+                    <span id="qty">1</span>
+
+                    <button onclick="increaseProductQty()">
+                        +
+                    </button>
+
+                </div>
+
+                <button
+                    class="add-btn"
+                    onclick="addCurrentProductToCart()">
+
+                    ADD
+
+                </button>
+
+                <button
+                    class="wish-btn"
+                    onclick="addCurrentProductToWishlist()">
+
+                    ❤️
+
+                </button>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </div>
+    <script>
 
-  <script>
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
 
-    // URL PARAMS
-    const params = new URLSearchParams(window.location.search);
+        const name =
+            params.get("name");
 
-    const name = params.get("name");
-    const price = Number(params.get("price"));
-    const img1 = params.get("img1");
+        const price =
+            params.get("price");
 
-    // SET DATA
-    document.getElementById("product-name").innerText = name;
+        const img1 =
+            params.get("img1");
 
-    document.getElementById("product-price").innerText =
-      "₹" + price;
+        const size =
+            params.get("size");
 
-    document.getElementById("product-image").src = img1;
+        document.getElementById(
+            "product-name"
+        ).innerText = name;
 
-    // QTY
-    let productQty = 1;
+        document.getElementById(
+            "product-price"
+        ).innerText =
+            "₹" + price;
 
-    function increaseProductQty() {
+        document.getElementById(
+            "product-size"
+        ).innerText =
+            size ? "Size: " + size : "";
 
-      productQty++;
+        document.getElementById(
+            "product-image"
+        ).src = img1;
 
-      document.getElementById("qty").innerText =
-        productQty;
+        let productQty = 1;
 
-    }
+        function increaseProductQty() {
 
-    function decreaseProductQty() {
+            productQty++;
 
-      if (productQty > 1) {
+            document.getElementById(
+                "qty"
+            ).innerText =
+                productQty;
 
-        productQty--;
+        }
 
-        document.getElementById("qty").innerText =
-          productQty;
+        function decreaseProductQty() {
 
-      }
+            if (productQty > 1) {
 
-    }
+                productQty--;
 
-    // ADD TO CART
-    function addCurrentProductToCart() {
+                document.getElementById(
+                    "qty"
+                ).innerText =
+                    productQty;
 
-      addToCartWithQty(
-        name,
-        price,
-        img1,
-        productQty
-      );
+            }
 
-    }
+        }
 
-    // ADD TO WISHLIST
-    function addCurrentProductToWishlist() {
+        function addCurrentProductToCart() {
 
-      addToWishlist(
-        name,
-        price,
-        img1
-      );
+            addToCartWithQty(
+                name,
+                price,
+                img1,
+                productQty
+            );
 
-    }
+        }
 
-  </script>
+        function addCurrentProductToWishlist() {
 
-  <script src="script.js"></script>
+            addToWishlist(
+                name,
+                price,
+                img1
+            );
+
+        }
+
+    </script>
+
+    <script src="script.js"></script>
 
 </body>
 

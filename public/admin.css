@@ -1,66 +1,83 @@
-/* BACKGROUND */
+/* PAGE */
 body{
   margin:0;
-  height:100vh;
+  min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
-  background: linear-gradient(135deg, #0aad0a, #36d36d);
-  font-family: 'Segoe UI', sans-serif;
+  background:linear-gradient(135deg,#10b981,#059669);
+  font-family:'Segoe UI',sans-serif;
 }
 
-/* LOGIN BOX */
+/* LOGIN CARD */
 .admin-login-container{
   background:#fff;
-  padding:40px;
-  border-radius:15px;
-  width:320px;
+  padding:35px;
+  width:350px;
+  border-radius:20px;
   text-align:center;
-  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* TITLE */
 .admin-login-container h2{
-  color:#0aad0a;
-  margin-bottom:5px;
+  margin:0;
+  color:#10b981;
+  font-size:28px;
 }
 
-/* SUBTEXT */
+/* SUBTITLE */
 .subtitle{
-  font-size:13px;
-  color:gray;
-  margin-bottom:20px;
+  color:#666;
+  font-size:14px;
+  margin:10px 0 25px;
 }
 
-/* INPUT */
+/* INPUTS */
 .admin-login-container input{
   width:100%;
   padding:12px;
-  margin:10px 0;
-  border-radius:8px;
-  border:1px solid #ccc;
-  outline:none;
-  transition:0.3s;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:14px;
+  box-sizing:border-box;
 }
 
 .admin-login-container input:focus{
-  border-color:#0aad0a;
+  outline:none;
+  border-color:#10b981;
+  box-shadow:0 0 0 3px rgba(16,185,129,0.15);
 }
 
 /* BUTTON */
 .admin-login-container button{
   width:100%;
   padding:12px;
-  margin-top:15px;
   border:none;
-  border-radius:8px;
-  background:#0aad0a;
+  border-radius:10px;
+  background:#10b981;
   color:white;
   font-size:16px;
+  font-weight:600;
   cursor:pointer;
   transition:0.3s;
 }
 
 .admin-login-container button:hover{
-  background:#088a08;
+  background:#059669;
+}
+
+/* MOBILE */
+@media(max-width:480px){
+
+  .admin-login-container{
+    width:90%;
+    padding:25px;
+  }
+
+  .admin-login-container h2{
+    font-size:24px;
+  }
+
 }
